@@ -1,40 +1,19 @@
 
-
-
-
-window.onload = function () { //ожидание полной загрузки страницы
-	// let isMobile = {
-	// 	Android: function () { return navigator.userAgent.match(/Android/i); },
-	// 	BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); },
-	// 	iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
-	// 	Opera: function () { return navigator.userAgent.match(/Opera Mini/i); },
-	// 	Windows: function () { return navigator.userAgent.match(/IEMobile/i); },
-	// 	any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }
-	// };               
-      
-
-
-	
-
-
-	//Главное меню (бургер)
-	// document.querySelector('.menu__btn').addEventListener('click', ev => {//Выбираем дом элимента и вешаем событие клик
-	// 	document.querySelector('.menu__list').classList.toggle('menu__list_open');//добавляем класс если его нет и наоборот
-	// 	document.querySelector('.menu__btn').classList.toggle('menu__btn_open');//добавляем класс если его нет и наоборот
-	// 	ev.stopPropagation();
-	// 	document.addEventListener('click', e => {
-	// 		if (e.target != document.querySelector('.menu__list')) {
-	// 			document.querySelector('.menu__list').classList.remove('menu__list_open');
-	// 			document.querySelector('.menu__btn').classList.remove('menu__btn_open');
-	// 		}
-	// 	})
-	// })
-
-}
-
-
-
-
+// Бургер
+if (document.querySelector('.burger-menu')) {
+	(function () {
+		// let burger = document.querySelector('.header__burger');
+		let header = document.querySelector('.header');
+		let burger = document.querySelector('.burger-menu');
+		// let body = document.querySelector('.body');
+		burger.addEventListener('click', () => {
+			// burger.classList.toggle('header__burger_active');
+			header.classList.toggle('header_active');
+			// body.classList.toggle('overflow-h');
+			burger.classList.toggle('burger-menu_active');
+		})
+	}());
+};
 
 
 

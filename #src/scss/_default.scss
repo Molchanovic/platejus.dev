@@ -12,15 +12,30 @@ h2,
 h3,
 h4,
 h5 {
+	font-family: $font;
+	font-weight: 700;
+	color: $color-text;
 }
 h1{
+	$fs: 60;
+	font-size: calc($fs / $f-size) + em;
+	line-height: calc(70 / $fs * 100%);
+
+	span {
+		color: $color-blue;
+	}
 }
 h2 {
+	$fs: 40;
+	font-size: calc($fs / $f-size) + em;
+	line-height: calc(60 / $fs * 100%);
 
 }
 
 h3 {
-
+	$fs: 20;
+	font-size: calc($fs / $f-size) + em;
+	line-height: calc(32 / $fs * 100%);
 }
 .btn {
 	display: inline-flex;
