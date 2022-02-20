@@ -40,7 +40,7 @@
 @import "footer.scss";
 @import "header.scss";
 
-
+// ==================================
 
 .all-need {
 
@@ -104,4 +104,117 @@
 		margin-top: 10px;
 	}
 }
+
+// ==================================
+.save-calmly {
+
+	&__title {
+	}
+
+	&__subtitle-text {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 60px;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		$grid: 31.9;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+		background: $color-bg-grey;
+		padding: 30px 25px 60px 25px;
+		box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+		z-index: 10;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 600px;
+			height: 40px;
+			background: $color-ligth-red;
+			mix-blend-mode: normal;
+			opacity: 0.4;
+			transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
+			position: absolute;
+			top: 30%;
+			right: -63%;
+			z-index: -1;
+
+			@media (max-width: $mxl){
+				right: -68%;
+			}	
+
+			@media (max-width: $mmd){
+				right: -81%;
+			}	
+
+			@media (max-width: $wsm){
+				right: -235px;
+			}	
+		}
+
+		@media (max-width: $mlg){
+			$grid: 48;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: $mlg){
+			padding: 20px 15px 30px 15px;
+		}
+
+		@media (max-width: $wsm){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+
+
+	}
+
+	&__item-title {
+		margin-bottom: 15px;
+	}
+
+	&__item-text {
+	}
+
+	&__dop-text {
+		margin-top: 35px;
+		@media (max-width: $mlg){
+			margin-top: 5px;
+		}
+	}
+}
+.padding-left-block {
+}
+
+
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+// ==================================
+
 

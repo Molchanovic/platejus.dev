@@ -776,6 +776,57 @@ h3 {
   margin-top: 10px;
 }
 
+.save-calmly__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.save-calmly__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31.9%;
+          flex: 0 0 31.9%;
+  max-width: 31.9%;
+  background: #F2F2F3;
+  padding: 30px 25px 60px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.save-calmly__item::before {
+  content: "";
+  display: inline-block;
+  width: 600px;
+  height: 40px;
+  background: #FFD6D7;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  -webkit-transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
+      -ms-transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
+          transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
+  position: absolute;
+  top: 30%;
+  right: -63%;
+  z-index: -1;
+}
+
+.save-calmly__item-title {
+  margin-bottom: 15px;
+}
+
+.save-calmly__dop-text {
+  margin-top: 35px;
+}
+
 @media (min-width: 576px) {
   .container_fluid {
     width: 100%;
@@ -818,6 +869,10 @@ h3 {
 
   .header__li {
     margin-left: 15px;
+  }
+
+  .save-calmly__item::before {
+    right: -68%;
   }
 }
 
@@ -882,9 +937,29 @@ h3 {
             flex: 0 0 47.5%;
     max-width: 47.5%;
   }
+
+  .save-calmly__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+            flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 25px;
+  }
+
+  .save-calmly__item {
+    padding: 20px 15px 30px 15px;
+  }
+
+  .save-calmly__dop-text {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 767px) {
+  section {
+    margin-top: 50px;
+  }
+
   h1 {
     font-size: 2em;
     line-height: 153.125%;
@@ -953,10 +1028,25 @@ h3 {
   .all-need__item {
     padding: 20px 15px;
   }
+
+  .save-calmly__item::before {
+    right: -81%;
+  }
 }
 
 @media (max-width: 540px) {
   .all-need__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .save-calmly__item::before {
+    right: -235px;
+  }
+
+  .save-calmly__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;

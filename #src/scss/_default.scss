@@ -20,6 +20,10 @@ main {
 
 section {
 	margin-top: 100px;
+
+	@media (max-width: $mmd){
+		margin-top: 50px;
+	}
 }
 
 a {
