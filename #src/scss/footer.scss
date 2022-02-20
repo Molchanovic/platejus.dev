@@ -8,9 +8,32 @@
         justify-content: space-between;
         color: #fff;
         font-weight: 400;
+
+        @media (max-width: $mlg){
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: $mmd){
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 
     &__info {
+        @media (max-width: $mlg){
+            $grid: 20;
+            flex: 0 0 0% + $grid;
+            max-width: 0% + $grid;
+        }
+
+        @media (max-width: $mmd){
+            order: 1;
+            $grid: 40;
+            flex: 0 0 0% + $grid;
+            max-width: 0% + $grid;
+        }
+
     }
 
     &__info-title {
@@ -43,15 +66,68 @@
         display: flex;
         justify-content: space-between;
         padding-right: 10px;
+        max-width: 115px;
+
+        
     }
 
     &__soc-item {
-        &:hover {
-            
+        position: relative;
+        width: 20px;
+        height: 15px;
+        i {
+            width: 20px;
+            height: 15px;
+            background: $color-light-grey;
+            transition: .3s;
+        }
+
+        &:first-child i {
+            width: 10px;
+        }
+
+
+        &:hover i{
+          background: #fff;
         }
     }
 
+    &__nav-wrapper {
+        $grid: 60;
+        flex: 0 0 0% + $grid;
+        max-width: 0% + $grid;
+        display: flex;
+        justify-content: space-between;
+
+
+        @media (max-width: $mlg){
+            $grid: 80;
+            flex: 0 0 0% + $grid;
+            max-width: 0% + $grid;
+
+            flex-wrap: wrap;
+        }
+        @media (max-width: $mmd){
+            order: 3;
+            $grid: 100;
+            flex: 0 0 0% + $grid;
+            max-width: 0% + $grid;
+            margin-top: 40px;
+        }
+
+
+    }
+
     &__nav {
+
+        @media (max-width: $mmd){
+            min-width: 110px;
+
+            &:first-child {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &__nav-title {
@@ -75,6 +151,14 @@
     }
 
     &__botton-block {
+        @media (max-width: $mlg){
+            margin-top: 40px;
+        }
+
+        @media (max-width: $mmd){
+            order: 2;
+            margin-top: 0;
+        }
     }
 
     &__btn {
@@ -136,6 +220,11 @@
     }
 
     &__line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $color-light-grey;
+        margin-top: 45px;
     }
 
     &__copyright {

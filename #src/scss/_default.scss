@@ -4,7 +4,7 @@ body {
 }
 
 html {
-	height: 100%;
+	// height: 100%;
 }
 
 .wrapper {
@@ -12,12 +12,24 @@ html {
 	display: flex;
 	flex-direction: column;
 }
+
 main {
+	padding: 60px 0px 0px 0px;
 	flex: 1 1;
 }
+
+section {
+	margin-top: 100px;
+}
+
 a {
 	&:hover {
 	}
+}
+
+p {
+	letter-spacing: 0.2px;
+	margin: 0;
 }
 
 h1,
@@ -38,11 +50,26 @@ h1{
 	span {
 		color: $color-blue;
 	}
+
+	@media (max-width: $mmd){
+		$fs: 32;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(49 / $fs * 100%);
+	}
 }
 h2 {
 	$fs: 40;
 	font-size: calc($fs / $f-size) + em;
 	line-height: calc(60 / $fs * 100%);
+	margin-bottom: 20px;
+
+
+	@media (max-width: $mmd){
+		$fs: 28;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(36 / $fs * 100%);
+		margin-bottom: 10px;
+	}
 
 }
 
@@ -50,6 +77,12 @@ h3 {
 	$fs: 20;
 	font-size: calc($fs / $f-size) + em;
 	line-height: calc(32 / $fs * 100%);
+
+	@media (max-width: $mmd){
+		$fs: 18;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(24 / $fs * 100%);
+	}
 }
 .btn {
 	display: inline-flex;
@@ -89,6 +122,13 @@ h3 {
 	&__inscription {
 		color: $color-form-color;
 		margin-bottom: 10px;
+	}
+}
+
+.padding-left-block {
+	padding-left: 55px;
+	@media (max-width: $mmd){
+		padding-left: 0;
 	}
 }
 

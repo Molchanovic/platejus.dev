@@ -40,3 +40,68 @@
 @import "footer.scss";
 @import "header.scss";
 
+
+
+.all-need {
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 60px;
+	}
+
+	&__item {
+		background: $color-bg-grey;
+		padding: 30px 25px;
+		$grid: 31.9;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+		box-sizing: border-box;
+		margin-bottom: 25px;
+
+		@media (max-width: $mlg){
+			$grid: 47.5;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+
+		@media (max-width: $mmd){
+			padding: 20px 15px;
+		}
+
+		@media (max-width: $wsm){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}	
+	}
+
+	&__item-img {
+		max-width: 160px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__item-title {
+		margin-bottom: 10px;
+	}
+
+	&__item-text {
+	}
+
+	&__item-date {
+		color: $color-gray-40;
+		$fs: 12;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(16 / $fs * 100%);
+		margin-top: 10px;
+	}
+}
+

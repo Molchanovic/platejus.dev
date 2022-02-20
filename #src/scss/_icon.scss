@@ -15,7 +15,7 @@ i{@include i;}
 	-webkit-mask-position: unset;
 	background-color: unset;
 }
-$icon: (cart,appstore, googleplay );
+$icon: (cart,appstore, googleplay, facebook, vk, twitter, insta );
 @each $icon in $icon {
 	.icon-#{$icon} {
 		-webkit-mask-image: url(../img/iconsprite/#{$icon}.svg);
