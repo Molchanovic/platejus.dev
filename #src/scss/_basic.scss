@@ -3,12 +3,23 @@
 	padding-left: ($plr - 4) + px;
 	padding-right: $plr + px;
 	margin: 0 auto;
-	&_fluid {
-		width: 93%;
+	&-fluid {
+		width: 100%;
 		padding: 0 $plr + px;
 		margin: 0 auto;
+		
+		
+
 		@media (min-width: $sm){
-		width: 100%;
+			width: 100%;
+		}
+
+		@media (max-width: 2000px) {
+			max-width: $hmxxl;
+		}
+
+		@media (max-width: $xl) {
+			max-width: $wlg;
 		}
 	}
 	@media (min-width: $sm) {

@@ -21,9 +21,15 @@ main {
 section {
 	margin-top: 100px;
 
+	
+
 	@media (max-width: $mmd){
 		margin-top: 50px;
 	}
+}
+
+.section-nomargin {
+	margin-top: 0;
 }
 
 a {
@@ -53,6 +59,12 @@ h1{
 
 	span {
 		color: $color-blue;
+	}
+
+	@media (max-width: $mlg){
+		$fs: 38;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(49 / $fs * 100%);
 	}
 
 	@media (max-width: $mmd){
@@ -90,36 +102,18 @@ h3 {
 }
 .btn {
 	display: inline-flex;
-	background: $color-btn;
+	background: $color-blue;
 	justify-content: center;
-	border: 1px solid $color-btn;
 	color: #fff;
-	line-height: 22px;
-	padding: 12px 33px;
-	font-family: $font;
-	font-size: calc(18 / $f-size) + em;
-	border-radius: 32px;
-	position: relative;
-	transition: 0.2s;
-	&__icon {
-		top: 14px;
-		left: 31px;
-		width: 22px;
-		height: 22px;
-		background-color: #fff;
-	}
+	padding: 16px 85px;
+	$fs: 16;
+	font-size: calc($fs / $f-size) + em;
+	line-height: calc(24 / $fs * 100%);
+	transition: 0.3s;
 	&:hover {
-		background-color: $color-btn-hover-backg;
-		transition: 0.2s;
-	}
-	&_active {
-		background-color: $color-btn-hover-backg;
-	}
-	&_disable {
-		background-color: $color-btn-disable-backg;
-		border-color: $color-btn-disable-border;
-		&:hover {
-		}
+		color: #fff;
+		background-color: $color-ligth-blue;
+		transition: 0.3s;
 	}
 }
 .form {
@@ -131,7 +125,7 @@ h3 {
 
 .padding-left-block {
 	padding-left: 55px;
-	@media (max-width: $mmd){
+	@media (max-width: $mlg){
 		padding-left: 0;
 	}
 }

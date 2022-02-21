@@ -40,6 +40,159 @@
 @import "footer.scss";
 @import "header.scss";
 
+
+
+
+
+.main-block {
+
+	&__title {
+	}
+
+	&__block-baner {
+		margin-top: 40px;
+	}
+
+	&__info-row {
+		display: flex;
+		justify-content: space-between;
+		background: $color-bg-grey url('../img/gallery/home/main-block-line.svg') no-repeat;
+		background-position: 105% 80%;
+		min-height: 400px;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 60px;
+			height: 36px;
+			background: url('../img/gallery/home/stars.svg');
+			position: absolute;
+			top: -36px;
+			right: 0;
+
+			@media (max-width: $mlg){
+				display: none;
+			}
+
+		}
+
+		@media (max-width: $mlg){
+			background-image: none;
+			min-height: 250px;
+		}
+
+	}
+
+	&__info {
+		padding: 80px 0px 0px 55px;
+		box-sizing: border-box;
+		$grid:45;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+
+		@media (max-width: $mxl){
+			$grid: 38;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+
+		@media (max-width: $mlg){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			padding: 30px 25px 30px 25px;
+			
+		}
+		
+	}
+
+	&__text {
+	}
+
+	&__btn {
+		padding: 25px 85px;
+		margin-top: 30px;
+
+		@media (max-width: $mxl){
+			padding: 25px 65px;
+		}
+
+		@media (max-width: $wsm){
+			padding: 25px 20px;
+		}
+	}
+
+	&__row {
+		background: $color-blue;
+		padding: 60px 55px 75px 55px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@media (max-width: $mlg){
+			padding: 30px 25px;
+			
+		}
+
+		
+	}
+
+	&__img {
+		
+		@media (max-width: $mlg){
+			display: none;
+		}
+	}
+
+	&__item {
+		$grid: 30;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+
+		@media (max-width: $mlg){
+			$grid: 47;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			margin-bottom: 30px;
+			
+		}
+
+		@media (max-width: $mmd){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			margin-bottom: 30px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+			
+		}
+	}
+
+	&__item-img {
+		max-width: 110px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+
+		@media (max-width: $mlg){
+			max-width: 90px;
+		}
+	}
+
+	&__item-title {
+		color: #fff;
+		margin-bottom: 10px;
+	}
+
+	&__item-text {
+		color: #fff;
+	}
+}
+
 // ==================================
 
 .all-need {
@@ -78,6 +231,10 @@
 			$grid: 100;
 			flex: 0 0 0% + $grid;
 			max-width: 0% + $grid;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}	
 	}
 
@@ -86,6 +243,10 @@
 		img {
 			width: 100%;
 			object-fit: cover;
+		}
+
+		@media (max-width: $mlg){
+			max-width: 90px;
 		}
 	}
 
@@ -131,6 +292,7 @@
 		position: relative;
 		overflow: hidden;
 		z-index: 10;
+		min-height: 490px;
 
 		&::before {
 			content: '';
@@ -156,6 +318,7 @@
 
 			@media (max-width: $wsm){
 				right: -235px;
+				
 			}	
 		}
 
@@ -164,16 +327,22 @@
 			flex: 0 0 0% + $grid;
 			max-width: 0% + $grid;
 			margin-bottom: 25px;
+			padding: 20px 15px 30px 15px;
+			min-height: 395px;
 		}
 
-		@media (max-width: $mlg){
-			padding: 20px 15px 30px 15px;
+		@media (max-width: $mmd){
+			min-height: 500px;
 		}
 
 		@media (max-width: $wsm){
 			$grid: 100;
 			flex: 0 0 0% + $grid;
 			max-width: 0% + $grid;
+
+			min-height: 340px;
+
+			
 		}
 
 
@@ -193,11 +362,76 @@
 		}
 	}
 }
-.padding-left-block {
+// ==================================
+.why-eazy {
+	background: $color-bg-grey;
+	padding: 50px 0px;
+
+	&__title {
+	}
+
+	&__subtitle-text {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 60px 0px;
+
+		@media (max-width: $mlg){
+			margin-bottom: 10px;
+		}
+	}
+
+	&__item {
+		$grid: 30;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+
+		@media (max-width: $mlg){
+			$grid: 48;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: $mmd){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+	}
+
+	&__item-img {
+		max-width: 160px;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+
+		@media (max-width: $mlg){
+			max-width: 90px;
+		}
+	}
+
+	&__item-title {
+		margin-bottom: 10px;
+	}
+
+	&__item-text {
+	}
+
+	&__btn {
+		padding: 16px 60px;
+		margin-left: 50px;
+
+		@media (max-width: $mlg){
+			margin-left: 0;
+		}
+	}
 }
 
-
-// ==================================
 // ==================================
 // ==================================
 // ==================================
