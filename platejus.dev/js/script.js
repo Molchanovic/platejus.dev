@@ -17,6 +17,61 @@ if (document.querySelector('.burger-menu')) {
 
 
 
+const swiperOne = new Swiper('.sliderOne', {
+	// Optional parameters
+	direction: 'horizontal',
+	slidesPerView: 1,
+	spaceBetween: 25,
+	loop: false,
+  
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination-one',
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.slider-next-one',
+	  prevEl: '.slider-back-one',
+	},
+
+	breakpoints: {
+		767: {
+			slidesPerView: 2,
+			spaceBetween: 5,
+		},
+	}
+  });
+
+
+  const swiperTwo = new Swiper('.sliderTwo', {
+	// Optional parameters
+	direction: 'horizontal',
+	slidesPerView: 1,
+	spaceBetween: 25,
+	loop: false,
+  
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination-two',
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.slider-next-two',
+	  prevEl: '.slider-back-two',
+	},
+
+	breakpoints: {
+		767: {
+			slidesPerView: 2,
+			spaceBetween: 5,
+		},
+	}
+  });
+
+
+
 
 
 

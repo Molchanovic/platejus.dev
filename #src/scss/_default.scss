@@ -106,10 +106,12 @@ h3 {
 	justify-content: center;
 	color: #fff;
 	padding: 16px 85px;
+	font-weight: 600;
 	$fs: 16;
 	font-size: calc($fs / $f-size) + em;
 	line-height: calc(24 / $fs * 100%);
 	transition: 0.3s;
+	box-sizing: border-box;
 	&:hover {
 		color: #fff;
 		background-color: $color-ligth-blue;
@@ -127,6 +129,33 @@ h3 {
 	padding-left: 55px;
 	@media (max-width: $mlg){
 		padding-left: 0;
+	}
+}
+
+.detailed-link  {
+	color: $color-blue;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	transition: .3s;
+	margin-top: 30px;
+
+	i {
+		position: relative;
+		background: $color-blue;
+		margin-left: 20px;
+		transition: .3s;
+		top: 2px;
+		left: 0;
+	}
+
+	&:hover {
+		color: $color-ligth-blue;
+
+		i {
+			background: $color-ligth-blue;
+			left: 10px;
+		}
 	}
 }
 
