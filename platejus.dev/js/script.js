@@ -1,5 +1,5 @@
 
-// Бургер
+// !Бургер
 if (document.querySelector('.burger-menu')) {
 	(function () {
 		// let burger = document.querySelector('.header__burger');
@@ -16,60 +16,123 @@ if (document.querySelector('.burger-menu')) {
 };
 
 
+// ! Счетчик 
 
-const swiperOne = new Swiper('.sliderOne', {
-	// Optional parameters
-	direction: 'horizontal',
-	slidesPerView: 1,
-	spaceBetween: 25,
-	loop: false,
-  
-	// If we need pagination
-	pagination: {
-	  el: '.swiper-pagination-one',
-	},
-  
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.slider-next-one',
-	  prevEl: '.slider-back-one',
-	},
+if (document.querySelector('.manage-income__row')) {
+	let wrapperSelect = document.querySelectorAll('.manage-income__row');
+	
 
-	breakpoints: {
-		767: {
-			slidesPerView: 2,
-			spaceBetween: 5,
+	wrapperSelect.forEach(function (wrapper) {
+
+		let allWrapper = wrapper.querySelectorAll('.manage-income__range');
+		allWrapper.forEach(function (range) {
+			let counter = range.querySelector('.manage-income__slider');
+			let counterOne = wrapper.querySelector('#counter-one');
+			let counterTwo = wrapper.querySelector('#counter-two');
+			let counterThree = wrapper.querySelector('#counter-three');
+			let NumOne = wrapper.querySelector('#range-num-one');
+			let NumTwo = wrapper.querySelector('#range-num-two');
+			let NumThree = wrapper.querySelector('#range-num-three');
+			// Первый ползунок, цифра снизу
+			counterOne.addEventListener('input', function () {
+				NumOne.style.left = (counterOne.value / 10) - 10 + '%';
+			});
+			// Второй ползунок, цифра снизу
+			counterTwo.addEventListener('input', function () {
+				NumTwo.style.left = (counterTwo.value / 100) - 10  + '%';
+			});
+			// Третий ползунок, цифра снизу
+			counterThree.addEventListener('input', function () {
+				NumThree.style.left = (counterThree.value) - 1 + '%';
+			});
+			// Общая сумма
+			counter.addEventListener('input', function () {
+				let resultSum = wrapper.querySelector('#sum-result');
+				let summ = counterOne.value * counterTwo.value * counterThree.value;
+
+				resultSum.innerHTML = summ;
+			});
+
+		});
+	});
+}
+
+
+
+
+		// let rageOne = wrapper.querySelector('#range-num-one');
+		// countOne = rageOne.querySelector('.manage-income__slider');
+		// countOne.addEventListener('input', function () {
+		// 	rageOne.querySelector('.manage-income__range-num').style.left = (countOne / 10) - 10 + '%';
+		// });
+
+
+// 		// let rageTwo = wrapper.querySelector('#range-num-one');
+// 		// let rageThree = wrapper.querySelector('#range-num-one');
+		
+// 		// rageTwo.querySelector('.manage-income__range-num').style.left = (counterTwo / 10) - 10 + '%';
+// 		// rageThree.querySelector('.manage-income__range-num').style.left = (counterThree / 10) - 10 + '%';
+
+
+
+// ! Слайдеры
+
+if (document.querySelector('.slider-cases__slider-block')) {
+	const swiperOne = new Swiper('.sliderOne', {
+		// Optional parameters
+		direction: 'horizontal',
+		slidesPerView: 1,
+		spaceBetween: 25,
+		loop: false,
+	  
+		// If we need pagination
+		pagination: {
+		  el: '.swiper-pagination-one',
 		},
-	}
-  });
-
-
-  const swiperTwo = new Swiper('.sliderTwo', {
-	// Optional parameters
-	direction: 'horizontal',
-	slidesPerView: 1,
-	spaceBetween: 25,
-	loop: false,
-  
-	// If we need pagination
-	pagination: {
-	  el: '.swiper-pagination-two',
-	},
-  
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.slider-next-two',
-	  prevEl: '.slider-back-two',
-	},
-
-	breakpoints: {
-		767: {
-			slidesPerView: 2,
-			spaceBetween: 5,
+	  
+		// Navigation arrows
+		navigation: {
+		  nextEl: '.slider-next-one',
+		  prevEl: '.slider-back-one',
 		},
-	}
-  });
-
+	
+		breakpoints: {
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 5,
+			},
+		}
+	  });
+	
+	
+	  const swiperTwo = new Swiper('.sliderTwo', {
+		// Optional parameters
+		direction: 'horizontal',
+		slidesPerView: 1,
+		spaceBetween: 25,
+		loop: false,
+	  
+		// If we need pagination
+		pagination: {
+		  el: '.swiper-pagination-two',
+		},
+	  
+		// Navigation arrows
+		navigation: {
+		  nextEl: '.slider-next-two',
+		  prevEl: '.slider-back-two',
+		},
+	
+		breakpoints: {
+			767: {
+				slidesPerView: 2,
+				spaceBetween: 5,
+			},
+		}
+	  });
+	
+	
+}
 
 
 
