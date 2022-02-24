@@ -36,14 +36,17 @@ if (document.querySelector('.manage-income__row')) {
 			// Первый ползунок, цифра снизу
 			counterOne.addEventListener('input', function () {
 				NumOne.style.left = (counterOne.value / 10) - 10 + '%';
+				NumOne.innerHTML = counterOne.value + ' чел.';
 			});
 			// Второй ползунок, цифра снизу
 			counterTwo.addEventListener('input', function () {
 				NumTwo.style.left = (counterTwo.value / 100) - 10  + '%';
+				NumTwo.innerHTML = counterTwo.value + ' ₽';
 			});
 			// Третий ползунок, цифра снизу
 			counterThree.addEventListener('input', function () {
 				NumThree.style.left = (counterThree.value) - 1 + '%';
+				NumThree.innerHTML = counterThree.value + ' %';
 			});
 			// Общая сумма
 			counter.addEventListener('input', function () {
