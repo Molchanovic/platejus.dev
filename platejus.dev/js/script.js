@@ -35,29 +35,51 @@ if (document.querySelector('.manage-income__row')) {
 			let NumThree = wrapper.querySelector('#range-num-three');
 			// Первый ползунок, цифра снизу
 			counterOne.addEventListener('input', function () {
-				NumOne.style.left = (counterOne.value / 10) - 10 + '%';
+				NumOne.style.left = (counterOne.value / 10) - 13 + '%';
 				NumOne.innerHTML = counterOne.value + ' чел.';
 			});
 			// Второй ползунок, цифра снизу
 			counterTwo.addEventListener('input', function () {
-				NumTwo.style.left = (counterTwo.value / 100) - 10  + '%';
+				NumTwo.style.left = (counterTwo.value / 100) - 12  + '%';
 				NumTwo.innerHTML = counterTwo.value + ' ₽';
 			});
 			// Третий ползунок, цифра снизу
 			counterThree.addEventListener('input', function () {
-				NumThree.style.left = (counterThree.value) - 1 + '%';
+				NumThree.style.left = (counterThree.value) - 2 + '%';
 				NumThree.innerHTML = counterThree.value + ' %';
 			});
 			// Общая сумма
 			counter.addEventListener('input', function () {
 				let resultSum = wrapper.querySelector('#sum-result');
-				let summ = counterOne.value * counterTwo.value * counterThree.value;
+				let summ = counterOne.value * counterTwo.value * counterThree.value / 100 ;
 
-				resultSum.innerHTML = summ;
+				finalSumm = summ.toLocaleString() + ' ₽';
+
+				resultSum.innerHTML = finalSumm;
 			});
 
 		});
 	});
+}
+
+// ! Липкая шапка 
+if (document.querySelector('.header')) {
+	let headerMove = document.querySelector('.header');
+
+	window.addEventListener('scroll', function () {
+		if (window.scrollY > 50) {
+			headerMove.classList.add('header_move');
+			console.log ('sdksdfn');
+		}
+		
+	
+		else {
+			headerMove.classList.remove('header_move');
+		}
+	} )
+	
+	
+
 }
 
 
@@ -102,7 +124,7 @@ if (document.querySelector('.slider-cases__slider-block')) {
 		breakpoints: {
 			767: {
 				slidesPerView: 2,
-				spaceBetween: 5,
+				spaceBetween: 25,
 			},
 		}
 	  });
@@ -129,7 +151,7 @@ if (document.querySelector('.slider-cases__slider-block')) {
 		breakpoints: {
 			767: {
 				slidesPerView: 2,
-				spaceBetween: 5,
+				spaceBetween: 25,
 			},
 		}
 	  });

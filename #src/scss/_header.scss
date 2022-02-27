@@ -3,6 +3,7 @@
     background: #fff;
     z-index: 2000;
     transition: .3s;
+    
    
 
     &__row {
@@ -17,7 +18,17 @@
         
     }
 
+    &_move {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, .98);
+        transition: .3s;
+    }
+
     &__logo {
+        width: 150px;
         img {
             width: 100%;
         }
@@ -52,7 +63,7 @@
         font-size: calc($fs / $f-size) + em;
         line-height: calc(20 / $fs * 100%);
         color: $color-blue;
-        font-weight: 700;
+        font-weight: 600;
         margin-left: 25px;
 
         a {
@@ -60,7 +71,7 @@
         }
 
         & a:hover {
-            color: $color-ligth-blue;
+            color: $color-purple;
         }
 
         &:first-child {
@@ -91,14 +102,14 @@
         font-size: calc($fs / $f-size) + em;
         line-height: calc(16/ $fs * 100%);
         color: $color-blue;
-        font-weight: 700;
+        font-weight: 600;
         padding: 5px 28px;
         border: 2px solid $color-blue;
         transition: .3s;
 
         &:hover {
-            color: $color-ligth-blue;
-            border-color: $color-ligth-blue;
+            color:  $color-purple;
+            border-color:  $color-purple;
         }
     }
 
@@ -113,7 +124,7 @@
     }
 
     &__tell {
-        font-weight: 700;
+        font-weight: 600;
         $fs: 14;
         font-size: calc($fs / $f-size) + em;
         line-height: calc(20 / $fs * 100%);
@@ -121,7 +132,7 @@
         transition: .3s;
 
         &:hover {
-            color: $color-ligth-blue;
+            color: $color-purple;
         }
         
     }
@@ -164,6 +175,8 @@
 
     }
 }
+
+
 
 .burger-menu {
     display: none;

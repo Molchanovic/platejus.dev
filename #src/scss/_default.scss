@@ -1,6 +1,6 @@
 body {
 	//background-color: $color-fon;
-	height: 100%;
+	// height: 100%;
 }
 
 html {
@@ -114,7 +114,7 @@ h3 {
 	box-sizing: border-box;
 	&:hover {
 		color: #fff;
-		background-color: $color-ligth-blue;
+		background-color: $color-purple;
 		transition: 0.3s;
 	}
 }
@@ -126,7 +126,7 @@ h3 {
 }
 
 .padding-left-block {
-	padding-left: 55px;
+	padding-left: 60px;
 	@media (max-width: $mlg){
 		padding-left: 0;
 	}

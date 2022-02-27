@@ -1,0 +1,57 @@
+[33mcommit b6754adbb5883365374c3a85c74b2424b570baec[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 19:04:42 2022 +0700
+
+    Revert "Revert "Revert "Revert "Revert "added edits"""""
+    
+    This reverts commit 7623e915a367216231801ae564c1bf52cd039bdd.
+
+[33mcommit 7623e915a367216231801ae564c1bf52cd039bdd[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 19:04:41 2022 +0700
+
+    Revert "Revert "Revert "Revert "added edits""""
+    
+    This reverts commit 1c47562641cec274d27d27009cefe4c96afc2e33.
+
+[33mcommit 1c47562641cec274d27d27009cefe4c96afc2e33[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 19:04:40 2022 +0700
+
+    Revert "Revert "Revert "added edits"""
+    
+    This reverts commit 7813c5bde81cd20683e487bc5ebee1ad0434cfad.
+
+[33mcommit 7813c5bde81cd20683e487bc5ebee1ad0434cfad[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 19:04:37 2022 +0700
+
+    Revert "Revert "added edits""
+    
+    This reverts commit 00ad740d7481b57a490db694cd6919cd110648a9.
+
+[33mcommit 00ad740d7481b57a490db694cd6919cd110648a9[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 19:03:43 2022 +0700
+
+    Revert "added edits"
+    
+    This reverts commit aec6bbbaa1c64bbab7bf2f62638b4f296dc36f68.
+
+[33mcommit aec6bbbaa1c64bbab7bf2f62638b4f296dc36f68[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 18:59:39 2022 +0700
+
+    added edits
+
+[33mcommit a80ff9b18be7e903f24cad469473d6ebe587d746[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 18:55:08 2022 +0700
+
+    added edits
+
+[33mcommit 39e5ffca9edc1cc091c1a349ab8bc2cd7ca12360[m
+Author: Molchanovic <sir.puptik2018@yandex.ru>
+Date:   Sun Feb 27 18:52:28 2022 +0700
+
+    added edits

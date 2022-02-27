@@ -58,7 +58,7 @@
         line-height: calc(20 / $fs * 100%);
 
             &:hover {
-                color: #fff;
+                color: $color-purple;
             }
     }
 
@@ -88,7 +88,7 @@
 
 
         &:hover i{
-          background: #fff;
+          background: $color-purple;
         }
     }
 
@@ -145,7 +145,7 @@
             transition: .3s;
 
             &:hover {
-                color: #fff;
+                color: $color-purple;
             }
         }
     }
@@ -182,12 +182,12 @@
         }
 
         &:hover {
-            border-color: $color-light-grey;
-            color: $color-light-grey;
+            border-color: $color-purple;
+            color: $color-purple;
         }
 
         &:hover i {
-            background: $color-light-grey;
+            background: $color-purple;
         }
 
         i {

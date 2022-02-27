@@ -50,7 +50,7 @@
 	}
 
 	&__block-baner {
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 
 	&__info-row {
@@ -85,7 +85,7 @@
 	}
 
 	&__info {
-		padding: 80px 0px 0px 55px;
+		padding: 100px 0px 0px 60px;
 		box-sizing: border-box;
 		$grid:45;
 		flex: 0 0 0% + $grid;
@@ -111,7 +111,7 @@
 	}
 
 	&__btn {
-		padding: 25px 85px;
+		padding: 16px 60px;
 		margin-top: 30px;
 
 		@media (max-width: $mxl){
@@ -125,7 +125,7 @@
 
 	&__row {
 		background: $color-blue;
-		padding: 60px 55px 75px 55px;
+		padding: 60px;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -252,6 +252,8 @@
 
 	&__item-title {
 		margin-bottom: 10px;
+		white-space: pre-line;
+
 	}
 
 	&__item-text {
@@ -713,6 +715,16 @@
 	&__slide {
 	}
 
+	.swiper-pagination {
+		.swiper-pagination-bullet {
+			background: rgba(18, 32, 165, .32);
+		}
+
+		.swiper-pagination-bullet-active {
+			background: $color-blue;
+		}
+	}
+
 	&__wrapper {
 		margin-top: 50px;
 		position: relative;
@@ -720,6 +732,9 @@
 		@media (max-width: $mxxl){
 			margin-top: 140px;
 		}
+		
+		
+		
 	}
 
 	&__slider-block {
@@ -780,7 +795,8 @@
 	top: 40%;
 
 	@media (max-width: $mxxl){
-		top: -100px;
+		bottom: -10px;
+		top: unset;
 	}
 
 	&:hover {
@@ -884,11 +900,6 @@
 // ==================================
 .manage-income {
 
-	
-}
-
-.manage-income {
-
 	&__title {
 	}
 
@@ -900,12 +911,22 @@
 		justify-content: space-between;
 		margin-top: 60px;
 		align-items: center;
+
+		@media (max-width: $mlg){
+			display: block;
+		}
 	}
 
 	&__selects {
-		$grid: 60;
+		$grid: 48;
 		flex: 0 0 0% + $grid;
 		max-width: 0% + $grid;
+
+		@media (max-width: $mlg){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
 	}
 
 	&__item {
@@ -914,6 +935,10 @@
 		&:first-child {
 			margin-top: 0;
 		}
+
+		@media (max-width: $mlg){
+			margin-top: 40px;
+		}
 	}
 
 	&__text-title {
@@ -921,9 +946,18 @@
 		font-size: calc($fs / $f-size) + em;
 		line-height: calc(36 / $fs * 100%);
 		font-weight: 700;
+
+		@media (max-width: $mmd){
+			$fs: 18;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(25 / $fs * 100%);
+		}
 	}
 
 	&__item-wrapper {
+		@media (max-width: $mmd){
+			width: 88%;
+		}
 	}
 
 	&__item-row {
@@ -940,6 +974,8 @@
 			color: $color-dark-grey;
 			font-weight: 600;
 		}
+
+		
 	}
 
 	&__range {
@@ -989,10 +1025,17 @@
 	}
 
 	&__sum {
-		$grid: 38;
+		$grid: 48;
 		flex: 0 0 0% + $grid;
 		max-width: 0% + $grid;
 		text-align: right;
+
+		@media (max-width: $mlg){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			margin-top: 20px;
+		}
 	}
 
 	&__sum-big-number {
@@ -1002,6 +1045,19 @@
 		line-height: calc(108 / $fs * 100%);
 		font-weight: 700;
 		color: $color-blue;
+
+		
+		@media (max-width: $mxl){
+			$fs: 64;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(79 / $fs * 100%);
+		}
+		
+		@media (max-width: $mmd){
+			$fs: 42;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(67 / $fs * 100%);
+		}
 	}
 
 	&__sum-text {
@@ -1013,6 +1069,7 @@
 	}
 }
 // ==================================
+
 // ==================================
 // ==================================
 // ==================================
