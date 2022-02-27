@@ -146,10 +146,10 @@
 	}
 
 	&__item {
-		$grid: 30;
-		flex: 0 0 0% + $grid;
-		max-width: 0% + $grid;
-
+		// $grid: 30;
+		// flex: 0 0 0% + $grid;
+		// max-width: 0% + $grid;
+		width: 280px;
 		@media (max-width: $mlg){
 			$grid: 47;
 			flex: 0 0 0% + $grid;
@@ -730,7 +730,7 @@
 		position: relative;
 
 		@media (max-width: $mxxl){
-			margin-top: 140px;
+			//margin-top: 140px;
 		}
 		
 		
@@ -793,6 +793,7 @@
 	transition: .3s;
 	position: absolute;
 	top: 40%;
+	z-index: 99;
 
 	@media (max-width: $mxxl){
 		bottom: -10px;
