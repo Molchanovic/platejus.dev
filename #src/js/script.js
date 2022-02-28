@@ -77,9 +77,15 @@ if (document.querySelector('.header')) {
 			headerMove.classList.remove('header_move');
 		}
 	} )
-	
-	
+}
 
+// ! 
+if (document.querySelector('.block-cookies')) { 
+	cookiesBlock = document.querySelector('.block-cookies');
+	cookiesBtn = document.querySelector('.block-cookies__btn');
+	cookiesBtn.addEventListener('click', function () {
+		cookiesBlock.classList.add('block-cookies_close')
+	})
 }
 
 

@@ -737,8 +737,25 @@
 		
 	}
 
+	&__wrapper-pag {
+		$grid: 82;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+
+		@media (max-width: $mlg){
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			order: 1;
+		}
+	}
+
 	&__slider-block {
-		position: relative;
+		// position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&__pagination {
@@ -791,19 +808,10 @@
 	height: 64px;
 	background: $color-blue;
 	transition: .3s;
-	position: absolute;
-	top: 40%;
-	z-index: 99;
-
-	@media (max-width: $mxxl){
-		bottom: -10px;
-		top: unset;
-	}
+	position: relative;
 
 	&:hover {
 		cursor: pointer;
-		
-
 		i {
 			background: $color-ligth-blue;
 		}
@@ -818,29 +826,19 @@
 		left: 27px;
 	}
 
+	@media (max-width: $mlg){
+		order: 2;
+	}
+
 	
 }
 
 .left-arrow {
-	left: -115px;
-
 	i {
 		transform: rotate(-180deg);
 		left: 20px;
 	}
 
-	@media (max-width: $mxxl){
-		left: 0;
-	}
-
-}
-
-.right-arrow {
-	right: -115px;
-
-	@media (max-width: $mxxl){
-		right: 0;
-	}
 }
 
 
@@ -1070,6 +1068,63 @@
 	}
 }
 // ==================================
+.block-cookies {
+	background: $colo-cookies-bg;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2500;
+	transition: .5s;
+
+	&_close {
+		bottom: -100px;
+	}
+
+	&__row {
+		padding: 12px 0px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text {
+		$fs: 20;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(36 / $fs * 100%);
+		color: #fff;
+		text-transform: uppercase;
+		margin: 0;
+
+		a {
+			border-bottom: 3px solid #fff;
+			margin-left: 5px;
+			transition: .3s;
+
+			&:hover {
+				color: $color-purple;
+				border-color: $color-purple;
+			}
+		}
+	
+	}
+
+	&__btn {
+		font-family: $font-helvetica;
+		color: $color-text;
+		background: #fff;
+		font-weight: 700;
+		padding: 10px 30px;
+		$fs: 20;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(20 / $fs * 100%);
+		transition: .3s;
+
+		&:hover {
+			color: #fff;
+			background: $color-purple;
+		}
+	}
+}
 
 // ==================================
 // ==================================
