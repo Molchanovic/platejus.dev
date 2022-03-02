@@ -1261,8 +1261,25 @@ h3 {
   position: relative;
 }
 
+.slider-cases__wrapper-pag {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 82%;
+          flex: 0 0 82%;
+  max-width: 82%;
+}
+
 .slider-cases__slider-block {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .slider-cases__pagination {
@@ -1334,19 +1351,11 @@ h3 {
   left: 27px;
 }
 
-.left-arrow {
-  left: -115px;
-}
-
 .left-arrow i {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
   left: 20px;
-}
-
-.right-arrow {
-  right: -115px;
 }
 
 .reviews {
@@ -1511,6 +1520,71 @@ h3 {
   font-weight: 500;
 }
 
+.block-cookies {
+  background: #313132;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2500;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.block-cookies_close {
+  bottom: -100px;
+}
+
+.block-cookies__row {
+  padding: 12px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block-cookies__text {
+  font-size: 1.25em;
+  line-height: 180%;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.block-cookies__text a {
+  border-bottom: 3px solid #fff;
+  margin-left: 5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.block-cookies__text a:hover {
+  color: #d617cf;
+  border-color: #d617cf;
+}
+
+.block-cookies__btn {
+  font-family: Helvetica, normal;
+  color: #202532;
+  background: #fff;
+  font-weight: 700;
+  padding: 10px 30px;
+  font-size: 1.25em;
+  line-height: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.block-cookies__btn:hover {
+  color: #fff;
+  background: #d617cf;
+}
+
 @media (min-width: 576px) {
   .container-fluid {
     width: 100%;
@@ -1542,7 +1616,7 @@ h3 {
 
 @media (min-width: 1600px) {
   .container {
-    max-width: 1040px;
+    max-width: 1180px;
   }
 }
 
@@ -1556,14 +1630,6 @@ h3 {
   .slider-arrow {
     bottom: -10px;
     top: unset;
-  }
-
-  .left-arrow {
-    left: 0;
-  }
-
-  .right-arrow {
-    right: 0;
   }
 }
 
@@ -1830,6 +1896,22 @@ h3 {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .slider-cases__wrapper-pag {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .slider-arrow {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .manage-income__row {
