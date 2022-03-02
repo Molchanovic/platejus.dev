@@ -1313,7 +1313,6 @@ h3 {
   transition: 0.3s;
   position: absolute;
   top: 40%;
-  z-index: 99;
 }
 
 .slider-arrow:hover {

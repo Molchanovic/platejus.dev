@@ -793,6 +793,7 @@
 	transition: .3s;
 	position: absolute;
 	top: 40%;
+	z-index: 99;
 
 	@media (max-width: $mxxl){
 		bottom: -10px;
