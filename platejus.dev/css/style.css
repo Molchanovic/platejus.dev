@@ -1328,7 +1328,8 @@ h3 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  position: relative;
+  position: absolute;
+  top: 40%;
 }
 
 .slider-arrow:hover {
@@ -1622,6 +1623,13 @@ h3 {
 @media (max-width: 2000px) {
   .container-fluid {
     max-width: 1110px;
+  }
+}
+
+@media (max-width: 1599px) {
+  .slider-arrow {
+    bottom: -10px;
+    top: unset;
   }
 }
 
