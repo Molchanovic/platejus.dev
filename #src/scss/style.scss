@@ -808,13 +808,7 @@
 	height: 64px;
 	background: $color-blue;
 	transition: .3s;
-	position: absolute;
-	top: 40%;
-
-	@media (max-width: $mxxl){
-		bottom: -10px;
-		top: unset;
-	}
+	position: relative;
 
 	&:hover {
 		cursor: pointer;

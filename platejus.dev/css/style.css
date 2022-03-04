@@ -139,6 +139,126 @@ i {
   -webkit-mask-image: url(../img/iconsprite/sliderarrow.svg);
 }
 
+.bg-all_need_1 {
+  width: 160px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -824px;
+}
+
+.bg-all_need_2 {
+  width: 160px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -1004px;
+}
+
+.bg-all_need_3 {
+  width: 160px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -1184px;
+}
+
+.bg-all_need_4 {
+  width: 160px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -1364px;
+}
+
+.bg-all_need_5 {
+  width: 160px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -1544px;
+}
+
+.bg-all_need_6 {
+  width: 160px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1698px -1110px;
+}
+
+.bg-how_cost_img {
+  width: 254px;
+  height: 254px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -10px;
+}
+
+.bg-how_cost_line {
+  width: 439px;
+  height: 234px;
+  background: url("../img/iconsprite/img/css_sprites.png") -508px -1556px;
+}
+
+.bg-img {
+  width: 1920px;
+  height: 1080px;
+  background: url("../img/iconsprite/img/css_sprites.png") -10px -10px;
+}
+
+.bg-main_block_img_1 {
+  width: 110px;
+  height: 110px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -1724px;
+}
+
+.bg-main_block_img_2 {
+  width: 110px;
+  height: 110px;
+  background: url("../img/iconsprite/img/css_sprites.png") -2080px -1724px;
+}
+
+.bg-main_block_img_3 {
+  width: 110px;
+  height: 110px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1698px -1290px;
+}
+
+.bg-main_block_line {
+  width: 716px;
+  height: 426px;
+  background: url("../img/iconsprite/img/css_sprites.png") -10px -1110px;
+}
+
+.bg-slider_cases_1 {
+  width: 456px;
+  height: 332px;
+  background: url("../img/iconsprite/img/css_sprites.png") -746px -1110px;
+}
+
+.bg-slider_cases_2 {
+  width: 456px;
+  height: 332px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1222px -1110px;
+}
+
+.bg-stars {
+  width: 60px;
+  height: 36px;
+  background: url("../img/iconsprite/img/css_sprites.png") -2131px -284px;
+}
+
+.bg-tablet {
+  width: 478px;
+  height: 316px;
+  background: url("../img/iconsprite/img/css_sprites.png") -10px -1556px;
+}
+
+.bg-why_eazy_1 {
+  width: 161px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -284px;
+}
+
+.bg-why_eazy_2 {
+  width: 161px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -464px;
+}
+
+.bg-why_eazy_3 {
+  width: 161px;
+  height: 160px;
+  background: url("../img/iconsprite/img/css_sprites.png") -1950px -644px;
+}
+
 html,
 body {
   padding: 0;
@@ -1328,8 +1448,7 @@ h3 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  position: absolute;
-  top: 40%;
+  position: relative;
 }
 
 .slider-arrow:hover {
@@ -1623,13 +1742,6 @@ h3 {
 @media (max-width: 2000px) {
   .container-fluid {
     max-width: 1110px;
-  }
-}
-
-@media (max-width: 1599px) {
-  .slider-arrow {
-    bottom: -10px;
-    top: unset;
   }
 }
 
