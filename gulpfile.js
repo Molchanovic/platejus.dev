@@ -134,12 +134,12 @@ function css() {
 				cascade: true
 			})
 		)
-		.pipe(webpcss(
-			{
-				webpClass: "._webp",
-				noWebpClass: "._no-webp"
-			}
-		))
+		// .pipe(webpcss(
+		// 	{
+		// 		webpClass: "._webp",
+		// 		noWebpClass: "._no-webp"
+		// 	}
+		// ))
 		.pipe(dest(path.build.css))
 		.pipe(clean_css())
 		.pipe(
@@ -220,7 +220,7 @@ function images() {
 				progressive: true,
 				svgoPlugins: [{ removeViewBox: false }],
 				interlaced: true,
-				optimizationLevel: 3 // 0 (без сжатия) to 7 (максимальное сжатие)
+				optimizationLevel: 0 // 0 (без сжатия) to 7 (максимальное сжатие)
 			})
 		)
 		.pipe(dest(path.build.img))
