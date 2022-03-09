@@ -482,6 +482,10 @@ h3 {
   margin-bottom: 10px;
 }
 
+.padding-left-block {
+  padding-left: 60px;
+}
+
 .padding-left-block p {
   margin-top: 20px;
 }
