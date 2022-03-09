@@ -1,26 +1,40 @@
 @mixin i {
-		width: 25px;
-		height: 25px;
-		position: absolute;
-		-webkit-mask-size: contain;
-		-webkit-mask-repeat: no-repeat;
-		-webkit-mask-position: center;
-		background-color: #666;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    background-color: #666;
 }
-i{@include i;}
+i {
+    @include i;
+}
 
 .mask-reset {
-	-webkit-mask-size: unset;
-	-webkit-mask-repeat: unset;
-	-webkit-mask-position: unset;
-	background-color: unset;
+    -webkit-mask-size: unset;
+    -webkit-mask-repeat: unset;
+    -webkit-mask-position: unset;
+    background-color: unset;
 }
-$icon: (cart,appstore, googleplay, facebook, vk, twitter, insta, arrowright, miniarrow, sliderarrow );
+$icon: (
+    cart,
+    appstore,
+    googleplay,
+    facebook,
+    vk,
+    twitter,
+    insta,
+    arrowright,
+    miniarrow,
+    sliderarrow
+);
+
 @each $icon in $icon {
-	.icon-#{$icon} {
-		-webkit-mask-image: url(../img/iconsprite/#{$icon}.svg);
-		// -webkit-mask-image: url(../img/icons/sprite.svg##{$icon});
-	}
+    .icon-#{$icon} {
+        -webkit-mask-image: url(../img/iconsprite/#{$icon}.svg);
+        // -webkit-mask-image: url(../img/icons/sprite.svg##{$icon});
+    }
 }
 // @mixin icon-item {
 // 	-webkit-mask-image: url(../img/icon/item.svg);
@@ -34,93 +48,111 @@ $icon: (cart,appstore, googleplay, facebook, vk, twitter, insta, arrowright, min
 // ../img/iconsprite/img/../img/iconsprite/img/../img/iconsprite/img/../img/iconsprite/img/../img/iconsprite/img/css_sprites.png
 
 /////////////////////
-   
+
 .bg-why_eazy_3 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -469px -456px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -469px -456px;
 }
 
 .bg-all_need_1 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -649px -456px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -649px -456px;
 }
 
 .bg-all_need_2 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -829px -456px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -829px -456px;
 }
 
 .bg-all_need_3 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -1009px -456px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -1009px -456px;
 }
 
 .bg-all_need_4 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -284px -710px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -284px -710px;
 }
 
 .bg-all_need_5 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -464px -710px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -464px -710px;
 }
 
 .bg-all_need_6 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -644px -710px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -644px -710px;
 }
 
 .bg-arrow_left {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -824px -710px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -824px -710px;
 }
 
 .bg-how_cost_img {
-    width: 254px; height: 254px;
-    background: url('../img/iconsprite/img/css_sprites.png') -10px -710px;
+    width: 254px;
+    height: 254px;
+    background: url("../img/iconsprite/img/css_sprites.png") -10px -710px;
 }
 
 .bg-how_cost_line {
-    width: 439px; height: 234px;
-    background: url('../img/iconsprite/img/css_sprites.png') -10px -456px;
+    width: 439px;
+    height: 234px;
+    background: url("../img/iconsprite/img/css_sprites.png") -10px -456px;
 }
 
 .bg-main_block_img_1 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -1004px -710px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -1004px -710px;
 }
 
 .bg-main_block_img_2 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -10px -984px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -10px -984px;
 }
 
 .bg-main_block_img_3 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -190px -984px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -190px -984px;
 }
 
 .bg-main_block_line {
-    width: 716px; height: 426px;
-    background: url('../img/iconsprite/img/css_sprites.png') -10px -10px;
+    width: 716px;
+    height: 426px;
+    background: url("../img/iconsprite/img/css_sprites.png") -10px -10px;
 }
 
 .bg-stars {
-    width: 60px; height: 36px;
-    background: url('../img/iconsprite/img/css_sprites.png') -746px -346px;
+    width: 60px;
+    height: 36px;
+    background: url("../img/iconsprite/img/css_sprites.png") -746px -346px;
 }
 
 .bg-tablet {
-    width: 478px; height: 316px;
-    background: url('../img/iconsprite/img/css_sprites.png') -746px -10px;
+    width: 478px;
+    height: 316px;
+    background: url("../img/iconsprite/img/css_sprites.png") -746px -10px;
 }
 
 .bg-why_eazy_1 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -370px -984px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -370px -984px;
 }
 
 .bg-why_eazy_2 {
-    width: 160px; height: 160px;
-    background: url('../img/iconsprite/img/css_sprites.png') -550px -984px;
+    width: 160px;
+    height: 160px;
+    background: url("../img/iconsprite/img/css_sprites.png") -550px -984px;
 }
