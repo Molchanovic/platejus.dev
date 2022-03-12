@@ -52,24 +52,55 @@ i {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -10px -346px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-why_eazy_2 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -190px -346px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-why_eazy_3 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -370px -346px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-main_block_img_1 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -550px -346px;
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-number_one {
@@ -77,6 +108,14 @@ i {
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -10px -526px;
 	zoom: 64%;
+
+	@media (max-width: $mlg){
+		zoom: 50%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 40%;
+	}
 }
 
 .bg-number_two {
@@ -84,6 +123,14 @@ i {
 	height: 157px;
 	background: url("../img/icons/css_sprites.png") -962px -10px;
 	zoom: 64%;
+
+	@media (max-width: $mlg){
+		zoom: 50%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 40%;
+	}
 }
 
 .bg-number_three {
@@ -91,6 +138,14 @@ i {
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -550px -706px;
 	zoom: 64%;
+
+	@media (max-width: $mlg){
+		zoom: 50%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 40%;
+	}
 }
 
 .bg-number_four {
@@ -98,42 +153,97 @@ i {
 	height: 157px;
 	background: url("../img/icons/css_sprites.png") -730px -706px;
 	zoom: 64%;
+
+	@media (max-width: $mlg){
+		zoom: 50%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 40%;
+	}
 }
 
 .bg-all_need_1 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -190px -526px;
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-all_need_2 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -370px -526px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-all_need_3 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -550px -526px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-all_need_4 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -782px -10px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-all_need_5 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -782px -190px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-all_need_6 {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -782px -370px;
+
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-arrow_left {
@@ -153,10 +263,24 @@ i {
 	width: 160px;
 	height: 160px;
 	background: url("../img/icons/css_sprites.png") -190px -706px;
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }
 
 .bg-main_block_img_3 {
 	width: 160px;
 	height: 160px;
 	background: url(../img/icons/css_sprites.png) -2643px -3307px;
+	@media (max-width: $mlg){
+		zoom: 80%;
+	}
+
+	@media (max-width: $wsm){
+		zoom: 60%;
+	}
 }

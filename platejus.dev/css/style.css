@@ -1080,6 +1080,7 @@ a {
 .main-block__item-title {
   color: #fff;
   margin-bottom: 10px;
+  margin-top: 12px;
 }
 
 .main-block__item-text {
@@ -1874,6 +1875,70 @@ a {
     max-width: 720px;
   }
 
+  .bg-why_eazy_1 {
+    zoom: 80%;
+  }
+
+  .bg-why_eazy_2 {
+    zoom: 80%;
+  }
+
+  .bg-why_eazy_3 {
+    zoom: 80%;
+  }
+
+  .bg-main_block_img_1 {
+    zoom: 80%;
+  }
+
+  .bg-number_one {
+    zoom: 50%;
+  }
+
+  .bg-number_two {
+    zoom: 50%;
+  }
+
+  .bg-number_three {
+    zoom: 50%;
+  }
+
+  .bg-number_four {
+    zoom: 50%;
+  }
+
+  .bg-all_need_1 {
+    zoom: 80%;
+  }
+
+  .bg-all_need_2 {
+    zoom: 80%;
+  }
+
+  .bg-all_need_3 {
+    zoom: 80%;
+  }
+
+  .bg-all_need_4 {
+    zoom: 80%;
+  }
+
+  .bg-all_need_5 {
+    zoom: 80%;
+  }
+
+  .bg-all_need_6 {
+    zoom: 80%;
+  }
+
+  .bg-main_block_img_2 {
+    zoom: 80%;
+  }
+
+  .bg-main_block_img_3 {
+    zoom: 80%;
+  }
+
   h1 {
     font-size: 2.375em;
     line-height: 128.9473684211%;
@@ -1966,12 +2031,17 @@ a {
     min-height: 250px;
   }
 
+  .main-block__img-line .icon {
+    display: none;
+  }
+
   .main-block__info {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
-    padding: 30px 25px 30px 25px;
+    padding: 0;
+    margin-bottom: 50px;
   }
 
   .main-block__row {
@@ -2260,6 +2330,70 @@ a {
 }
 
 @media (max-width: 540px) {
+  .bg-why_eazy_1 {
+    zoom: 60%;
+  }
+
+  .bg-why_eazy_2 {
+    zoom: 60%;
+  }
+
+  .bg-why_eazy_3 {
+    zoom: 60%;
+  }
+
+  .bg-main_block_img_1 {
+    zoom: 60%;
+  }
+
+  .bg-number_one {
+    zoom: 40%;
+  }
+
+  .bg-number_two {
+    zoom: 40%;
+  }
+
+  .bg-number_three {
+    zoom: 40%;
+  }
+
+  .bg-number_four {
+    zoom: 40%;
+  }
+
+  .bg-all_need_1 {
+    zoom: 60%;
+  }
+
+  .bg-all_need_2 {
+    zoom: 60%;
+  }
+
+  .bg-all_need_3 {
+    zoom: 60%;
+  }
+
+  .bg-all_need_4 {
+    zoom: 60%;
+  }
+
+  .bg-all_need_5 {
+    zoom: 60%;
+  }
+
+  .bg-all_need_6 {
+    zoom: 60%;
+  }
+
+  .bg-main_block_img_2 {
+    zoom: 60%;
+  }
+
+  .bg-main_block_img_3 {
+    zoom: 60%;
+  }
+
   .main-block__btn {
     padding: 25px 20px;
     width: 100%;
