@@ -144,20 +144,24 @@ h3 {
 	transition: .3s;
 	margin-top: 30px;
 
-	i {
+	.icon {
 		position: relative;
-		background: $color-blue;
+		width: 25px;
+		height: 25px;
+		fill: transparent;
 		margin-left: 20px;
 		transition: .3s;
 		top: 2px;
 		left: 0;
+		stroke: $color-blue;
+    	stroke-width: 2;
 	}
 
 	&:hover {
 		color: $color-ligth-blue;
 
-		i {
-			background: $color-ligth-blue;
+		.icon {
+			stroke: $color-ligth-blue;
 			left: 10px;
 		}
 	}

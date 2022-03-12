@@ -1,235 +1,218 @@
 .footer {
-    background: $color-blue;
-    padding: 16px 0px 22px 0px;
+	background: $color-blue;
+	padding: 16px 0px 22px 0px;
 
-    &__row {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        color: #fff;
-        font-weight: 400;
+	&__row {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		color: #fff;
+		font-weight: 400;
 
-        @media (max-width: $mlg){
-            flex-wrap: wrap;
-            justify-content: flex-end;
-        }
+		@media (max-width: $mlg) {
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
 
-        @media (max-width: $mmd){
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-    }
+		@media (max-width: $mmd) {
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
 
-    &__info {
-        @media (max-width: $mlg){
-            $grid: 20;
-            flex: 0 0 0% + $grid;
-            max-width: 0% + $grid;
-        }
+	&__info {
+		@media (max-width: $mlg) {
+			$grid: 20;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
 
-        @media (max-width: $mmd){
-            order: 1;
-            $grid: 40;
-            flex: 0 0 0% + $grid;
-            max-width: 0% + $grid;
-        }
+		@media (max-width: $mmd) {
+			order: 1;
+			$grid: 40;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+	}
 
-    }
+	&__info-title {
+		color: #fff;
+		$fs: 24;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(36 / $fs * 100%);
+		margin-bottom: 15px;
+	}
 
-    &__info-title {
-        color: #fff;
-        $fs: 24;
-        font-size: calc($fs / $f-size) + em;
-        line-height: calc(36 / $fs * 100%);
-        margin-bottom: 15px;
-    }
+	&__info-wrapper {
+	}
 
-    &__info-wrapper {
-        
-    }
+	&__info-link {
+		display: block;
+		color: $color-light-grey;
+		transition: 1s;
+		margin-bottom: 7px;
+		$fs: 14;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(20 / $fs * 100%);
 
-    &__info-link {
-        display: block;
-        color: $color-light-grey;
-        transition: 1s;
-        margin-bottom: 7px;
-        $fs: 14;
-        font-size: calc($fs / $f-size) + em;
-        line-height: calc(20 / $fs * 100%);
+		&:hover {
+			color: $color-purple;
+		}
+	}
 
-            &:hover {
-                color: $color-purple;
-            }
-    }
+	&__soc {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 10px;
+		max-width: 115px;
+		margin-left: -5px;
+	}
 
-    &__soc {
-        display: flex;
-        justify-content: space-between;
-        padding-right: 10px;
-        max-width: 115px;
+	&__soc-item {
+		position: relative;
+		.icon {
+		width: 21px;
+		height: 15px;
+			fill: $color-light-grey;
+			transition: 0.3s;
+			&:hover {
+				fill: $color-purple;
+			}
 
-        
-    }
+		}
 
-    &__soc-item {
-        position: relative;
-        width: 20px;
-        height: 15px;
-        i {
-            width: 20px;
-            height: 15px;
-            background: $color-light-grey;
-            transition: .3s;
-        }
+		
 
-        &:first-child i {
-            width: 10px;
-        }
+		
+	}
 
+	&__nav-wrapper {
+		$grid: 60;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+		display: flex;
+		justify-content: space-between;
 
-        &:hover i{
-          background: $color-purple;
-        }
-    }
+		@media (max-width: $mlg) {
+			$grid: 80;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
 
-    &__nav-wrapper {
-        $grid: 60;
-        flex: 0 0 0% + $grid;
-        max-width: 0% + $grid;
-        display: flex;
-        justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		@media (max-width: $mmd) {
+			order: 3;
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			margin-top: 40px;
+		}
+	}
 
+	&__nav {
+		@media (max-width: $mmd) {
+			min-width: 110px;
 
-        @media (max-width: $mlg){
-            $grid: 80;
-            flex: 0 0 0% + $grid;
-            max-width: 0% + $grid;
+			&:first-child {
+				margin-left: 0;
+				margin-bottom: 20px;
+			}
+		}
+	}
 
-            flex-wrap: wrap;
-        }
-        @media (max-width: $mmd){
-            order: 3;
-            $grid: 100;
-            flex: 0 0 0% + $grid;
-            max-width: 0% + $grid;
-            margin-top: 40px;
-        }
+	&__nav-title {
+		color: #fff;
+		margin-bottom: 7px;
+	}
 
+	&__nav-list {
+		color: $color-light-grey;
+		$fs: 14;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(20 / $fs * 100%);
 
-    }
+		a {
+			transition: 0.3s;
 
-    &__nav {
+			&:hover {
+				color: $color-purple;
+			}
+		}
+	}
 
-        @media (max-width: $mmd){
-            min-width: 110px;
+	&__botton-block {
+		@media (max-width: $mlg) {
+			margin-top: 40px;
+		}
 
-            &:first-child {
-                margin-left: 0;
-                margin-bottom: 20px;
-            }
-        }
-    }
+		@media (max-width: $mmd) {
+			order: 2;
+			margin-top: 0;
+		}
+	}
 
-    &__nav-title {
-        color: #fff;
-        margin-bottom: 7px;
-    }
+	&__btn {
+		//display: block;
+		border: 1px solid #ffffff;
+		box-sizing: border-box;
+		border-radius: 5px;
+		min-width: 124px;
+		min-height: 34px;
+		margin-bottom: 8px;
+		font-weight: 400;
+		$fs: 14;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(20 / $fs * 100%);
+		//padding: 8px 20px;
+		position: relative;
+		transition: 0.3s;
+		display: flex;
+    align-items: center;
+    justify-content: center;
 
-    &__nav-list {
-        color: $color-light-grey;
-        $fs:14;
-        font-size: calc($fs / $f-size) + em;
-        line-height: calc(20 / $fs * 100%);
+		&:last-child {
+			margin-bottom: 0;
+		}
 
-        a {
-            transition: .3s;
+		&:hover {
+			border-color: $color-purple;
+			color: $color-purple;
+			.icon {
+				fill: $color-purple;
+			}
+		}
 
-            &:hover {
-                color: $color-purple;
-            }
-        }
-    }
+		.icon {
+			transition: 0.3s;
+			width: 100%;
+			max-width: 89px;
+			height: 20px;
+			fill: #fff;
+			
+		}
+	}
+	&__appstore {
+	}
 
-    &__botton-block {
-        @media (max-width: $mlg){
-            margin-top: 40px;
-        }
+	&__googleplay {
+		.icon{
+			position: relative;
+			top: 1px;
+		}
+		
+	}
 
-        @media (max-width: $mmd){
-            order: 2;
-            margin-top: 0;
-        }
-    }
+	&__line {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background: $color-light-grey;
+		margin-top: 45px;
+	}
 
-    &__btn {
-        display: block;
-        border: 1px solid #FFFFFF;
-        box-sizing: border-box;
-        border-radius: 5px;
-        min-width: 124px;
-        min-height: 34px;
-        margin-bottom: 8px;
-        font-weight: 400;
-        $fs: 14;
-        font-size: calc($fs / $f-size) + em;
-        line-height: calc(20 / $fs * 100%);
-        padding: 8px 20px;
-        position: relative;
-        transition: .3s;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        &:hover {
-            border-color: $color-purple;
-            color: $color-purple;
-        }
-
-        &:hover i {
-            background: $color-purple;
-        }
-
-        i {
-            transition: .3s;
-            width: 70%;
-            top: 2px;
-            left: 17px;
-            background: #fff;
-
-            
-        }
-    }
-
-    &__appstore {
-        i {
-            width: 70%;
-            top: 2px;
-            left: 17px;
-            background: #fff;
-        }
-    }
-
-    &__googleplay {
-        i {
-            width: 70%;
-            top: 5px;
-            left: 17px;
-            background: #fff;
-        }
-    }
-
-    &__line {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: $color-light-grey;
-        margin-top: 45px;
-    }
-
-    &__copyright {
-        color: $color-light-grey;
-    }
+	&__copyright {
+		color: $color-light-grey;
+	}
 }
 .container {
 }
