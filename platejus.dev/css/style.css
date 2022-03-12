@@ -123,28 +123,24 @@ i {
   width: 160px;
   height: 160px;
   background: url("../img/icons/css_sprites.png") -10px -526px;
-  zoom: 64%;
 }
 
 .bg-number_two {
   width: 160px;
   height: 157px;
   background: url("../img/icons/css_sprites.png") -962px -10px;
-  zoom: 64%;
 }
 
 .bg-number_three {
   width: 160px;
   height: 160px;
   background: url("../img/icons/css_sprites.png") -550px -706px;
-  zoom: 64%;
 }
 
 .bg-number_four {
   width: 160px;
   height: 157px;
   background: url("../img/icons/css_sprites.png") -730px -706px;
-  zoom: 64%;
 }
 
 .bg-all_need_1 {
@@ -187,7 +183,6 @@ i {
   width: 160px;
   height: 160px;
   background: url("../img/icons/css_sprites.png") -10px -706px;
-  zoom: 64%;
 }
 
 .bg-how_cost_img {
@@ -205,7 +200,15 @@ i {
 .bg-main_block_img_3 {
   width: 160px;
   height: 160px;
-  background: url(../img/icons/css_sprites.png) -2643px -3307px;
+  background: url("../img/icons/css_sprites.png") -2643px -3307px;
+}
+
+.img-number {
+  zoom: 64%;
+}
+
+.img-arrow {
+  zoom: 64%;
 }
 
 html,
@@ -1772,6 +1775,134 @@ a {
   background: #d617cf;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 0), (-o-min-device-pixel-ratio: 2/1) and (min-width: 0), (min-resolution: 2dppx) and (min-width: 0) {
+  .bg-all_need_1 {
+    width: 320px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -582px;
+  }
+
+  .bg-number_three {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -662px;
+  }
+
+  .bg-why_eazy_1 {
+    width: 294px;
+    height: 312px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -996px;
+  }
+
+  .bg-why_eazy_2 {
+    width: 320px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -856px;
+  }
+
+  .bg-why_eazy_3 {
+    width: 160px;
+    height: 127px;
+    background: url("../img/icons/css_sprites_x2.png") -1848px -588px;
+  }
+
+  .bg-all_need_2 {
+    width: 176px;
+    height: 284px;
+    background: url("../img/icons/css_sprites_x2.png") -1848px -284px;
+  }
+
+  .bg-all_need_3 {
+    width: 264px;
+    height: 204px;
+    background: url("../img/icons/css_sprites_x2.png") -350px -1328px;
+  }
+
+  .bg-all_need_4 {
+    width: 320px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -1328px;
+  }
+
+  .bg-all_need_5 {
+    width: 320px;
+    height: 264px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -298px;
+  }
+
+  .bg-all_need_6 {
+    width: 202px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -1848px -10px;
+  }
+
+  .bg-arrow_left {
+    width: 300px;
+    height: 300px;
+    background: url("../img/icons/css_sprites_x2.png") -324px -996px;
+  }
+
+  .bg-main_block_img_1 {
+    width: 320px;
+    height: 280px;
+    background: url("../img/icons/css_sprites_x2.png") -644px -996px;
+  }
+
+  .bg-main_block_img_2 {
+    width: 320px;
+    height: 268px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -10px;
+  }
+
+  .bg-main_block_img_3 {
+    width: 320px;
+    height: 280px;
+    background: url("../img/icons/css_sprites_x2.png") -984px -996px;
+  }
+
+  .bg-number_four {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -350px -662px;
+  }
+
+  .bg-number_one {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -690px -662px;
+  }
+
+  .bg-number_two {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -1030px -662px;
+  }
+
+  .bg-how_cost_img {
+    width: 508px;
+    height: 508px;
+    background: url("../img/icons/css_sprites_x2.png") -980px -10px;
+  }
+
+  .bg-tablet {
+    width: 950px;
+    height: 632px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -10px;
+  }
+
+  .img-tablet,
+  .img-main_block_img,
+  .img-all_need,
+  .img-why_eazy {
+    zoom: 50%;
+  }
+
+  .img-arrow,
+  .img-number {
+    zoom: 32%;
+  }
+}
+
 @media (min-width: 576px) {
   .container-fluid {
     width: 100%;
@@ -1875,67 +2006,13 @@ a {
     max-width: 720px;
   }
 
-  .bg-why_eazy_1 {
-    zoom: 80%;
-  }
-
-  .bg-why_eazy_2 {
-    zoom: 80%;
-  }
-
-  .bg-why_eazy_3 {
-    zoom: 80%;
-  }
-
-  .bg-main_block_img_1 {
-    zoom: 80%;
-  }
-
-  .bg-number_one {
+  .img-number {
     zoom: 50%;
   }
 
-  .bg-number_two {
-    zoom: 50%;
-  }
-
-  .bg-number_three {
-    zoom: 50%;
-  }
-
-  .bg-number_four {
-    zoom: 50%;
-  }
-
-  .bg-all_need_1 {
-    zoom: 80%;
-  }
-
-  .bg-all_need_2 {
-    zoom: 80%;
-  }
-
-  .bg-all_need_3 {
-    zoom: 80%;
-  }
-
-  .bg-all_need_4 {
-    zoom: 80%;
-  }
-
-  .bg-all_need_5 {
-    zoom: 80%;
-  }
-
-  .bg-all_need_6 {
-    zoom: 80%;
-  }
-
-  .bg-main_block_img_2 {
-    zoom: 80%;
-  }
-
-  .bg-main_block_img_3 {
+  .img-why_eazy,
+  .img-main_block_img,
+  .img-all_need {
     zoom: 80%;
   }
 
@@ -2198,6 +2275,18 @@ a {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 991px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 991px), (min-resolution: 2dppx) and (max-width: 991px) {
+  .img-number {
+    zoom: 25%;
+  }
+
+  .img-why_eazy,
+  .img-main_block_img,
+  .img-all_need {
+    zoom: 40%;
+  }
+}
+
 @media (max-width: 767px) {
   .container-fluid {
     max-width: 540px;
@@ -2330,67 +2419,13 @@ a {
 }
 
 @media (max-width: 540px) {
-  .bg-why_eazy_1 {
-    zoom: 60%;
-  }
-
-  .bg-why_eazy_2 {
-    zoom: 60%;
-  }
-
-  .bg-why_eazy_3 {
-    zoom: 60%;
-  }
-
-  .bg-main_block_img_1 {
-    zoom: 60%;
-  }
-
-  .bg-number_one {
+  .img-number {
     zoom: 40%;
   }
 
-  .bg-number_two {
-    zoom: 40%;
-  }
-
-  .bg-number_three {
-    zoom: 40%;
-  }
-
-  .bg-number_four {
-    zoom: 40%;
-  }
-
-  .bg-all_need_1 {
-    zoom: 60%;
-  }
-
-  .bg-all_need_2 {
-    zoom: 60%;
-  }
-
-  .bg-all_need_3 {
-    zoom: 60%;
-  }
-
-  .bg-all_need_4 {
-    zoom: 60%;
-  }
-
-  .bg-all_need_5 {
-    zoom: 60%;
-  }
-
-  .bg-all_need_6 {
-    zoom: 60%;
-  }
-
-  .bg-main_block_img_2 {
-    zoom: 60%;
-  }
-
-  .bg-main_block_img_3 {
+  .img-why_eazy,
+  .img-main_block_img,
+  .img-all_need {
     zoom: 60%;
   }
 
@@ -2451,137 +2486,14 @@ a {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .bg-all_need_1 {
-    width: 320px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -582px;
-    zoom: 50%;
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 540px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 540px), (min-resolution: 2dppx) and (max-width: 540px) {
+  .img-number {
+    zoom: 20%;
   }
 
-  .bg-number_three {
-    width: 320px;
-    height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -662px;
-    zoom: 50%;
-  }
-
-  .bg-why_eazy_1 {
-    width: 294px;
-    height: 312px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -996px;
-    zoom: 50%;
-  }
-
-  .bg-why_eazy_2 {
-    width: 320px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -856px;
-    zoom: 50%;
-  }
-
-  .bg-why_eazy_3 {
-    width: 160px;
-    height: 127px;
-    background: url("../img/icons/css_sprites_x2.png") -1848px -588px;
-    zoom: 50%;
-  }
-
-  .bg-all_need_2 {
-    width: 176px;
-    height: 284px;
-    background: url("../img/icons/css_sprites_x2.png") -1848px -284px;
-    zoom: 50%;
-  }
-
-  .bg-all_need_3 {
-    width: 264px;
-    height: 204px;
-    background: url("../img/icons/css_sprites_x2.png") -350px -1328px;
-    zoom: 50%;
-  }
-
-  .bg-all_need_4 {
-    width: 320px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -1328px;
-    zoom: 50%;
-  }
-
-  .bg-all_need_5 {
-    width: 320px;
-    height: 264px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -298px;
-    zoom: 50%;
-  }
-
-  .bg-all_need_6 {
-    width: 202px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -1848px -10px;
-    zoom: 50%;
-  }
-
-  .bg-arrow_left {
-    width: 300px;
-    height: 300px;
-    background: url("../img/icons/css_sprites_x2.png") -324px -996px;
-    zoom: 50%;
-  }
-
-  .bg-main_block_img_1 {
-    width: 320px;
-    height: 280px;
-    background: url("../img/icons/css_sprites_x2.png") -644px -996px;
-    zoom: 50%;
-  }
-
-  .bg-main_block_img_2 {
-    width: 320px;
-    height: 268px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -10px;
-    zoom: 50%;
-  }
-
-  .bg-main_block_img_3 {
-    width: 320px;
-    height: 280px;
-    background: url("../img/icons/css_sprites_x2.png") -984px -996px;
-    zoom: 50%;
-  }
-
-  .bg-number_four {
-    width: 320px;
-    height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -350px -662px;
-    zoom: 50%;
-  }
-
-  .bg-number_one {
-    width: 320px;
-    height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -690px -662px;
-    zoom: 50%;
-  }
-
-  .bg-number_two {
-    width: 320px;
-    height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -1030px -662px;
-    zoom: 50%;
-  }
-
-  .bg-how_cost_img {
-    width: 508px;
-    height: 508px;
-    background: url("../img/icons/css_sprites_x2.png") -980px -10px;
-    zoom: 50%;
-  }
-
-  .bg-tablet {
-    width: 950px;
-    height: 632px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -10px;
-    zoom: 50%;
+  .img-why_eazy,
+  .img-main_block_img,
+  .img-all_need {
+    zoom: 30%;
   }
 }
