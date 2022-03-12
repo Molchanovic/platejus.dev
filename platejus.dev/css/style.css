@@ -2450,3 +2450,138 @@ a {
     line-height: 142.8571428571%;
   }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .bg-all_need_1 {
+    width: 320px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -582px;
+    zoom: 50%;
+  }
+
+  .bg-number_three {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -662px;
+    zoom: 50%;
+  }
+
+  .bg-why_eazy_1 {
+    width: 294px;
+    height: 312px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -996px;
+    zoom: 50%;
+  }
+
+  .bg-why_eazy_2 {
+    width: 320px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -856px;
+    zoom: 50%;
+  }
+
+  .bg-why_eazy_3 {
+    width: 160px;
+    height: 127px;
+    background: url("../img/icons/css_sprites_x2.png") -1848px -588px;
+    zoom: 50%;
+  }
+
+  .bg-all_need_2 {
+    width: 176px;
+    height: 284px;
+    background: url("../img/icons/css_sprites_x2.png") -1848px -284px;
+    zoom: 50%;
+  }
+
+  .bg-all_need_3 {
+    width: 264px;
+    height: 204px;
+    background: url("../img/icons/css_sprites_x2.png") -350px -1328px;
+    zoom: 50%;
+  }
+
+  .bg-all_need_4 {
+    width: 320px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -1328px;
+    zoom: 50%;
+  }
+
+  .bg-all_need_5 {
+    width: 320px;
+    height: 264px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -298px;
+    zoom: 50%;
+  }
+
+  .bg-all_need_6 {
+    width: 202px;
+    height: 254px;
+    background: url("../img/icons/css_sprites_x2.png") -1848px -10px;
+    zoom: 50%;
+  }
+
+  .bg-arrow_left {
+    width: 300px;
+    height: 300px;
+    background: url("../img/icons/css_sprites_x2.png") -324px -996px;
+    zoom: 50%;
+  }
+
+  .bg-main_block_img_1 {
+    width: 320px;
+    height: 280px;
+    background: url("../img/icons/css_sprites_x2.png") -644px -996px;
+    zoom: 50%;
+  }
+
+  .bg-main_block_img_2 {
+    width: 320px;
+    height: 268px;
+    background: url("../img/icons/css_sprites_x2.png") -1508px -10px;
+    zoom: 50%;
+  }
+
+  .bg-main_block_img_3 {
+    width: 320px;
+    height: 280px;
+    background: url("../img/icons/css_sprites_x2.png") -984px -996px;
+    zoom: 50%;
+  }
+
+  .bg-number_four {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -350px -662px;
+    zoom: 50%;
+  }
+
+  .bg-number_one {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -690px -662px;
+    zoom: 50%;
+  }
+
+  .bg-number_two {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.png") -1030px -662px;
+    zoom: 50%;
+  }
+
+  .bg-how_cost_img {
+    width: 508px;
+    height: 508px;
+    background: url("../img/icons/css_sprites_x2.png") -980px -10px;
+    zoom: 50%;
+  }
+
+  .bg-tablet {
+    width: 950px;
+    height: 632px;
+    background: url("../img/icons/css_sprites_x2.png") -10px -10px;
+    zoom: 50%;
+  }
+}
