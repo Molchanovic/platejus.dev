@@ -33,14 +33,19 @@
 //===Проект===============================
 
 @import "_default.scss";
-@import "_sprite";
+//@import "_sprite";
 
 ///////////////////////////////////////////////
 
 //===Header and Footer===================
 @import "footer.scss";
 @import "header.scss";
-
+main {
+	@media (min-width: $md){
+	margin-top: 100px;
+	}
+	
+}
 .main-block {
 	&__title {
 	}
@@ -622,10 +627,15 @@
 	}
 
 	&__item-text {
-		$fs: 14;
+		$fs: 16;
 		font-size: calc($fs / $f-size) + em;
-		line-height: calc(20 / $fs * 100%);
+		line-height: calc(24 / $fs * 100%);
 		margin-left: 10px;
+		@media (max-width: $msm){
+			$fs: 14;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(22 / $fs * 100%);
+		}
 	}
 
 	&__arrow {

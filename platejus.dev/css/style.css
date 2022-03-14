@@ -1,26 +1,4 @@
-@font-face {
-  font-family: "Inter";
-  font-display: swap;
-  src: url("../fonts/Inter-Bold.woff") format("woff"), url("../fonts/Inter-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  font-display: swap;
-  src: url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  font-display: swap;
-  src: url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,600,700&subset=cyrillic-ext&display=swap);
 
 .container {
   width: 95%;
@@ -56,7 +34,7 @@
 }
 
 body {
-  font-family: Inter, normal;
+  font-family: Inter, "Sens-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -92,115 +70,115 @@ i {
 .bg-tablet {
   width: 478px;
   height: 316px;
-  background: url("../img/icons/css_sprites.png") -10px -10px;
+  background: url("../img/icons/css_sprites.webp") -10px -10px;
 }
 
 .bg-why_eazy_1 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -10px -346px;
+  background: url("../img/icons/css_sprites.webp") -10px -346px;
 }
 
 .bg-why_eazy_2 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -190px -346px;
+  background: url("../img/icons/css_sprites.webp") -190px -346px;
 }
 
 .bg-why_eazy_3 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -370px -346px;
+  background: url("../img/icons/css_sprites.webp") -370px -346px;
 }
 
 .bg-main_block_img_1 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -550px -346px;
+  background: url("../img/icons/css_sprites.webp") -550px -346px;
 }
 
 .bg-number_one {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -10px -526px;
+  background: url("../img/icons/css_sprites.webp") -10px -526px;
 }
 
 .bg-number_two {
   width: 160px;
   height: 157px;
-  background: url("../img/icons/css_sprites.png") -962px -10px;
+  background: url("../img/icons/css_sprites.webp") -962px -10px;
 }
 
 .bg-number_three {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -550px -706px;
+  background: url("../img/icons/css_sprites.webp") -550px -706px;
 }
 
 .bg-number_four {
   width: 160px;
   height: 157px;
-  background: url("../img/icons/css_sprites.png") -730px -706px;
+  background: url("../img/icons/css_sprites.webp") -730px -706px;
 }
 
 .bg-all_need_1 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -190px -526px;
+  background: url("../img/icons/css_sprites.webp") -190px -526px;
 }
 
 .bg-all_need_2 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -370px -526px;
+  background: url("../img/icons/css_sprites.webp") -370px -526px;
 }
 
 .bg-all_need_3 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -550px -526px;
+  background: url("../img/icons/css_sprites.webp") -550px -526px;
 }
 
 .bg-all_need_4 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -782px -10px;
+  background: url("../img/icons/css_sprites.webp") -782px -10px;
 }
 
 .bg-all_need_5 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -782px -190px;
+  background: url("../img/icons/css_sprites.webp") -782px -190px;
 }
 
 .bg-all_need_6 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -782px -370px;
+  background: url("../img/icons/css_sprites.webp") -782px -370px;
 }
 
 .bg-arrow_left {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -10px -706px;
+  background: url("../img/icons/css_sprites.webp") -10px -706px;
 }
 
 .bg-how_cost_img {
   width: 254px;
   height: 254px;
-  background: url("../img/icons/css_sprites.png") -508px -10px;
+  background: url("../img/icons/css_sprites.webp") -508px -10px;
 }
 
 .bg-main_block_img_2 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -190px -706px;
+  background: url("../img/icons/css_sprites.webp") -190px -706px;
 }
 
 .bg-main_block_img_3 {
   width: 160px;
   height: 160px;
-  background: url("../img/icons/css_sprites.png") -2643px -3307px;
+  background: url("../img/icons/css_sprites.webp") -2643px -3307px;
 }
 
 .img-number {
@@ -387,7 +365,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Inter, normal;
+  font-family: Inter, "Sens-serif";
   font-weight: 700;
   color: #202532;
   margin: 0;
@@ -513,92 +491,6 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  fill: #aaa;
-}
-
-a {
-  text-decoration: none;
-}
-
-.icon-appstore {
-  font-size: 2rem;
-  width: 4.1em;
-}
-
-.icon-arrowright {
-  font-size: 24.8rem;
-  width: 0.3870967742em;
-}
-
-.icon-facebook {
-  font-size: 1.6rem;
-  width: 0.625em;
-}
-
-.icon-googleplay {
-  font-size: 1.8rem;
-  width: 4.9444444444em;
-}
-
-.icon-how-cost-line {
-  font-size: 23.4rem;
-  width: 1.8760683761em;
-}
-
-.icon-insta {
-  font-size: 1.6rem;
-  width: 1.125em;
-}
-
-.icon-logo {
-  font-size: 29.6rem;
-  width: 1.7837837838em;
-}
-
-.icon-main-block-line {
-  font-size: 39.5rem;
-  width: 1.7493670886em;
-}
-
-.icon-miniarrow {
-  font-size: 1.6rem;
-  width: 1.875em;
-}
-
-.icon-sliderarrow {
-  font-size: 3.4rem;
-  width: 0.4705882353em;
-}
-
-.icon-stars {
-  font-size: 3.6rem;
-  width: 1.6666666667em;
-}
-
-.icon-stars-min {
-  font-size: 2rem;
-  width: 1.05em;
-}
-
-.icon-tablet {
-  font-size: 31.6rem;
-  width: 1.503164557em;
-}
-
-.icon-twitter {
-  font-size: 1.6rem;
-  width: 1.25em;
-}
-
-.icon-vk {
-  font-size: 1.1rem;
-  width: 2em;
 }
 
 .footer {
@@ -778,6 +670,8 @@ a {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  position: fixed;
+  width: 100%;
 }
 
 .header__row {
@@ -1355,8 +1249,8 @@ a {
 }
 
 .how-work__item-text {
-  font-size: 0.875em;
-  line-height: 142.8571428571%;
+  font-size: 1em;
+  line-height: 150%;
   margin-left: 10px;
 }
 
@@ -1758,7 +1652,7 @@ a {
 }
 
 .block-cookies__btn {
-  font-family: Inter, normal;
+  font-family: Inter, "Sens-serif";
   color: #202532;
   background: #fff;
   font-weight: 700;
@@ -1776,118 +1670,118 @@ a {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 0), (-o-min-device-pixel-ratio: 2/1) and (min-width: 0), (min-resolution: 2dppx) and (min-width: 0) {
-  .bg-all_need_1 {
+  .bg-number_one {
     width: 320px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -582px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.webp") -1508px -350px;
   }
 
   .bg-number_three {
     width: 320px;
     height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -662px;
-  }
-
-  .bg-why_eazy_1 {
-    width: 294px;
-    height: 312px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -996px;
-  }
-
-  .bg-why_eazy_2 {
-    width: 320px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -856px;
-  }
-
-  .bg-why_eazy_3 {
-    width: 160px;
-    height: 127px;
-    background: url("../img/icons/css_sprites_x2.png") -1848px -588px;
-  }
-
-  .bg-all_need_2 {
-    width: 176px;
-    height: 284px;
-    background: url("../img/icons/css_sprites_x2.png") -1848px -284px;
-  }
-
-  .bg-all_need_3 {
-    width: 264px;
-    height: 204px;
-    background: url("../img/icons/css_sprites_x2.png") -350px -1328px;
-  }
-
-  .bg-all_need_4 {
-    width: 320px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -1328px;
-  }
-
-  .bg-all_need_5 {
-    width: 320px;
-    height: 264px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -298px;
-  }
-
-  .bg-all_need_6 {
-    width: 202px;
-    height: 254px;
-    background: url("../img/icons/css_sprites_x2.png") -1848px -10px;
-  }
-
-  .bg-arrow_left {
-    width: 300px;
-    height: 300px;
-    background: url("../img/icons/css_sprites_x2.png") -324px -996px;
-  }
-
-  .bg-main_block_img_1 {
-    width: 320px;
-    height: 280px;
-    background: url("../img/icons/css_sprites_x2.png") -644px -996px;
-  }
-
-  .bg-main_block_img_2 {
-    width: 320px;
-    height: 268px;
-    background: url("../img/icons/css_sprites_x2.png") -1508px -10px;
-  }
-
-  .bg-main_block_img_3 {
-    width: 320px;
-    height: 280px;
-    background: url("../img/icons/css_sprites_x2.png") -984px -996px;
-  }
-
-  .bg-number_four {
-    width: 320px;
-    height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -350px -662px;
-  }
-
-  .bg-number_one {
-    width: 320px;
-    height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -690px -662px;
+    background: url("../img/icons/css_sprites_x2.webp") -1508px -684px;
   }
 
   .bg-number_two {
     width: 320px;
     height: 314px;
-    background: url("../img/icons/css_sprites_x2.png") -1030px -662px;
-  }
-
-  .bg-how_cost_img {
-    width: 508px;
-    height: 508px;
-    background: url("../img/icons/css_sprites_x2.png") -980px -10px;
+    background: url("../img/icons/css_sprites_x2.webp") -10px -1342px;
   }
 
   .bg-tablet {
     width: 950px;
     height: 632px;
-    background: url("../img/icons/css_sprites_x2.png") -10px -10px;
+    background: url("../img/icons/css_sprites_x2.webp") -10px -10px;
+  }
+
+  .bg-why_eazy_1 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -10px -662px;
+  }
+
+  .bg-why_eazy_2 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -350px -662px;
+  }
+
+  .bg-why_eazy_3 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -690px -662px;
+  }
+
+  .bg-all_need_1 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -1030px -662px;
+  }
+
+  .bg-all_need_2 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -10px -1002px;
+  }
+
+  .bg-all_need_3 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -350px -1002px;
+  }
+
+  .bg-all_need_4 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -690px -1002px;
+  }
+
+  .bg-all_need_5 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -1030px -1002px;
+  }
+
+  .bg-all_need_6 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/icons/css_sprites_x2.webp") -1508px -10px;
+  }
+
+  .bg-arrow_left {
+    width: 300px;
+    height: 300px;
+    background: url("../img/icons/css_sprites_x2.webp") -1508px -1018px;
+  }
+
+  .bg-how_cost_img {
+    width: 508px;
+    height: 508px;
+    background: url("../img/icons/css_sprites_x2.webp") -980px -10px;
+  }
+
+  .bg-main_block_img_1 {
+    width: 320px;
+    height: 280px;
+    background: url("../img/icons/css_sprites_x2.webp") -690px -1342px;
+  }
+
+  .bg-main_block_img_2 {
+    width: 320px;
+    height: 268px;
+    background: url("../img/icons/css_sprites_x2.webp") -1370px -1342px;
+  }
+
+  .bg-main_block_img_3 {
+    width: 320px;
+    height: 280px;
+    background: url("../img/icons/css_sprites_x2.webp") -1030px -1342px;
+  }
+
+  .bg-number_four {
+    width: 320px;
+    height: 314px;
+    background: url("../img/icons/css_sprites_x2.webp") -350px -1342px;
   }
 
   .img-tablet,
@@ -1918,6 +1812,10 @@ a {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+
+  main {
+    margin-top: 100px;
   }
 }
 
@@ -2098,6 +1996,11 @@ a {
 
   .header__wrapper {
     width: 100%;
+  }
+
+  .header__tell {
+    font-size: 1.25em;
+    line-height: 100%;
   }
 
   .burger-menu {
@@ -2416,6 +2319,13 @@ a {
     font-size: 1em;
     line-height: 156.25%;
     padding: 4px 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .how-work__item-text {
+    font-size: 0.875em;
+    line-height: 157.1428571429%;
   }
 }
 

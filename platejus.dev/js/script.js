@@ -63,21 +63,20 @@ if (document.querySelector('.manage-income__row')) {
 }
 
 // ! Липкая шапка 
-if (document.querySelector('.header')) {
-	let headerMove = document.querySelector('.header');
+// if (document.querySelector('.header')) {
+// 	let headerMove = document.querySelector('.header');
 
-	window.addEventListener('scroll', function () {
-		if (window.scrollY > 50) {
-			headerMove.classList.add('header_move');
-			console.log ('sdksdfn');
-		}
+// 	window.addEventListener('scroll', function () {
+// 		if (window.scrollY > 50) {
+// 			headerMove.classList.add('header_move');
+// 		}
 		
 	
-		else {
-			headerMove.classList.remove('header_move');
-		}
-	} )
-}
+// 		else {
+// 			headerMove.classList.remove('header_move');
+// 		}
+// 	} )
+// }
 
 // ! 
 if (document.querySelector('.block-cookies')) { 

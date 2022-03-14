@@ -3,6 +3,10 @@
     background: #fff;
     z-index: 2000;
     transition: .3s;
+	 position: fixed;
+    width: 100%;
+
+	
     
    
 
@@ -130,6 +134,11 @@
         line-height: calc(20 / $fs * 100%);
         margin-left: 25px;
         transition: .3s;
+		  @media (max-width: $mlg){
+			$fs: 20;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(20 / $fs * 100%);
+		  }
 
         &:hover {
             color: $color-purple;
