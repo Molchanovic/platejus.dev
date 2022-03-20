@@ -5,16 +5,17 @@ if (document.querySelector('.burger-menu')) {
 		// let burger = document.querySelector('.header__burger');
 		let header = document.querySelector('.header');
 		let burger = document.querySelector('.burger-menu');
+		let body = document.body;
 		// let body = document.querySelector('.body');
 		burger.addEventListener('click', () => {
 			// burger.classList.toggle('header__burger_active');
 			header.classList.toggle('header_active');
+			body.classList.toggle ('body_hidden');
 			// body.classList.toggle('overflow-h');
 			burger.classList.toggle('burger-menu_active');
 		})
 	}());
 };
-
 
 // ! Счетчик 
 
@@ -78,10 +79,30 @@ if (document.querySelector('.manage-income__row')) {
 // 	} )
 // }
 
-// ! 
+// ! Куки
 if (document.querySelector('.block-cookies')) { 
-	cookiesBlock = document.querySelector('.block-cookies');
-	cookiesBtn = document.querySelector('.block-cookies__btn');
+	let cookiesBlock = document.querySelector('.block-cookies');
+	let cookiesBtn = document.querySelector('.block-cookies__btn');
+	let cookiClose = document.querySelector('.block-cookies__close');
+	let cookiTextBlock = document.querySelector('.block-cookies__block-text');
+	let cookiTitle = document.querySelector('.block-cookies__text');
+	let cookiRow = document.querySelector('.block-cookies__row');
+
+
+	cookiTitle.addEventListener ('click', function () {
+		cookiTextBlock.classList.add('block-cookies__block-text_active');
+		cookiClose.classList.add('block-cookies__close_active');
+		cookiRow.classList.add('block-cookies__row_active');
+		cookiTitle.innerHTML = `ПОЛИТИКА В ОТНОШЕНИИ ФАЙЛОВ "COOKIES"`;
+	});
+
+	cookiClose.addEventListener('click', function () {
+		cookiTextBlock.classList.remove('block-cookies__block-text_active');
+		cookiClose.classList.remove('block-cookies__close_active');
+		cookiRow.classList.remove('block-cookies__row_active');
+		cookiTitle.innerHTML = `МЫ ИСПОЛЬЗУЕМ КУКИ. <a class="block-cookies__link" href="##">ЧТО ЭТО ЗНАЧИТ?</a> `;
+	});
+
 	cookiesBtn.addEventListener('click', function () {
 		cookiesBlock.classList.add('block-cookies_close')
 	})
@@ -300,7 +321,23 @@ document.addEventListener('keydown', function (e){
 })(); //Модальное окно  //!Сниппет "!modal" html
 //@//@include('../../../_module/JS/_tooltip.js', {}) //Тултип  //!Сниппет "!tooltip" html
 //@//@include('../../../_module/JS/_validator-form.js', {}) //Валидатор форм  //!Сниппет "!forma" html
-//@//@include('../../../_module/JS/_accordion.js', {}) //Валидатор форм  //!Сниппет "!accordion" html
+if (document.getElementsByClassName("accordion")) {
+	let acc = document.getElementsByClassName("accordion");
+	let i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function () {
+			this.classList.toggle("accordion_active");
+			let panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
+}
+ //Валидатор форм  //!Сниппет "!accordion" html
 
 if (document.querySelector('.tel')) {
 	//@//@include('../../../_module/JS/_maskPhone.js', {}) //Маска номера телефона (библиотека)

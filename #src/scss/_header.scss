@@ -111,6 +111,12 @@
         border: 2px solid $color-blue;
         transition: .3s;
 
+        @media (max-width: $mlg){
+            $fs: 20;
+            font-size: calc($fs / $f-size) + em;
+            line-height: calc(25 / $fs * 100%);
+        }
+
         &:hover {
             color:  $color-purple;
             border-color:  $color-purple;
