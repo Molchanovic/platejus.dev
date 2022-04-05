@@ -185,6 +185,20 @@ if (document.querySelector('.slider-cases__slider-block')) {
 	
 }
 
+//! Прелоадер
+
+if (document.querySelector('.preloader')) {
+	window.onload = function () {
+		setTimeout(() => {
+			document.body.classList.add('loaded_hiding');
+		window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded_hiding');
+		}, 1000);
+		}, 500);
+	}
+}
+
 
 
 
