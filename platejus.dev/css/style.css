@@ -2188,6 +2188,7 @@ h3 {
 
   .header__logo {
     width: 80px;
+    margin-left: 25px;
   }
 
   .header__nav {
@@ -2284,7 +2285,6 @@ h3 {
             flex: 0 0 48%;
     max-width: 48%;
     margin-bottom: 25px;
-    padding: 20px 15px 30px 15px;
     min-height: 395px;
   }
 
@@ -2294,6 +2294,7 @@ h3 {
 
   .why-eazy__row {
     margin-bottom: 10px;
+    padding-left: 25px;
   }
 
   .why-eazy__item {
@@ -2310,6 +2311,7 @@ h3 {
 
   .why-eazy__btn {
     margin-left: 0;
+    margin-left: 25px;
   }
 
   .how-cost {

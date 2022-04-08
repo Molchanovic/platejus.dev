@@ -364,7 +364,7 @@ main {
 			flex: 0 0 0% + $grid;
 			max-width: 0% + $grid;
 			margin-bottom: 25px;
-			padding: 20px 15px 30px 15px;
+			// padding: 20px 15px 30px 15px;
 			min-height: 395px;
 		}
 
@@ -400,6 +400,7 @@ main {
 	background: $color-bg-grey;
 	padding: 50px 0px;
 
+
 	&__title {
 	}
 
@@ -414,6 +415,7 @@ main {
 
 		@media (max-width: $mlg) {
 			margin-bottom: 10px;
+			padding-left: 25px;
 		}
 	}
 
@@ -461,6 +463,7 @@ main {
 
 		@media (max-width: $mlg) {
 			margin-left: 0;
+			margin-left: 25px;
 		}
 	}
 }
