@@ -84,6 +84,7 @@ main {
 		max-width: 712px;
 		max-height: 400px;
 		position: absolute;
+		overflow: hidden;
 		z-index: -1;
 		right: 0;
 		top: 0;
@@ -95,6 +96,9 @@ main {
 				stroke: $color-blue;
 				stroke-width: 3px;
 				fill: transparent;
+				position: relative;
+				top: -10px;
+				
 			}
 			&-stars-min {
 				&-1,
@@ -291,6 +295,19 @@ main {
 	&__item-title {
 		margin-bottom: 10px;
 		white-space: pre-line;
+
+		@media (max-width: $mxl){
+			$fs: 17;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(25 / $fs * 100%);
+			
+		}
+
+		@media (max-width: $mmd){
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__item-text {
@@ -1070,7 +1087,7 @@ main {
 	}
 
 	&__sum-big-number {
-		margin-top: 15px;
+		margin-top: 20px;
 		$fs: 72;
 		font-size: calc($fs / $f-size) + em;
 		line-height: calc(108 / $fs * 100%);
