@@ -1131,11 +1131,11 @@ h3 {
   background: #FFD6D7;
   mix-blend-mode: normal;
   opacity: 0.4;
-  -webkit-transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
-      -ms-transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
-          transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
+  -webkit-transform: matrix(1.1, -1.55, 0.32, 0.71, 0, 0);
+      -ms-transform: matrix(1.1, -1.55, 0.32, 0.71, 0, 0);
+          transform: matrix(1.1, -1.55, 0.32, 0.71, 0, 0);
   position: absolute;
-  top: 30%;
+  top: 12%;
   right: -63%;
   z-index: -1;
 }
@@ -2111,6 +2111,10 @@ h3 {
   }
 
   .save-calmly__item::before {
+    -webkit-transform: matrix(0.9, -1.55, 0.32, 0.71, 0, 0);
+        -ms-transform: matrix(0.9, -1.55, 0.32, 0.71, 0, 0);
+            transform: matrix(0.9, -1.55, 0.32, 0.71, 0, 0);
+    top: 30%;
     right: -68%;
   }
 
@@ -2288,13 +2292,20 @@ h3 {
     max-width: 90px;
   }
 
+  .save-calmly__item::before {
+    -webkit-transform: matrix(1.05, -1.55, 0.32, 0.71, 0, 0);
+        -ms-transform: matrix(1.05, -1.55, 0.32, 0.71, 0, 0);
+            transform: matrix(1.05, -1.55, 0.32, 0.71, 0, 0);
+    top: 20%;
+  }
+
   .save-calmly__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 48%;
             flex: 0 0 48%;
     max-width: 48%;
     margin-bottom: 25px;
-    min-height: 395px;
+    min-height: 490px;
   }
 
   .save-calmly__dop-text {
@@ -2519,11 +2530,14 @@ h3 {
   }
 
   .save-calmly__item::before {
-    right: -81%;
+    -webkit-transform: matrix(0.6, -1.55, 0.32, 0.71, 0, 0);
+        -ms-transform: matrix(0.6, -1.55, 0.32, 0.71, 0, 0);
+            transform: matrix(0.6, -1.55, 0.32, 0.71, 0, 0);
+    top: 50%;
   }
 
   .save-calmly__item {
-    min-height: 500px;
+    min-height: 600px;
   }
 
   .why-eazy__item {
@@ -2606,7 +2620,7 @@ h3 {
   }
 
   .save-calmly__item::before {
-    right: -235px;
+    display: none;
   }
 
   .save-calmly__item {
@@ -2628,6 +2642,25 @@ h3 {
 
   .how-work__item-img img {
     width: 50px;
+  }
+
+  .slider-cases__pagination {
+    margin-top: 10px;
+  }
+
+  .slider-cases__pagination .swiper-pagination {
+    top: 32px;
+  }
+
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+  }
+
+  .slider-arrow .icon {
+    width: 8px;
+    height: 20px;
   }
 
   .reviews__slide-name {

@@ -349,6 +349,7 @@ main {
 		z-index: 10;
 		min-height: 490px;
 
+
 		&::before {
 			content: "";
 			display: inline-block;
@@ -357,22 +358,33 @@ main {
 			background: $color-ligth-red;
 			mix-blend-mode: normal;
 			opacity: 0.4;
-			transform: matrix(0.71, -1.55, 0.32, 0.71, 0, 0);
+			transform: matrix(1.1, -1.55, 0.32, 0.71, 0, 0);
 			position: absolute;
-			top: 30%;
+			top: 12%;
 			right: -63%;
 			z-index: -1;
 
 			@media (max-width: $mxl) {
+				transform: matrix(.9, -1.55, 0.32, 0.71, 0, 0);
+				top: 30%;
 				right: -68%;
 			}
 
+			@media (max-width: $mlg) {
+				transform: matrix(1.05, -1.55, 0.32, 0.71, 0, 0);
+				top: 20%;
+			}
+
 			@media (max-width: $mmd) {
-				right: -81%;
+				transform: matrix(.6, -1.55, 0.32, 0.71, 0, 0);
+				top: 50%;
 			}
 
 			@media (max-width: $wsm) {
-				right: -235px;
+				// right: -235px;
+				// top: -15%;
+				// transform: matrix(2.1, -1.55, 0.32, 0.71, 0, 0);
+				display: none;
 			}
 		}
 
@@ -382,18 +394,17 @@ main {
 			max-width: 0% + $grid;
 			margin-bottom: 25px;
 			// padding: 20px 15px 30px 15px;
-			min-height: 395px;
+			min-height: 490px;
 		}
 
 		@media (max-width: $mmd) {
-			min-height: 500px;
+			min-height: 600px;
 		}
 
 		@media (max-width: $wsm) {
 			$grid: 100;
 			flex: 0 0 0% + $grid;
 			max-width: 0% + $grid;
-
 			min-height: 340px;
 		}
 	}
@@ -806,7 +817,6 @@ main {
 	}
 
 	&__slider-block {
-		// position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -817,6 +827,14 @@ main {
 		height: 24px;
 		position: relative;
 		margin-top: 50px;
+
+		@media (max-width: $wsm){
+			margin-top: 10px;
+
+			.swiper-pagination {
+				top: 32px;
+			}
+		}
 	}
 
 	&__slide-img {
@@ -886,6 +904,19 @@ main {
 
 	@media (max-width: $mlg) {
 		order: 2;
+	}
+
+	@media (max-width: $wsm) {
+		width: 40px;
+		height: 40px;
+		opacity: 0.3;
+		// position: relative;
+		// top: -42px;
+
+		.icon {
+			width: 8px;
+			height: 20px;
+		}
 	}
 }
 
