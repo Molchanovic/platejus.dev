@@ -916,6 +916,16 @@ main {
 		.icon {
 			width: 8px;
 			height: 20px;
+
+			
+		}
+
+		&:hover {
+			opacity: 1;
+
+			.icon {
+				stroke: #fff;
+			}
 		}
 	}
 }

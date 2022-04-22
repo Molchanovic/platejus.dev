@@ -2663,6 +2663,14 @@ h3 {
     height: 20px;
   }
 
+  .slider-arrow:hover {
+    opacity: 1;
+  }
+
+  .slider-arrow:hover .icon {
+    stroke: #fff;
+  }
+
   .reviews__slide-name {
     font-size: 1.25em;
     line-height: 125%;
