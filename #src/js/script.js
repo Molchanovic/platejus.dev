@@ -165,7 +165,7 @@ if (document.querySelector('.slider-cases__slider-block')) {
 	  
 		// If we need pagination
 		pagination: {
-		  el: '.swiper-pagination-two',
+		  el: '.swiper-pagination-two', 
 		},
 	  
 		// Navigation arrows
@@ -179,10 +179,8 @@ if (document.querySelector('.slider-cases__slider-block')) {
 				slidesPerView: 2,
 				spaceBetween: 25,
 			},
-		}
+		},
 	  });
-	
-	
 }
 
 //! Прелоадер

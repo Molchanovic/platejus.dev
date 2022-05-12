@@ -52,6 +52,7 @@ main {
 
 	&__block-baner {
 		margin-top: 60px;
+		position: relative;
 	}
 
 	&__info-row {
@@ -78,6 +79,20 @@ main {
 			background: $color-bg-grey;
 		}
 	}
+
+	&__starts-icon {
+		position: absolute;
+		width: 59px;
+		height: 36px;
+		right: 0;
+		top: -40px;
+		fill: $color-blue;
+
+		@media (max-width: $mlg){
+			display: none;
+		}
+	}
+
 	&__img-line {
 		width: 100%;
 		height: 100%;
@@ -102,8 +117,7 @@ main {
 			}
 			&-stars-min {
 				&-1,
-				&-2,
-				&-3 {
+				&-2{
 					position: absolute;
 					width: 25px;
 					height: 25px;
@@ -116,15 +130,7 @@ main {
 				&-2 {
 					left: 165px;
 					top: 52px;
-				}
-				&-3 {
-					width: 59px;
-					height: 36px;
-					right: 0;
-					top: -40px;
-				}
-
-				
+				}				
 			}
 
 			@media (max-width: $mlg){
@@ -502,6 +508,7 @@ main {
 	padding: 60px 55px 80px 55px;
 	position: relative;
 	overflow: hidden;
+	margin-top: 70px;
 
 	@media (max-width: $mlg) {
 		padding: 30px 25px 30px 25px;
@@ -546,6 +553,12 @@ main {
 			@media (max-width: $mlg) {
 				display: none;
 			}
+		}
+		
+		.img-how_cost_img {
+			zoom: 55%;
+			position: relative;
+			top: 80px;
 		}
 	}
 

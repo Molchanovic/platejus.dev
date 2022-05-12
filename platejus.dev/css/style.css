@@ -918,6 +918,7 @@ h3 {
 
 .main-block__block-baner {
   margin-top: 60px;
+  position: relative;
 }
 
 .main-block__info-row {
@@ -940,6 +941,15 @@ h3 {
   width: 100%;
   height: 100%;
   background: #F2F2F3;
+}
+
+.main-block__starts-icon {
+  position: absolute;
+  width: 59px;
+  height: 36px;
+  right: 0;
+  top: -40px;
+  fill: #1220a5;
 }
 
 .main-block__img-line {
@@ -966,8 +976,7 @@ h3 {
 }
 
 .main-block__img-line .icon-stars-min-1,
-.main-block__img-line .icon-stars-min-2,
-.main-block__img-line .icon-stars-min-3 {
+.main-block__img-line .icon-stars-min-2 {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -982,13 +991,6 @@ h3 {
 .main-block__img-line .icon-stars-min-2 {
   left: 165px;
   top: 52px;
-}
-
-.main-block__img-line .icon-stars-min-3 {
-  width: 59px;
-  height: 36px;
-  right: 0;
-  top: -40px;
 }
 
 .main-block__info {
@@ -1196,6 +1198,7 @@ h3 {
   padding: 60px 55px 80px 55px;
   position: relative;
   overflow: hidden;
+  margin-top: 70px;
 }
 
 .how-cost__row {
@@ -1233,6 +1236,12 @@ h3 {
   height: 100%;
   top: -199px;
   left: 1px;
+}
+
+.how-cost__img .img-how_cost_img {
+  zoom: 55%;
+  position: relative;
+  top: 80px;
 }
 
 .how-cost__info {
@@ -2246,6 +2255,10 @@ h3 {
   .main-block__info-row {
     background-image: none;
     min-height: 250px;
+  }
+
+  .main-block__starts-icon {
+    display: none;
   }
 
   .main-block__img-line .icon {
