@@ -354,45 +354,47 @@ main {
 		overflow: hidden;
 		z-index: 10;
 		min-height: 490px;
+		background: url(../img/iconsprite/block-fon.svg) center center no-repeat $color-bg-grey;
+		background-size: 100% 100%;
 
 
-		&::before {
-			content: "";
-			display: inline-block;
-			width: 600px;
-			height: 40px;
-			background: $color-ligth-red;
-			mix-blend-mode: normal;
-			opacity: 0.4;
-			transform: matrix(1.1, -1.55, 0.32, 0.71, 0, 0);
-			position: absolute;
-			top: 12%;
-			right: -63%;
-			z-index: -1;
+		// &::before {
+		// 	content: "";
+		// 	display: inline-block;
+		// 	width: 600px;
+		// 	height: 40px;
+		// 	background: $color-ligth-red;
+		// 	mix-blend-mode: normal;
+		// 	opacity: 0.4;
+		// 	transform: matrix(1.1, -1.55, 0.32, 0.71, 0, 0);
+		// 	position: absolute;
+		// 	top: 12%;
+		// 	right: -63%;
+		// 	z-index: -1;
 
-			@media (max-width: $mxl) {
-				transform: matrix(.9, -1.55, 0.32, 0.71, 0, 0);
-				top: 30%;
-				right: -68%;
-			}
+		// 	@media (max-width: $mxl) {
+		// 		transform: matrix(.9, -1.55, 0.32, 0.71, 0, 0);
+		// 		top: 30%;
+		// 		right: -68%;
+		// 	}
 
-			@media (max-width: $mlg) {
-				transform: matrix(1.05, -1.55, 0.32, 0.71, 0, 0);
-				top: 20%;
-			}
+		// 	@media (max-width: $mlg) {
+		// 		transform: matrix(1.05, -1.55, 0.32, 0.71, 0, 0);
+		// 		top: 20%;
+		// 	}
 
-			@media (max-width: $mmd) {
-				transform: matrix(.6, -1.55, 0.32, 0.71, 0, 0);
-				top: 50%;
-			}
+		// 	@media (max-width: $mmd) {
+		// 		transform: matrix(.6, -1.55, 0.32, 0.71, 0, 0);
+		// 		top: 50%;
+		// 	}
 
-			@media (max-width: $wsm) {
-				// right: -235px;
-				// top: -15%;
-				// transform: matrix(2.1, -1.55, 0.32, 0.71, 0, 0);
-				display: none;
-			}
-		}
+		// 	@media (max-width: $msm) {
+		// 		right: -235px;
+		// 		top: -15%;
+		// 		transform: matrix(2.1, -1.55, 0.32, 0.71, 0, 0);
+		// 		//display: none;
+		// 	}
+		// }
 
 		@media (max-width: $mlg) {
 			$grid: 48;
@@ -799,7 +801,7 @@ main {
 
 	.swiper-pagination {
 		.swiper-pagination-bullet {
-			background: rgba(18, 32, 165, 0.32);
+			background: $color-arrowFon;
 		}
 
 		.swiper-pagination-bullet-active {
@@ -893,9 +895,10 @@ main {
 	justify-content: center;
 	width: 64px;
 	height: 64px;
-	background: $color-blue;
+	background: $color-arrowFon;
 	transition: 0.3s;
 	position: relative;
+	cursor: pointer;
 
 	.icon {
 		transition: 0.3s;
@@ -906,12 +909,13 @@ main {
 		stroke-width: 2;
 	}
 
+	&_active {
+		background: $color-blue ;
+	}
+
 	&:hover {
-		cursor: pointer;
-		.icon {
-			fill: transparent;
-			stroke: $color-ligth-blue;
-			stroke-width: 2;
+		@media (min-width: $md){
+		background: $color-blue;
 		}
 	}
 
@@ -919,10 +923,10 @@ main {
 		order: 2;
 	}
 
-	@media (max-width: $wsm) {
+	@media (max-width: $msm) {
 		width: 40px;
 		height: 40px;
-		opacity: 0.3;
+		//opacity: 0.3;
 		// position: relative;
 		// top: -42px;
 

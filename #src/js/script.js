@@ -198,7 +198,17 @@ if (document.querySelector('.preloader')) {
 }
 
 
+let myBtns=document.querySelectorAll('.slider-arrow');
+myBtns.forEach(function(btn) {
 
+	 btn.addEventListener('click', () => {
+		btn.classList.add('slider-arrow_active');
+		setTimeout (function(){
+			btn.classList.remove('slider-arrow_active');
+		}, 200);
+	 });
+
+});
 
 
 
