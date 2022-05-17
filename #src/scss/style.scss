@@ -354,9 +354,12 @@ main {
 		overflow: hidden;
 		z-index: 10;
 		min-height: 490px;
-		background: url(../img/iconsprite/block-fon.svg) center center no-repeat $color-bg-grey;
+		background-image: url("data:image/svg+xml,%3Csvg width='380' height='443' viewBox='0 0 380 443' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H380V443H0V0Z' /%3E%3Cmask id='mask0_2239_66' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='380' height='443'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H380V443H0V0Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_2239_66)'%3E%3Cpath opacity='0.400614' fill-rule='evenodd' clip-rule='evenodd' d='M-12.0562 457.578L384.675 -43.8265L391.435 -13.7965L-5.29552 487.608L-12.0562 457.578Z' fill='%23FFD6D7'/%3E%3C/g%3E%3C/svg%3E%0A");
+		//background: url(../img/iconsprite/block-fon.svg) 100% 100% no-repeat $color-bg-grey;
+		background-repeat: no-repeat;
+		background-color: $color-bg-grey;
 		background-size: 100% 100%;
-		-webkit-background-size: 100% 100%;
+		
 		
 
 
