@@ -5,28 +5,28 @@
 	box-sizing: border-box;
 	margin: 0 auto;
 	&-fluid {
-		width: 93%;
+		width: 100%;
 		padding: 0 $plr + px;
 		margin: 0 auto;
-		@media (min-width: $sm){
-		width: 100%;
-		}
+		// @media (min-width: $sm){
+		// width: 100%;
+		// }
 
-		@media (max-width: 2000px) {
-			max-width: $hmxxl;
-		}
+		// @media (max-width: 2000px) {
+		// 	max-width: $hmxxl;
+		// }
 
-		@media (max-width: $xl) {
-			max-width: $wlg;
-		}
+		// @media (max-width: $xl) {
+		// 	max-width: $wlg;
+		// }
 
-		@media (max-width: $mlg) {
-			max-width: $wmd;
-		}
+		// @media (max-width: $mlg) {
+		// 	max-width: $wmd;
+		// }
 
-		@media (max-width: $mmd) {
-			max-width: $wsm;
-		}
+		// @media (max-width: $mmd) {
+		// 	max-width: $wsm;
+		// }
 	}
 	@media (min-width: $sm) {
 		max-width: $wsm;
