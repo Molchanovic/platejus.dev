@@ -6,7 +6,8 @@
   padding-right: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-fluid {
@@ -1047,10 +1048,6 @@ h3 {
   color: #fff;
 }
 
-.all-need {
-  margin-top: 100px;
-}
-
 .all-need__title {
   margin-bottom: 20px;
 }
@@ -1400,7 +1397,7 @@ h3 {
 
 .slider-cases {
   background: #F2F2F3;
-  padding: 50px 0px 60px 0px;
+  padding: 60px 0;
 }
 
 .slider-cases .swiper-pagination .swiper-pagination-bullet {
@@ -1509,7 +1506,7 @@ h3 {
 }
 
 .reviews {
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   background: #fff;
 }
 

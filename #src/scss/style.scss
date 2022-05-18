@@ -245,7 +245,6 @@ main {
 // ==================================
 
 .all-need {
-	margin-top: 100px;
 	@media (max-width: $mxl){
 	margin-top:55px;
 	}
@@ -837,7 +836,7 @@ main {
 // ==================================
 .slider-cases {
 	background: $color-bg-grey;
-	padding: 50px 0px 60px 0px;
+	padding: 60px 0;
 
 	&__slide {
 	}
@@ -998,7 +997,7 @@ main {
 
 // ==================================
 .reviews {
-	padding-bottom: 120px;
+	padding-bottom: 100px;
 	background: #fff;
 
 	&__title {
