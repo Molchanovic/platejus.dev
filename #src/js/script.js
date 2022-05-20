@@ -10,7 +10,7 @@ if (document.querySelector('.burger-menu')) {
 		burger.addEventListener('click', () => {
 			// burger.classList.toggle('header__burger_active');
 			header.classList.toggle('header_active');
-			body.classList.toggle ('body_hidden');
+			body.classList.toggle('body_hidden');
 			// body.classList.toggle('overflow-h');
 			burger.classList.toggle('burger-menu_active');
 		})
@@ -21,7 +21,7 @@ if (document.querySelector('.burger-menu')) {
 
 if (document.querySelector('.manage-income__row')) {
 	let wrapperSelect = document.querySelectorAll('.manage-income__row');
-	
+
 
 	wrapperSelect.forEach(function (wrapper) {
 
@@ -41,7 +41,7 @@ if (document.querySelector('.manage-income__row')) {
 			});
 			// Второй ползунок, цифра снизу
 			counterTwo.addEventListener('input', function () {
-				NumTwo.style.left = (counterTwo.value / 100) - 12  + '%';
+				NumTwo.style.left = (counterTwo.value / 100) - 12 + '%';
 				NumTwo.innerHTML = counterTwo.value + ' ₽';
 			});
 			// Третий ползунок, цифра снизу
@@ -52,7 +52,7 @@ if (document.querySelector('.manage-income__row')) {
 			// Общая сумма
 			counter.addEventListener('input', function () {
 				let resultSum = wrapper.querySelector('#sum-result');
-				let summ = counterOne.value * counterTwo.value * counterThree.value / 100 ;
+				let summ = counterOne.value * counterTwo.value * counterThree.value / 100;
 
 				finalSumm = summ.toLocaleString() + ' ₽';
 
@@ -71,8 +71,8 @@ if (document.querySelector('.manage-income__row')) {
 // 		if (window.scrollY > 50) {
 // 			headerMove.classList.add('header_move');
 // 		}
-		
-	
+
+
 // 		else {
 // 			headerMove.classList.remove('header_move');
 // 		}
@@ -80,7 +80,7 @@ if (document.querySelector('.manage-income__row')) {
 // }
 
 // ! Куки
-if (document.querySelector('.block-cookies')) { 
+if (document.querySelector('.block-cookies')) {
 	let cookiesBlock = document.querySelector('.block-cookies');
 	let cookiesBtn = document.querySelector('.block-cookies__btn');
 	let cookiClose = document.querySelector('.block-cookies__close');
@@ -89,7 +89,7 @@ if (document.querySelector('.block-cookies')) {
 	let cookiRow = document.querySelector('.block-cookies__row');
 
 
-	cookiTitle.addEventListener ('click', function () {
+	cookiTitle.addEventListener('click', function () {
 		cookiTextBlock.classList.add('block-cookies__block-text_active');
 		cookiClose.classList.add('block-cookies__close_active');
 		cookiRow.classList.add('block-cookies__row_active');
@@ -111,16 +111,16 @@ if (document.querySelector('.block-cookies')) {
 
 
 
-		// let rageOne = wrapper.querySelector('#range-num-one');
-		// countOne = rageOne.querySelector('.manage-income__slider');
-		// countOne.addEventListener('input', function () {
-		// 	rageOne.querySelector('.manage-income__range-num').style.left = (countOne / 10) - 10 + '%';
-		// });
+// let rageOne = wrapper.querySelector('#range-num-one');
+// countOne = rageOne.querySelector('.manage-income__slider');
+// countOne.addEventListener('input', function () {
+// 	rageOne.querySelector('.manage-income__range-num').style.left = (countOne / 10) - 10 + '%';
+// });
 
 
 // 		// let rageTwo = wrapper.querySelector('#range-num-one');
 // 		// let rageThree = wrapper.querySelector('#range-num-one');
-		
+
 // 		// rageTwo.querySelector('.manage-income__range-num').style.left = (counterTwo / 10) - 10 + '%';
 // 		// rageThree.querySelector('.manage-income__range-num').style.left = (counterThree / 10) - 10 + '%';
 
@@ -128,59 +128,129 @@ if (document.querySelector('.block-cookies')) {
 
 // ! Слайдеры
 
+
 if (document.querySelector('.slider-cases__slider-block')) {
+let myBtns = document.querySelectorAll('.slider-arrow');
 	const swiperOne = new Swiper('.sliderOne', {
 		// Optional parameters
 		direction: 'horizontal',
 		slidesPerView: 1,
 		spaceBetween: 25,
 		loop: false,
-	  
+
 		// If we need pagination
 		pagination: {
-		  el: '.swiper-pagination-one',
+			el: '.swiper-pagination-one',
 		},
-	  
+
 		// Navigation arrows
 		navigation: {
-		  nextEl: '.slider-next-one',
-		  prevEl: '.slider-back-one',
+			nextEl: '.slider-next-one',
+			prevEl: '.slider-back-one',
 		},
-	
+
 		breakpoints: {
 			767: {
 				slidesPerView: 2,
 				spaceBetween: 25,
 			},
 		}
-	  });
+
+		
+
+	});
+
+
 	
 	
-	  const swiperTwo = new Swiper('.sliderTwo', {
+
+
+	const swiperTwo = new Swiper('.sliderTwo', {
 		// Optional parameters
 		direction: 'horizontal',
 		slidesPerView: 1,
 		spaceBetween: 25,
 		loop: false,
-	  
+
 		// If we need pagination
 		pagination: {
-		  el: '.swiper-pagination-two', 
+			el: '.swiper-pagination-two',
 		},
-	  
+
 		// Navigation arrows
 		navigation: {
-		  nextEl: '.slider-next-two',
-		  prevEl: '.slider-back-two',
+			nextEl: '.slider-next-two',
+			prevEl: '.slider-back-two',
 		},
-	
+
 		breakpoints: {
 			767: {
 				slidesPerView: 2,
 				spaceBetween: 25,
 			},
 		},
-	  });
+	});
+
+	swiperOne.on("slideChange", function () {
+		console.log("Текущий слайд", this.activeIndex);
+		if (
+			this.previousIndex < this.activeIndex ||
+			this.slides - 1 == this.previousIndex
+		) {
+			//console.log("Вперед");
+			// document.querySelector('#result').innerHTML = `Индекс ${this.activeIndex}, направление "вперед"`;
+			document.querySelector('.right-arrow').classList.add('slider-arrow_active');
+			setTimeout(function () {
+				document.querySelector('.right-arrow').classList.remove('slider-arrow_active');
+			}, 200);
+			
+		} else {
+			//console.log("Назад");
+			// document.querySelector('#result').innerHTML = ` Индекс ${this.activeIndex}, направление "назад"`;
+			document.querySelector('.left-arrow').classList.add('slider-arrow_active');
+			setTimeout(function () {
+				document.querySelector('.left-arrow').classList.remove('slider-arrow_active');
+			}, 200);
+		}
+	});
+
+	swiperTwo.on("slideChange", function () {
+		//console.log("Текущий слайд", this.activeIndex);
+		// let right = document.querySelector('.reviews .right-arrow');
+		// let left = document.querySelector('.reviews .left-arrow');
+		if (
+			this.previousIndex < this.activeIndex ||
+			this.slides - 1 == this.previousIndex
+		) {
+			//console.log("Вперед");
+			// document.querySelector('#result').innerHTML = `Индекс ${this.activeIndex}, направление "вперед"`;
+			document.querySelector('.reviews .right-arrow').classList.add('slider-arrow_active');
+			setTimeout(function () {
+				document.querySelector('.reviews .right-arrow').classList.remove('slider-arrow_active');
+			}, 200);
+			
+		} else {
+			//console.log("Назад");
+			// document.querySelector('#result').innerHTML = ` Индекс ${this.activeIndex}, направление "назад"`;
+			document.querySelector('.reviews .left-arrow').classList.add('slider-arrow_active');
+			setTimeout(function () {
+				document.querySelector('.reviews .left-arrow').classList.remove('slider-arrow_active');
+			}, 200);
+		}
+	});
+
+	
+
+	myBtns.forEach(function (btn) {
+
+		btn.addEventListener('click', () => {
+			btn.classList.add('slider-arrow_active');
+			setTimeout(function () {
+				btn.classList.remove('slider-arrow_active');
+			}, 200);
+		});
+	
+	});
 }
 
 //! Прелоадер
@@ -189,26 +259,17 @@ if (document.querySelector('.preloader')) {
 	window.onload = function () {
 		setTimeout(() => {
 			document.body.classList.add('loaded_hiding');
-		window.setTimeout(function () {
-		document.body.classList.add('loaded');
-		document.body.classList.remove('loaded_hiding');
-		}, 1000);
+			window.setTimeout(function () {
+				document.body.classList.add('loaded');
+				document.body.classList.remove('loaded_hiding');
+			}, 1000);
 		}, 500);
 	}
 }
 
 
-let myBtns=document.querySelectorAll('.slider-arrow');
-myBtns.forEach(function(btn) {
 
-	 btn.addEventListener('click', () => {
-		btn.classList.add('slider-arrow_active');
-		setTimeout (function(){
-			btn.classList.remove('slider-arrow_active');
-		}, 200);
-	 });
 
-});
 
 
 
