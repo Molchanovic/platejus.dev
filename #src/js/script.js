@@ -132,12 +132,9 @@ if (document.querySelector('.block-cookies')) {
 if (document.querySelector('.slider-cases__slider-block')) {
 
 	let myBtns = document.querySelectorAll('.slider-arrow');
-	let rightArrow = document.querySelector('.right-arrow');
-	let leftArrow = document.querySelector('.left-arrow');
-	let rightArrowTwo = document.querySelector('.reviews .right-arrow');
-	let leftArrowTwo = document.querySelector('.reviews .left-arrow');
-	// let myBtns = document.querySelectorAll('.slider-arrow');
-
+	let rightArrow = document.querySelectorAll('.right-arrow');
+	let leftArrow = document.querySelectorAll('.left-arrow');
+  
 	const swiperOne = new Swiper('.sliderOne', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -166,7 +163,7 @@ if (document.querySelector('.slider-cases__slider-block')) {
 		
 
 	});
-		const swiperTwo = new Swiper('.sliderTwo', {
+	const swiperTwo = new Swiper('.sliderTwo', {
 		// Optional parameters
 		direction: 'horizontal',
 		slidesPerView: 1,
@@ -191,12 +188,15 @@ if (document.querySelector('.slider-cases__slider-block')) {
 			},
 		},
 	});
-
-	swiperChange (swiperOne);
-	swiperChange (swiperTwo , rightArrowTwo, leftArrowTwo);
+	rightArrow.forEach(function(right){
+		leftArrow.forEach(function(left){
+			swiperChange (swiperOne , right , left);
+			swiperChange (swiperTwo , right , left);
+		})
+	});
 	
 
-	function swiperChange(swiperName , rightClass = rightArrow, leftClass = leftArrow){
+	function swiperChange(swiperName , rightClass, leftClass){
 		swiperName.on("slideChange", function () {
 			if (
 				this.previousIndex < this.activeIndex ||
@@ -212,9 +212,7 @@ if (document.querySelector('.slider-cases__slider-block')) {
 
 	myBtns.forEach(function (btn) {
 
-		btn.addEventListener('click', () => {
-			addHover(btn);
-		});
+		btn.addEventListener('click', addHover(btn));
 	
 	});
 
