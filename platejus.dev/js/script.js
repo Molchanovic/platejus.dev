@@ -130,7 +130,14 @@ if (document.querySelector('.block-cookies')) {
 
 
 if (document.querySelector('.slider-cases__slider-block')) {
-let myBtns = document.querySelectorAll('.slider-arrow');
+
+	let myBtns = document.querySelectorAll('.slider-arrow');
+	let rightArrow = document.querySelector('.right-arrow');
+	let leftArrow = document.querySelector('.left-arrow');
+	let rightArrowTwo = document.querySelector('.reviews .right-arrow');
+	let leftArrowTwo = document.querySelector('.reviews .left-arrow');
+	// let myBtns = document.querySelectorAll('.slider-arrow');
+
 	const swiperOne = new Swiper('.sliderOne', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -159,13 +166,7 @@ let myBtns = document.querySelectorAll('.slider-arrow');
 		
 
 	});
-
-
-	
-	
-
-
-	const swiperTwo = new Swiper('.sliderTwo', {
+		const swiperTwo = new Swiper('.sliderTwo', {
 		// Optional parameters
 		direction: 'horizontal',
 		slidesPerView: 1,
@@ -191,66 +192,40 @@ let myBtns = document.querySelectorAll('.slider-arrow');
 		},
 	});
 
-	swiperOne.on("slideChange", function () {
-		console.log("Текущий слайд", this.activeIndex);
-		if (
-			this.previousIndex < this.activeIndex ||
-			this.slides - 1 == this.previousIndex
-		) {
-			//console.log("Вперед");
-			// document.querySelector('#result').innerHTML = `Индекс ${this.activeIndex}, направление "вперед"`;
-			document.querySelector('.right-arrow').classList.add('slider-arrow_active');
-			setTimeout(function () {
-				document.querySelector('.right-arrow').classList.remove('slider-arrow_active');
-			}, 200);
-			
-		} else {
-			//console.log("Назад");
-			// document.querySelector('#result').innerHTML = ` Индекс ${this.activeIndex}, направление "назад"`;
-			document.querySelector('.left-arrow').classList.add('slider-arrow_active');
-			setTimeout(function () {
-				document.querySelector('.left-arrow').classList.remove('slider-arrow_active');
-			}, 200);
-		}
-	});
-
-	swiperTwo.on("slideChange", function () {
-		//console.log("Текущий слайд", this.activeIndex);
-		// let right = document.querySelector('.reviews .right-arrow');
-		// let left = document.querySelector('.reviews .left-arrow');
-		if (
-			this.previousIndex < this.activeIndex ||
-			this.slides - 1 == this.previousIndex
-		) {
-			//console.log("Вперед");
-			// document.querySelector('#result').innerHTML = `Индекс ${this.activeIndex}, направление "вперед"`;
-			document.querySelector('.reviews .right-arrow').classList.add('slider-arrow_active');
-			setTimeout(function () {
-				document.querySelector('.reviews .right-arrow').classList.remove('slider-arrow_active');
-			}, 200);
-			
-		} else {
-			//console.log("Назад");
-			// document.querySelector('#result').innerHTML = ` Индекс ${this.activeIndex}, направление "назад"`;
-			document.querySelector('.reviews .left-arrow').classList.add('slider-arrow_active');
-			setTimeout(function () {
-				document.querySelector('.reviews .left-arrow').classList.remove('slider-arrow_active');
-			}, 200);
-		}
-	});
-
+	swiperChange (swiperOne);
+	swiperChange (swiperTwo , rightArrowTwo, leftArrowTwo);
 	
+
+	function swiperChange(swiperName , rightClass = rightArrow, leftClass = leftArrow){
+		swiperName.on("slideChange", function () {
+			if (
+				this.previousIndex < this.activeIndex ||
+				this.slides - 1 == this.previousIndex
+			) {
+				addHover(rightClass);
+				
+			} else {
+				addHover(leftClass);
+			}
+		});
+	}
 
 	myBtns.forEach(function (btn) {
 
 		btn.addEventListener('click', () => {
-			btn.classList.add('slider-arrow_active');
-			setTimeout(function () {
-				btn.classList.remove('slider-arrow_active');
-			}, 200);
+			addHover(btn);
 		});
 	
 	});
+
+	function addHover(myBtn = myBtns) {
+		
+		myBtn.classList.add('slider-arrow_active');
+			setTimeout(function () {
+				myBtn.classList.remove('slider-arrow_active');
+			}, 200);
+	}
+	
 }
 
 //! Прелоадер
