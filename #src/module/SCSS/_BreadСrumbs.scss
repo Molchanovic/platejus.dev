@@ -1,0 +1,78 @@
+//Хлебные крошки  //!Сниппет "!BreadСrumbs"
+
+.breadcrumbs {
+	// margin-top: 30px;
+	$fs: 20;
+	font-size: calc($fs / $f-size) + em;
+	line-height: calc(32 / $fs * 100%);
+	color: $color-bread-crumbs;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	line-height: 25px;
+
+
+	&__item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-left: 8px;
+
+		a {
+			transition: .3s;
+		}
+
+		a {
+			&:hover {
+				color: $color-purple;
+			}
+		}
+		
+
+		&:first-child {
+			margin-left: 0px;
+
+			&:before {
+				display: none;
+			}
+		}
+
+		&:last-child {
+			color: $color-dark-grey;
+			
+
+			a {
+				cursor: text;
+
+				&:hover {
+					color: $color-dark-grey;
+				}
+			}
+		}
+
+		svg {
+			width: 20px;
+			margin-left: 8px;
+		}
+
+		// &_home {
+		// 	margin-left: 0;
+
+		// 	&:hover {
+		// 		i {
+		// 			background-color: red;
+		// 		}
+		// 	}
+		// }
+
+		&_active {
+			color: #666;
+		}
+	}
+
+	&__icon {
+		width: 16px;
+		height: 16px;
+	}
+}

@@ -3,11 +3,13 @@
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		src: url("../fonts/#{$file_name}.woff") format("woff"),
+		url("../fonts/#{$file_name}.woff2") format("woff2");
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
 }
+
 @import "_variables.scss";
 @import "fonts.scss";
 @import "_basic.scss";
@@ -16,16 +18,16 @@
 //===Модули===============================
 @import "../../../_module/SCSS/reset";
 // @import "../../../_module/SCSS/_ChoosQuant";
-// @import "../../../_module/SCSS/_BreadСrumbs"; //Хлебные крошки  //!Сниппет "!BreadСrumbs" ОТСУТСТВУЕТ
+@import "../module/SCSS/_BreadСrumbs"; //Хлебные крошки  //!Сниппет "!BreadСrumbs" ОТСУТСТВУЕТ
 // @import "../../../_module/SCSS/_CheckRadio"; //Чекбоксы и радио кнопки  //!Сниппет "!CheckRadio" ОТСУТСТВУЕТ
 // @import "../../../_module/SCSS/_rating"; //Рейтинг //!Сниппет "!rating" ОТСУТСТВУЕТ
 //@import "module/_InputNumber"; //Кастомный inpun number  //!Сниппет "!InputNumber" ОТСУТСТВУЕТ
 //@import "module/_CircularDiagram"; //Круговая диаграмма  //!Сниппет "!CircularDiagram" ОТСУТСТВУЕТ
 //@import "../../../_module/SCSS/_navmenu"; //Главное меню  //!Сниппет "!navmenu" html + js
 // @import "../../../_module/SCSS/_tooltip"; //тултипы  //!Сниппет "!tultip" html
-@import "../../../_module/SCSS/_modal"; //Модальное окно  //!Сниппет "!modal" html
+@import "../module/SCSS/_modal"; //Модальное окно  //!Сниппет "!modal" html
 //@import "../../../_module/SCSS/_validador-form"; //Валидатор форм  //!Сниппет "!forma" html
-@import "../../../_module/SCSS/_accordion"; //!Сниппет "!accordion" html
+@import "../module/SCSS/_accordion"; //!Сниппет "!accordion" html
 //@import "../../../_module/SCSS/_hidingNumbers"; //Скрытие номера  //!Сниппет "!hidnum" html
 // @import "../../../_module/SCSS/_select"; //select поле выбора  //!Сниппет "!select" html
 // @import "../../../_module/SCSS/_tabs"; //Табы  //!Сниппет "!Tabs" html
@@ -40,15 +42,16 @@
 //===Header and Footer===================
 @import "footer.scss";
 @import "header.scss";
+
 main {
-	@media (min-width: $md){
-	margin-top: 100px;
+	@media (min-width: $md) {
+		margin-top: 100px;
 	}
-	
+
 }
+
 .main-block {
-	&__title {
-	}
+	&__title {}
 
 	&__block-baner {
 		margin-top: 60px;
@@ -88,7 +91,7 @@ main {
 		top: -40px;
 		fill: $color-blue;
 
-		@media (max-width: $mlg){
+		@media (max-width: $mlg) {
 			display: none;
 		}
 	}
@@ -103,6 +106,7 @@ main {
 		z-index: -1;
 		right: 0;
 		top: 0;
+
 		.icon {
 			&-line {
 				width: 100%;
@@ -113,27 +117,31 @@ main {
 				fill: transparent;
 				position: relative;
 				top: -10px;
-				
+
 			}
+
 			&-stars-min {
+
 				&-1,
-				&-2{
+				&-2 {
 					position: absolute;
 					width: 25px;
 					height: 25px;
 					fill: $color-blue;
 				}
+
 				&-1 {
 					left: 245px;
 					bottom: 31px;
 				}
+
 				&-2 {
 					left: 165px;
 					top: 52px;
-				}				
+				}
 			}
 
-			@media (max-width: $mlg){
+			@media (max-width: $mlg) {
 				display: none;
 			}
 		}
@@ -161,8 +169,7 @@ main {
 		}
 	}
 
-	&__text {
-	}
+	&__text {}
 
 	&__btn {
 		padding: 16px 60px;
@@ -200,6 +207,7 @@ main {
 		$grid: 30;
 		flex: 0 0 0% + $grid;
 		max-width: 279px;
+
 		@media (max-width: $mlg) {
 			$grid: 47;
 			flex: 0 0 0% + $grid;
@@ -221,6 +229,7 @@ main {
 
 	&__item-img {
 		max-width: 110px;
+
 		img {
 			width: 100%;
 			object-fit: cover;
@@ -245,9 +254,10 @@ main {
 // ==================================
 
 .all-need {
-	@media (max-width: $mxl){
-	margin-top:55px;
+	@media (max-width: $mxl) {
+		margin-top: 55px;
 	}
+
 	&__title {
 		margin-bottom: 20px;
 	}
@@ -257,7 +267,7 @@ main {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-top: 55px;
-		
+
 	}
 
 	&__item {
@@ -292,6 +302,7 @@ main {
 
 	&__item-img {
 		max-width: 160px;
+
 		img {
 			width: 100%;
 			object-fit: cover;
@@ -306,22 +317,21 @@ main {
 		margin-bottom: 10px;
 		white-space: pre-line;
 
-		@media (max-width: $mxl){
+		@media (max-width: $mxl) {
 			$fs: 17;
 			font-size: calc($fs / $f-size) + em;
 			line-height: calc(25 / $fs * 100%);
-			
+
 		}
 
-		@media (max-width: $mmd){
+		@media (max-width: $mmd) {
 			br {
 				display: none;
 			}
 		}
 	}
 
-	&__item-text {
-	}
+	&__item-text {}
 
 	&__item-date {
 		color: $color-gray-40;
@@ -334,21 +344,20 @@ main {
 
 // ==================================
 .save-calmly {
-	&__title {
-	}
+	&__title {}
 
-	&__subtitle-text {
-	}
+	&__subtitle-text {}
 
 	&__row {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 60px;
 		flex-wrap: wrap;
-		@media (max-width: $mmd){
-			
+
+		@media (max-width: $mmd) {
+
 			justify-content: center;
-		
+
 		}
 	}
 
@@ -363,17 +372,17 @@ main {
 		overflow: hidden;
 		z-index: 10;
 		min-height: 400px;
-// &:before{
-// 	content: '';
-// 	position: absolute;
-// 	left: 0;
-// 	top: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 		background: url(../img/iconsprite/block-fon.svg) center center no-repeat #f2f2f3;
-// background-size: cover;
-// z-index: -1;
-// }
+		// &:before{
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: 0;
+		// 	top: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 		background: url(../img/iconsprite/block-fon.svg) center center no-repeat #f2f2f3;
+		// background-size: cover;
+		// z-index: -1;
+		// }
 
 		// background: url(../img/iconsprite/block-fon.svg) 100% 100% no-repeat $color-bg-grey;
 		// background-size: 100% 100%;
@@ -386,37 +395,37 @@ main {
 			//background: red;
 			mix-blend-mode: normal;
 			opacity: 0.4;
-			transform: matrix(1.1,-1.43,.34,.71,0,0);
+			transform: matrix(1.1, -1.43, .34, .71, 0, 0);
 			position: absolute;
 			top: 12%;
 			left: -4px;
 			z-index: -1;
-			
+
 			@media (max-width: $mxl) {
-				transform: matrix(1.1,-1.43,.34,.71,0,0);
+				transform: matrix(1.1, -1.43, .34, .71, 0, 0);
 			}
 
 			@media (max-width: $mlg) {
-	 			    transform: matrix(1.1,-1.78,.34,.71,0,0);
-    left: -31px;
+				transform: matrix(1.1, -1.78, .34, .71, 0, 0);
+				left: -31px;
 			}
 
 			@media (max-width: $mmd) {
-				transform: matrix(1.1,-1.47,.34,.71,0,0);
-    left: -6px;
+				transform: matrix(1.1, -1.47, .34, .71, 0, 0);
+				left: -6px;
 			}
 
 			@media (max-width: $msm) {
-				transform: matrix(1.1,-2.02,.34,.71,0,0);
-    left: -62px;
+				transform: matrix(1.1, -2.02, .34, .71, 0, 0);
+				left: -62px;
 			}
 		}
-		
 
 
-		
 
-		
+
+
+
 
 		@media (max-width: $mxl) {
 			$grid: 48;
@@ -425,6 +434,7 @@ main {
 			// padding: 20px 15px 30px 15px;
 			//min-height: 490px;
 		}
+
 		@media (max-width: $mlg) {
 			$grid: 48;
 			flex: 0 0 0% + $grid;
@@ -436,7 +446,7 @@ main {
 			$grid: 100;
 			flex: 0 0 0% + $grid;
 			min-height: 443px;
-			
+
 		}
 
 		@media (max-width: $msm) {
@@ -462,11 +472,11 @@ main {
 		margin-bottom: 15px;
 	}
 
-	&__item-text {
-	}
+	&__item-text {}
 
 	&__dop-text {
 		margin-top: 35px;
+
 		@media (max-width: $mlg) {
 			margin-top: 5px;
 		}
@@ -479,11 +489,9 @@ main {
 	padding: 50px 0px;
 
 
-	&__title {
-	}
+	&__title {}
 
-	&__subtitle-text {
-	}
+	&__subtitle-text {}
 
 	&__row {
 		display: flex;
@@ -518,6 +526,7 @@ main {
 
 	&__item-img {
 		max-width: 160px;
+
 		img {
 			width: 100%;
 			object-fit: cover;
@@ -532,8 +541,7 @@ main {
 		margin-bottom: 10px;
 	}
 
-	&__item-text {
-	}
+	&__item-text {}
 
 	&__btn {
 		padding: 16px 60px;
@@ -562,7 +570,7 @@ main {
 		padding: 30px 15px 30px 15px;
 	}
 
-	
+
 
 	&__row {
 		display: flex;
@@ -584,6 +592,7 @@ main {
 		@media (max-width: $mlg) {
 			display: none;
 		}
+
 		.icon {
 			position: absolute;
 			fill: transparent;
@@ -594,11 +603,12 @@ main {
 			height: 100%;
 			top: -199px;
 			left: 1px;
+
 			@media (max-width: $mlg) {
 				display: none;
 			}
 		}
-		
+
 		.img-how_cost_img {
 			zoom: 55%;
 			position: relative;
@@ -649,11 +659,9 @@ main {
 
 // ==================================
 .how-work {
-	&__title {
-	}
+	&__title {}
 
-	&__subtitle-text {
-	}
+	&__subtitle-text {}
 
 	&__row {
 		display: flex;
@@ -738,7 +746,8 @@ main {
 		font-size: calc($fs / $f-size) + em;
 		line-height: calc(24 / $fs * 100%);
 		margin-left: 10px;
-		@media (max-width: $msm){
+
+		@media (max-width: $msm) {
 			$fs: 14;
 			font-size: calc($fs / $f-size) + em;
 			line-height: calc(22 / $fs * 100%);
@@ -760,11 +769,9 @@ main {
 
 // ==================================
 .big-opportunities {
-	&__title {
-	}
+	&__title {}
 
-	&__subtitle-text {
-	}
+	&__subtitle-text {}
 
 	&__row {
 		display: flex;
@@ -787,8 +794,7 @@ main {
 		}
 	}
 
-	&__item-wrapper {
-	}
+	&__item-wrapper {}
 
 	&__item {
 		$grid: 31.5;
@@ -822,11 +828,9 @@ main {
 		margin-bottom: 10px;
 	}
 
-	&__item-detailed-link {
-	}
+	&__item-detailed-link {}
 
-	&__item-text {
-	}
+	&__item-text {}
 
 	&__text {
 		margin-top: 30px;
@@ -838,8 +842,7 @@ main {
 	background: $color-bg-grey;
 	padding: 60px 0;
 
-	&__slide {
-	}
+	&__slide {}
 
 	.swiper-pagination {
 		.swiper-pagination-bullet {
@@ -885,7 +888,7 @@ main {
 		position: relative;
 		margin-top: 50px;
 
-		@media (max-width: $wsm){
+		@media (max-width: $wsm) {
 			margin-top: 10px;
 
 			.swiper-pagination {
@@ -896,6 +899,7 @@ main {
 
 	&__slide-img {
 		margin-bottom: 45px;
+
 		img {
 			width: 100%;
 			object-fit: cover;
@@ -906,8 +910,7 @@ main {
 		margin-bottom: 15px;
 	}
 
-	&__slide-text {
-	}
+	&__slide-text {}
 
 	&__slide-detailed-link {
 		display: flex;
@@ -956,8 +959,8 @@ main {
 	}
 
 	&:hover {
-		@media (min-width: $md){
-		background: $color-blue;
+		@media (min-width: $md) {
+			background: $color-blue;
 		}
 	}
 
@@ -976,7 +979,7 @@ main {
 			width: 8px;
 			height: 20px;
 
-			
+
 		}
 
 		&:hover {
@@ -1000,14 +1003,11 @@ main {
 	padding-bottom: 100px;
 	background: #fff;
 
-	&__title {
-	}
+	&__title {}
 
-	&__subtitle-text {
-	}
+	&__subtitle-text {}
 
-	&__slide {
-	}
+	&__slide {}
 
 	&__slide-row {
 		display: flex;
@@ -1017,6 +1017,7 @@ main {
 	&__slide-img {
 		width: 68px;
 		height: 68px;
+
 		img {
 			width: 100%;
 			height: 100%;
@@ -1041,8 +1042,7 @@ main {
 		}
 	}
 
-	&__slide-description {
-	}
+	&__slide-description {}
 
 	&__slide-text {
 		margin-top: 30px;
@@ -1051,11 +1051,9 @@ main {
 
 // ==================================
 .manage-income {
-	&__title {
-	}
+	&__title {}
 
-	&__subtitle-text {
-	}
+	&__subtitle-text {}
 
 	&__row {
 		display: flex;
@@ -1132,8 +1130,7 @@ main {
 		position: relative;
 		height: 60px;
 
-		input {
-		}
+		input {}
 	}
 
 	&__range-num {
@@ -1213,15 +1210,18 @@ main {
 		line-height: calc(16 / $fs * 100%);
 		color: $color-gray-40;
 		font-weight: 500;
-		@media (max-width: $msm){
-		// $fs: 10;
-		// font-size: calc($fs / $f-size) + em;
-		br {
-			display: none;
-		}
+
+		@media (max-width: $msm) {
+
+			// $fs: 10;
+			// font-size: calc($fs / $f-size) + em;
+			br {
+				display: none;
+			}
 		}
 	}
 }
+
 // ==================================
 .block-cookies {
 	background: $color-dark-blue;
@@ -1368,6 +1368,7 @@ main {
 				color: $color-purple;
 			}
 		}
+
 		display: none;
 
 		&_active {
@@ -1404,14 +1405,14 @@ main {
 		border-top: 3px solid transparent;
 		border-radius: 50%;
 		animation: spinner 1s linear infinite;
-		
+
 	}
 
 	@keyframes spinner {
 		from {
 			transform: rotate(0deg);
 		}
-	 
+
 		to {
 			transform: rotate(360deg);
 		}
@@ -1419,8 +1420,580 @@ main {
 }
 
 
+// ================================== База знаний
+.knowledgebase {
+	padding: 25px 0 160px 0;
+
+	@media (max-width: $mxl) {
+		padding-top: 0;
+	}
+
+	@media (max-width: $mlg) {
+		margin-top: 0;
+		padding: 80px 0 90px 0;
+
+	}
+}
+
+.baseknow {
+
+	&__title-block {
+		margin-bottom: 40px;
+
+		@media (max-width: $wsm) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__title {
+		color: #000;
+
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $mlg) {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		$grid: 33;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+
+		@media (max-width: $mlg) {
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+	}
+
+	&__contennt {
+		height: 100%;
+		$grid: 63;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+
+		@media (max-width: $mlg) {
+			margin-top: 40px;
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+
+		@media (max-width: $wsm) {
+			margin-top: 20px;
+		}
+	}
+
+	&__cards {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		border-bottom: 1px solid $color-border-title;
+
+		@media (max-width: $wsm) {
+			margin-top: 20px;
+		}
+
+
+
+		.card-base {
+			$grid: 48.5;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+			margin-bottom: 20px;
+			min-height: 320px;
+
+			@media (max-width: $wsm) {
+				$grid: 100;
+				flex: 0 0 0% + $grid;
+				max-width: 0% + $grid;
+				min-height: unset;
+			}
+
+		}
+	}
+}
+
+.baseknow-sitebar {
+	background: $color-bg-grey;
+	padding: 40px 30px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+
+	@media (max-width: $wsm) {
+		padding: 20px 15px;
+	}
+
+	@media (max-width: $wsm) {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		$fs: 24;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(36 / $fs * 100%);
+
+		@media (max-width: $wsm) {
+			$fs: 18;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(24 / $fs * 100%);
+		}
+	}
+
+	&__nav {}
+
+	&__wrapper {
+		padding: 8px 10px 10px 20px;
+	}
+
+	ul {
+		overflow-x: hidden;
+		overflow-y: scroll;
+		max-height: 100px;
+		direction: rtl;
+
+		&::-webkit-scrollbar {
+			left: 0;
+			width: 4px;
+			background-color: $color-gray-40;
+			transform: rotate(180deg)
+		}
+
+		&::-webkit-scrollbar-thumb {
+			width: 6px;
+			height: 20px;
+			background: $color-tunbs;
+		}
+
+		li {
+			margin-left: 10px;
+			$fs: 12;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(16 / $fs * 100%);
+			color: $color-blue;
+			font-weight: 500;
+			margin-bottom: 8px;
+			text-align: left;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+	}
+
+	&__item {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		background: $color-grey-five;
+		padding: 10px 10px 10px 10px;
+
+		p {
+			text-align: left;
+			margin-right: 5px;
+		}
+
+		span {
+			margin: 0px 8px 0px auto;
+			$fs: 12;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(16 / $fs * 100%);
+			letter-spacing: 0.02em;
+		}
+
+		@media (max-width: $mxl) {
+			$fs: 14;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(20 / $fs * 100%);
+		}
+	}
+
+	&__link {
+		&_active {
+			color: $color-purple;
+
+			&:hover {
+				color: $color-purple;
+			}
+		}
+	}
+}
+
+.stayed-questions {
+	background: $color-bg-grey;
+	padding: 40px 30px;
+
+	@media (max-width: $wsm) {
+		padding: 20px 15px;
+	}
+
+	&__title {
+		$fs: 24;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(36 / $fs * 100%);
+		padding-bottom: 8px;
+		border-bottom: 2px solid $color-border-title;
+
+		@media (max-width: $wsm) {
+			$fs: 18;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(24 / $fs * 100%);
+		}
+	}
+
+	&__text {}
+
+	&__btn {
+		padding: 16px 30px;
+		margin-top: 20px;
+	}
+}
+
+.base-search {
+	position: relative;
+	width: 100%;
+
+	&__input {
+		width: 100%;
+		padding: 16px 20px 16px 50px;
+		background: $color-bg-grey;
+		border: none;
+		box-sizing: border-box;
+
+		&::placeholder {
+			color: $color-gray-40;
+		}
+
+	}
+
+	svg {
+		position: absolute;
+		top: 14px;
+		left: 17px;
+		fill: $color-gray-40;
+
+	}
+}
+
+.card-base {
+	padding: 30px 20px;
+	background: $color-bg-grey;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&__text-block {}
+
+	&__title {
+		$fs: 16;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(24 / $fs * 100%);
+		font-weight: 600;
+		margin-bottom: 12px;
+	}
+
+	&__text {}
+}
+
+.paginations {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+
+	&__arrow-btn {
+		min-width: 30px;
+		min-height: 30px;
+		border: 1px solid $color-tunbs;
+		position: relative;
+		transition: .3s;
+
+		svg {
+			transition: .3s;
+			fill: transparent;
+			stroke: $color-tunbs;
+			height: 15px;
+			position: absolute;
+			top: 7px;
+		}
+
+		&:hover {
+			background: $color-blue;
+
+			svg {
+				stroke: #fff;
+			}
+		}
+	}
+
+	.paginations-back {
+		svg {
+			left: 6px;
+		}
+	}
+
+	.paginations-next {
+		svg {
+			transform: rotate(-180deg);
+			left: 7px;
+		}
+	}
+
+	ul {
+		margin: 0px 16px;
+		display: flex;
+
+		li {
+			margin-right: 16px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__link {
+		$fs: 14;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(20 / $fs * 100%);
+		transition: .3s;
+		font-weight: 400;
+
+		&:hover {
+			color: $color-blue;
+		}
+
+		&_active {
+			color: $color-blue;
+		}
+	}
+
+
+}
+
+
+
 // ==================================
-// ==================================
+.base-popup {
+	padding: 100px;
+	border-radius: 0px;
+	position: relative;
+	min-width: 1180px;
+	box-sizing: border-box;
+
+	@media (max-width: $mxxl) {
+		min-width: 1080px;
+	}
+
+	@media (max-width: $mxl) {
+		min-width: 880px;
+	}
+
+	@media (max-width: $mlg) {
+		min-width: 90%
+	}
+
+	@media (max-width: $mmd) {
+		padding: 50px;
+	}
+
+	@media (max-width: $wsm) {
+		padding: 20px;
+	}
+
+	&__close {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+
+		svg {
+			transition: .3s;
+		}
+
+		&:hover {
+			svg {
+				fill: $color-purple;
+			}
+		}
+
+		@media (max-width: $wsm) {
+			top: 15px;
+			right: 15px;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	&__block {
+		display: flex;
+	}
+
+	&__form {
+		$grid: 50;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+
+		@media (max-width: $mxl) {
+			$grid: 60;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+
+		@media (max-width: $mlg) {
+			$grid: 100;
+			flex: 0 0 0% + $grid;
+			max-width: 0% + $grid;
+		}
+
+
+	}
+
+	&__title {
+		$fs: 24;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(36 / $fs * 100%);
+		opacity: 0.8;
+		margin-bottom: 40px;
+
+		@media (max-width: $wsm) {
+			$fs: 18;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(20 / $fs * 100%);
+			margin-top: 20px;
+		}
+	}
+
+	&__input-block {
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		span {
+			$fs: 14;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(20 / $fs * 100%);
+			margin-bottom: 8px;
+			display: block;
+		}
+	}
+
+	&__input {}
+
+	&__textarea {
+		height: 165px;
+		resize: none;
+	}
+
+	&__btn {
+		background: $color-ligth-purple;
+
+		@media (max-width: $wsm) {
+			width: 100%;
+		}
+
+		&_disable {
+			opacity: .5;
+			pointer-events: none;
+			
+		}
+	}
+
+	&__img {
+		$grid: 50;
+		flex: 0 0 0% + $grid;
+		max-width: 0% + $grid;
+		display: flex;
+		align-items: center;
+
+		div {
+			zoom: 50%;
+
+			@media (max-width: $mxl) {
+				zoom: 35%;
+			}
+		}
+
+		@media (max-width: $mlg) {
+			display: none;
+		}
+	}
+
+
+	&__checkbox {
+		label {
+			$fs: 12;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(16 / $fs * 100%);
+			margin-top: 20px;
+			display: flex;
+
+			span {
+				cursor: pointer;
+				display: inline-block;
+				min-width: 14px;
+				height: 14px;
+				border: 1px solid $color-gray-40;
+				margin-right: 8px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: .3s;
+
+				&::before {
+					width: 80%;
+					height: 80%;
+					content: '';
+					background: url(../img/iconsprite/check.svg) no-repeat;
+					background-size: contain;
+					transition: .3s;
+					display: none;
+				}
+			}
+
+			p {
+				@media (max-width: $wsm) {
+					br {
+						display: none;
+					}
+				}
+			}
+
+			a {
+				color: $color-blue;
+			}
+		}
+
+		input {
+			display: none;
+		}
+
+
+	}
+}
+
+#checkbox-base:checked+label span {
+	min-width: 16px;
+	height: 16px;
+	background: $color-blue;
+	border: none;
+}
+
+#checkbox-base:checked+label span::before {
+	display: inline-block;
+}
+
+
 // ==================================
 // ==================================
 // ==================================
@@ -1433,11 +2006,11 @@ main {
 .loaded_hiding .preloader {
 	transition: 0.3s opacity;
 	opacity: 0;
-  }
-  
+}
+
 .loaded .preloader {
 	display: none;
-  }
+}
 
 
 

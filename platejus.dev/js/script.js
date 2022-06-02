@@ -18,7 +18,6 @@ if (document.querySelector('.burger-menu')) {
 };
 
 // ! Счетчик 
-
 if (document.querySelector('.manage-income__row')) {
 	let wrapperSelect = document.querySelectorAll('.manage-income__row');
 
@@ -63,22 +62,6 @@ if (document.querySelector('.manage-income__row')) {
 	});
 }
 
-// ! Липкая шапка 
-// if (document.querySelector('.header')) {
-// 	let headerMove = document.querySelector('.header');
-
-// 	window.addEventListener('scroll', function () {
-// 		if (window.scrollY > 50) {
-// 			headerMove.classList.add('header_move');
-// 		}
-
-
-// 		else {
-// 			headerMove.classList.remove('header_move');
-// 		}
-// 	} )
-// }
-
 // ! Куки
 if (document.querySelector('.block-cookies')) {
 	let cookiesBlock = document.querySelector('.block-cookies');
@@ -108,33 +91,13 @@ if (document.querySelector('.block-cookies')) {
 	})
 }
 
-
-
-
-// let rageOne = wrapper.querySelector('#range-num-one');
-// countOne = rageOne.querySelector('.manage-income__slider');
-// countOne.addEventListener('input', function () {
-// 	rageOne.querySelector('.manage-income__range-num').style.left = (countOne / 10) - 10 + '%';
-// });
-
-
-// 		// let rageTwo = wrapper.querySelector('#range-num-one');
-// 		// let rageThree = wrapper.querySelector('#range-num-one');
-
-// 		// rageTwo.querySelector('.manage-income__range-num').style.left = (counterTwo / 10) - 10 + '%';
-// 		// rageThree.querySelector('.manage-income__range-num').style.left = (counterThree / 10) - 10 + '%';
-
-
-
 // ! Слайдеры
-
-
 if (document.querySelector('.slider-cases__slider-block')) {
 
 	let myBtns = document.querySelectorAll('.slider-arrow');
 	let rightArrow = document.querySelectorAll('.right-arrow');
 	let leftArrow = document.querySelectorAll('.left-arrow');
-  
+
 	const swiperOne = new Swiper('.sliderOne', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -160,7 +123,7 @@ if (document.querySelector('.slider-cases__slider-block')) {
 			},
 		}
 
-		
+
 
 	});
 	const swiperTwo = new Swiper('.sliderTwo', {
@@ -188,22 +151,22 @@ if (document.querySelector('.slider-cases__slider-block')) {
 			},
 		},
 	});
-	rightArrow.forEach(function(right){
-		leftArrow.forEach(function(left){
-			swiperChange (swiperOne , right , left);
-			swiperChange (swiperTwo , right , left);
+	rightArrow.forEach(function (right) {
+		leftArrow.forEach(function (left) {
+			swiperChange(swiperOne, right, left);
+			swiperChange(swiperTwo, right, left);
 		})
 	});
-	
 
-	function swiperChange(swiperName , rightClass, leftClass){
+
+	function swiperChange(swiperName, rightClass, leftClass) {
 		swiperName.on("slideChange", function () {
 			if (
 				this.previousIndex < this.activeIndex ||
 				this.slides - 1 == this.previousIndex
 			) {
 				addHover(rightClass);
-				
+
 			} else {
 				addHover(leftClass);
 			}
@@ -213,21 +176,20 @@ if (document.querySelector('.slider-cases__slider-block')) {
 	myBtns.forEach(function (btn) {
 
 		btn.addEventListener('click', addHover(btn));
-	
+
 	});
 
-	function addHover(myBtn = myBtns) {
-		
+	function addHover(myBtn) {
+
 		myBtn.classList.add('slider-arrow_active');
-			setTimeout(function () {
-				myBtn.classList.remove('slider-arrow_active');
-			}, 200);
+		setTimeout(function () {
+			myBtn.classList.remove('slider-arrow_active');
+		}, 200);
 	}
-	
+
 }
 
 //! Прелоадер
-
 if (document.querySelector('.preloader')) {
 	window.onload = function () {
 		setTimeout(() => {
@@ -240,6 +202,20 @@ if (document.querySelector('.preloader')) {
 	}
 }
 
+//! Проверка чекеда у кнопки
+if (document.querySelector('.base-popup')) {
+	let btnSend = document.querySelector('.base-popup__btn');
+	let inputPopup = document.querySelector('#checkbox-base');
+
+	inputPopup.addEventListener('click', function () {
+		if (inputPopup.checked) {
+			btnSend.classList.remove('base-popup__btn_disable');
+		}
+		else {
+			btnSend.classList.add('base-popup__btn_disable');
+		}
+	})
+}
 
 
 
@@ -396,7 +372,48 @@ if (document.getElementsByClassName("accordion")) {
  //Валидатор форм  //!Сниппет "!accordion" html
 
 if (document.querySelector('.tel')) {
-	//@//@include('../../../_module/JS/_maskPhone.js', {}) //Маска номера телефона (библиотека)
-	//maskPhone('.tel');//Вызов функции маски номера телефона
+	function maskPhone(selector, masked = '+7 (___) ___-__-__') {
+	const elems = document.querySelectorAll(selector);
+
+	function mask(event) {
+		const keyCode = event.keyCode;
+		const template = masked,
+			def = template.replace(/\D/g, ""),
+			val = this.value.replace(/\D/g, "");
+		console.log(template);
+		let i = 0,
+			newValue = template.replace(/[_\d]/g, function (a) {
+				return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+			});
+		i = newValue.indexOf("_");
+		if (i !== -1) {
+			newValue = newValue.slice(0, i);
+		}
+		let reg = template.substr(0, this.value.length).replace(/_+/g,
+			function (a) {
+				return "\\d{1," + a.length + "}";
+			}).replace(/[+()]/g, "\\$&");
+		reg = new RegExp("^" + reg + "$");
+		if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+			this.value = newValue;
+		}
+		if (event.type === "blur" && this.value.length < 5) {
+			this.value = "";
+		}
+
+	}
+
+	for (const elem of elems) {
+		elem.addEventListener("input", mask);
+		elem.addEventListener("focus", mask);
+		elem.addEventListener("blur", mask);
+	}
+	
+}
+
+// use
+
+// maskPhone('селектор элементов', 'маска, если маску не передать то будет работать стандартная +7 (___) ___-__-__'); //Маска номера телефона (библиотека)
+	maskPhone('.tel');//Вызов функции маски номера телефона
 }
 

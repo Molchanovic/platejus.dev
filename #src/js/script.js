@@ -18,7 +18,6 @@ if (document.querySelector('.burger-menu')) {
 };
 
 // ! Счетчик 
-
 if (document.querySelector('.manage-income__row')) {
 	let wrapperSelect = document.querySelectorAll('.manage-income__row');
 
@@ -63,22 +62,6 @@ if (document.querySelector('.manage-income__row')) {
 	});
 }
 
-// ! Липкая шапка 
-// if (document.querySelector('.header')) {
-// 	let headerMove = document.querySelector('.header');
-
-// 	window.addEventListener('scroll', function () {
-// 		if (window.scrollY > 50) {
-// 			headerMove.classList.add('header_move');
-// 		}
-
-
-// 		else {
-// 			headerMove.classList.remove('header_move');
-// 		}
-// 	} )
-// }
-
 // ! Куки
 if (document.querySelector('.block-cookies')) {
 	let cookiesBlock = document.querySelector('.block-cookies');
@@ -108,33 +91,13 @@ if (document.querySelector('.block-cookies')) {
 	})
 }
 
-
-
-
-// let rageOne = wrapper.querySelector('#range-num-one');
-// countOne = rageOne.querySelector('.manage-income__slider');
-// countOne.addEventListener('input', function () {
-// 	rageOne.querySelector('.manage-income__range-num').style.left = (countOne / 10) - 10 + '%';
-// });
-
-
-// 		// let rageTwo = wrapper.querySelector('#range-num-one');
-// 		// let rageThree = wrapper.querySelector('#range-num-one');
-
-// 		// rageTwo.querySelector('.manage-income__range-num').style.left = (counterTwo / 10) - 10 + '%';
-// 		// rageThree.querySelector('.manage-income__range-num').style.left = (counterThree / 10) - 10 + '%';
-
-
-
 // ! Слайдеры
-
-
 if (document.querySelector('.slider-cases__slider-block')) {
 
 	let myBtns = document.querySelectorAll('.slider-arrow');
 	let rightArrow = document.querySelectorAll('.right-arrow');
 	let leftArrow = document.querySelectorAll('.left-arrow');
-  
+
 	const swiperOne = new Swiper('.sliderOne', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -160,7 +123,7 @@ if (document.querySelector('.slider-cases__slider-block')) {
 			},
 		}
 
-		
+
 
 	});
 	const swiperTwo = new Swiper('.sliderTwo', {
@@ -188,22 +151,22 @@ if (document.querySelector('.slider-cases__slider-block')) {
 			},
 		},
 	});
-	rightArrow.forEach(function(right){
-		leftArrow.forEach(function(left){
-			swiperChange (swiperOne , right , left);
-			swiperChange (swiperTwo , right , left);
+	rightArrow.forEach(function (right) {
+		leftArrow.forEach(function (left) {
+			swiperChange(swiperOne, right, left);
+			swiperChange(swiperTwo, right, left);
 		})
 	});
-	
 
-	function swiperChange(swiperName , rightClass, leftClass){
+
+	function swiperChange(swiperName, rightClass, leftClass) {
 		swiperName.on("slideChange", function () {
 			if (
 				this.previousIndex < this.activeIndex ||
 				this.slides - 1 == this.previousIndex
 			) {
 				addHover(rightClass);
-				
+
 			} else {
 				addHover(leftClass);
 			}
@@ -213,21 +176,20 @@ if (document.querySelector('.slider-cases__slider-block')) {
 	myBtns.forEach(function (btn) {
 
 		btn.addEventListener('click', addHover(btn));
-	
+
 	});
 
-	function addHover(myBtn = myBtns) {
-		
+	function addHover(myBtn) {
+
 		myBtn.classList.add('slider-arrow_active');
-			setTimeout(function () {
-				myBtn.classList.remove('slider-arrow_active');
-			}, 200);
+		setTimeout(function () {
+			myBtn.classList.remove('slider-arrow_active');
+		}, 200);
 	}
-	
+
 }
 
 //! Прелоадер
-
 if (document.querySelector('.preloader')) {
 	window.onload = function () {
 		setTimeout(() => {
@@ -240,6 +202,20 @@ if (document.querySelector('.preloader')) {
 	}
 }
 
+//! Проверка чекеда у кнопки
+if (document.querySelector('.base-popup')) {
+	let btnSend = document.querySelector('.base-popup__btn');
+	let inputPopup = document.querySelector('#checkbox-base');
+
+	inputPopup.addEventListener('click', function () {
+		if (inputPopup.checked) {
+			btnSend.classList.remove('base-popup__btn_disable');
+		}
+		else {
+			btnSend.classList.add('base-popup__btn_disable');
+		}
+	})
+}
 
 
 
@@ -249,13 +225,13 @@ if (document.querySelector('.preloader')) {
 
 
 //===Модули===============================
-@@include('../../../_module/JS/_modal.js', {}) //Модальное окно  //!Сниппет "!modal" html
+@@include('../module/JS/_modal.js', {}) //Модальное окно  //!Сниппет "!modal" html
 //@//@include('../../../_module/JS/_tooltip.js', {}) //Тултип  //!Сниппет "!tooltip" html
 //@//@include('../../../_module/JS/_validator-form.js', {}) //Валидатор форм  //!Сниппет "!forma" html
-@@include('../../../_module/JS/_accordion.js', {}) //Валидатор форм  //!Сниппет "!accordion" html
+@@include('../module/JS/_accordion.js', {}) //Валидатор форм  //!Сниппет "!accordion" html
 
 if (document.querySelector('.tel')) {
-	//@//@include('../../../_module/JS/_maskPhone.js', {}) //Маска номера телефона (библиотека)
-	//maskPhone('.tel');//Вызов функции маски номера телефона
+	@@include('../../../_module/JS/_maskPhone.js', {}) //Маска номера телефона (библиотека)
+	maskPhone('.tel');//Вызов функции маски номера телефона
 }
 

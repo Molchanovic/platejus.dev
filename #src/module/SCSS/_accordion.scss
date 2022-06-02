@@ -1,0 +1,43 @@
+.accordion {
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	font-family: $font;
+	$fs: 16;
+	font-size: calc($fs / $f-size) + em;
+	line-height: calc(24 / $fs * 100%);
+	font-weight: 600;
+	color: $color-blue;
+
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 10px solid $color-blue;
+		transition: .3s;
+	}
+
+	&_active:after {
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 10px solid $color-blue;
+		border-top: none;
+	}
+}
+
+.panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	background: $color-grey-five;
+
+	margin-bottom: 12px;
+
+	&:last-child {
+		margin-bottom: 0;
+
+	}
+
+}

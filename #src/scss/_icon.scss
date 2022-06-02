@@ -1,27 +1,30 @@
 @mixin i {
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	-webkit-mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	-webkit-mask-position: center;
-	background-color: #666;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    background-color: #666;
 }
+
 i {
-	@include i;
+    @include i;
 }
 
 .mask-reset {
-	-webkit-mask-size: unset;
-	-webkit-mask-repeat: unset;
-	-webkit-mask-position: unset;
-	background-color: unset;
+    -webkit-mask-size: unset;
+    -webkit-mask-repeat: unset;
+    -webkit-mask-position: unset;
+    background-color: unset;
 }
+
 .icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
 }
+
 // $icon: (cart,appstore, googleplay, facebook, vk, twitter, insta, arrowright, miniarrow, sliderarrow );
 // @each $icon in $icon {
 // 	.icon-#{$icon} {
@@ -155,360 +158,342 @@ i {
 // 	height: 160px;
 // 	back
 
-.bg-main_block_img_1 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -10px -346px;
-}
-
 .bg-main_block_img_2 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -190px -346px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -1078px -346px;
 }
 
 .bg-main_block_img_3 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -370px -346px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -770px -654px;
 }
 
 .bg-number_four {
-    width: 160px; height: 157px;
-    background: url('../img/icons/css_sprites.webp') -730px -706px;
+    width: 160px;
+    height: 157px;
+    background: url('../img/icons/css_sprites_x1.webp') -1268px -730px;
 }
 
 .bg-number_one {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -550px -346px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -950px -654px;
 }
 
 .bg-number_three {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -10px -526px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -554px -409px;
 }
 
 .bg-number_two {
-    width: 160px; height: 157px;
-    background: url('../img/icons/css_sprites.webp') -996px -10px;
+    width: 160px;
+    height: 157px;
+    background: url('../img/icons/css_sprites_x1.webp') -1268px -907px;
 }
 
 .bg-tablet {
-    width: 478px; height: 316px;
-    background: url('../img/icons/css_sprites.webp') -10px -10px;
+    width: 478px;
+    height: 316px;
+    background: url('../img/icons/css_sprites_x1.webp') -770px -10px;
 }
 
 .bg-why_eazy_1 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -190px -526px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -554px -589px;
 }
 
 .bg-why_eazy_2 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -370px -526px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -10px -941px;
 }
 
 .bg-why_eazy_3 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -550px -526px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -190px -941px;
 }
 
 .bg-all_need_1 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -816px -10px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -370px -941px;
 }
 
 .bg-all_need_2 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -816px -190px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -550px -941px;
 }
 
 .bg-all_need_3 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -816px -370px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -730px -941px;
 }
 
 .bg-all_need_4 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -10px -706px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -910px -941px;
 }
 
 .bg-all_need_5 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -190px -706px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -1268px -10px;
 }
 
 .bg-all_need_6 {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -370px -706px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -1268px -190px;
 }
 
 .bg-arrow_left {
-    width: 160px; height: 160px;
-    background: url('../img/icons/css_sprites.webp') -550px -706px;
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -1268px -370px;
 }
 
+.bg-base_img {
+    width: 740px;
+    height: 379px;
+    background: url('../img/icons/css_sprites_x1.webp') -10px -10px;
+}
+
+.bg-dgin_img {
+    width: 524px;
+    height: 512px;
+    background: url('../img/icons/css_sprites_x1.webp') -10px -409px;
+}
+
+// .bg-dgin_img {
+//     width: 524px;
+//     height: 512px;
+//     background: url('../img/icons/css_sprites_x1.webp') -10px -409px;
+//     // zoom: 50%;
+// }
+
 .bg-how_cost_img {
-    width: 288px; height: 288px;
-    background: url('../img/icons/css_sprites.webp') -508px -10px;
+    width: 288px;
+    height: 288px;
+    background: url('../img/icons/css_sprites_x1.webp') -770px -346px;
+}
+
+.bg-main_block_img_1 {
+    width: 160px;
+    height: 160px;
+    background: url('../img/icons/css_sprites_x1.webp') -1268px -550px;
 }
 
 
 .img {
-	&-tablet,
-	&-main_block_img,
-	&-all_need,
-	&-why_eazy,
-	&-arrow {
-	}
-	&-number {
-		zoom: 64%;
-		@media (max-width: $mlg) {
-			zoom: 50%;
-		}
-	
-		@media (max-width: $wsm) {
-			zoom: 40%;
-		}
-	}
-	&-arrow{
-		zoom: 64%;
-	}
-	&-why_eazy,
-	&-main_block_img,
-	&-all_need{
-		@media (max-width: $mlg) {
-			zoom: 80%;
-		}
-	
-		@media (max-width: $wsm) {
-			zoom: 60%;
-		}
-	}
+
+    &-tablet,
+    &-main_block_img,
+    &-all_need,
+    &-why_eazy,
+    &-arrow {}
+
+    &-number {
+        zoom: 64%;
+
+        @media (max-width: $mlg) {
+            zoom: 50%;
+        }
+
+        @media (max-width: $wsm) {
+            zoom: 40%;
+        }
+    }
+
+    &-arrow {
+        zoom: 64%;
+    }
+
+    &-why_eazy,
+    &-main_block_img,
+    &-all_need {
+        @media (max-width: $mlg) {
+            zoom: 80%;
+        }
+
+        @media (max-width: $wsm) {
+            zoom: 60%;
+        }
+    }
 }
 
-@media (min-resolution: 2dppx) and (min-width: 0){
-// 	.bg-number_one {
-// 		width: 320px; height: 314px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1508px -350px;
-//   }
-  
-//   .bg-number_three {
-// 		width: 320px; height: 314px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1508px -684px;
-//   }
-  
-//   .bg-number_two {
-// 		width: 320px; height: 314px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -10px -1342px;
-//   }
-  
-//   .bg-tablet {
-// 		width: 950px; height: 632px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -10px -10px;
-//   }
-  
-//   .bg-why_eazy_1 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -10px -662px;
-//   }
-  
-//   .bg-why_eazy_2 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -350px -662px;
-//   }
-  
-//   .bg-why_eazy_3 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -690px -662px;
-//   }
-  
-//   .bg-all_need_1 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1030px -662px;
-//   }
-  
-//   .bg-all_need_2 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -10px -1002px;
-//   }
-  
-//   .bg-all_need_3 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -350px -1002px;
-//   }
-  
-//   .bg-all_need_4 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -690px -1002px;
-//   }
-  
-//   .bg-all_need_5 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1030px -1002px;
-//   }
-  
-//   .bg-all_need_6 {
-// 		width: 320px; height: 320px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1508px -10px;
-//   }
-  
-//   .bg-arrow_left {
-// 		width: 300px; height: 300px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1508px -1018px;
-//   }
-  
-//   .bg-how_cost_img {
-// 		width: 508px; height: 508px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -980px -10px;
-//   }
-  
-//   .bg-main_block_img_1 {
-// 		width: 320px; height: 280px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -690px -1342px;
-//   }
-  
-//   .bg-main_block_img_2 {
-// 		width: 320px; height: 268px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1370px -1342px;
-//   }
-  
-//   .bg-main_block_img_3 {
-// 		width: 320px; height: 280px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -1030px -1342px;
-//   }
-  
-//   .bg-number_four {
-// 		width: 320px; height: 314px;
-// 		background: url('../img/icons/css_sprites_x2.webp') -350px -1342px;
-//   }
+@media (min-resolution: 2dppx) and (min-width: 0) {
 
-.bg-main_block_img_2 {
-    width: 320px; height: 268px;
-    background: url('../img/icons/css_sprites_x2.webp') -1350px -1342px;
-}
+    .bg-why_eazy_1 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -2106px -662px;
+    }
 
-.bg-main_block_img_3 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -10px -662px;
-}
+    .bg-why_eazy_2 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -1510px -1258px;
+    }
 
-.bg-number_four {
-    width: 320px; height: 314px;
-    background: url('../img/icons/css_sprites_x2.webp') -1576px -690px;
-}
+    .bg-why_eazy_3 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -1850px -1258px;
+    }
 
-.bg-number_one {
-    width: 320px; height: 314px;
-    background: url('../img/icons/css_sprites_x2.webp') -10px -1342px;
-}
+    .bg-all_need_1 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -1078px -788px;
+    }
 
-.bg-number_three {
-    width: 320px; height: 314px;
-    background: url('../img/icons/css_sprites_x2.webp') -350px -1342px;
-}
+    .bg-all_need_2 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -1078px -1128px;
+    }
 
-.bg-number_two {
-    width: 320px; height: 314px;
-    background: url('../img/icons/css_sprites_x2.webp') -690px -1342px;
-}
+    .bg-all_need_3 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -1078px -1468px;
+    }
 
-.bg-tablet {
-    width: 950px; height: 632px;
-    background: url('../img/icons/css_sprites_x2.webp') -10px -10px;
-}
+    .bg-all_need_4 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -10px -1832px;
+    }
 
-.bg-why_eazy_1 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -350px -662px;
-}
+    .bg-all_need_5 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -350px -1832px;
+    }
 
-.bg-why_eazy_2 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -690px -662px;
-}
+    .bg-all_need_6 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -690px -1832px;
+    }
 
-.bg-why_eazy_3 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -1030px -662px;
-}
+    .bg-arrow_left {
+        width: 300px;
+        height: 300px;
+        background: url('../img/icons/css_sprites_x2.webp') -2480px -344px;
+    }
 
-.bg-all_need_1 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -10px -1002px;
-}
+    .bg-base_img {
+        width: 1480px;
+        height: 758px;
+        background: url('../img/icons/css_sprites_x2.webp') -10px -10px;
+    }
 
-.bg-all_need_2 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -350px -1002px;
-}
+    .bg-dgin_img {
+        width: 1048px;
+        height: 1024px;
+        background: url('../img/icons/css_sprites_x2.webp') -10px -788px;
+    }
 
-.bg-all_need_3 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -690px -1002px;
-}
+    .bg-how_cost_img {
+        width: 576px;
+        height: 576px;
+        background: url('../img/icons/css_sprites_x2.webp') -1510px -662px;
+    }
 
-.bg-all_need_4 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -1030px -1002px;
-}
+    .bg-main_block_img_1 {
+        width: 320px;
+        height: 280px;
+        background: url('../img/icons/css_sprites_x2.webp') -2480px -664px;
+    }
 
-.bg-all_need_5 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -1576px -10px;
-}
+    .bg-main_block_img_2 {
+        width: 320px;
+        height: 268px;
+        background: url('../img/icons/css_sprites_x2.webp') -2480px -964px;
+    }
 
-.bg-all_need_6 {
-    width: 320px; height: 320px;
-    background: url('../img/icons/css_sprites_x2.webp') -1576px -350px;
-}
+    .bg-main_block_img_3 {
+        width: 320px;
+        height: 320px;
+        background: url('../img/icons/css_sprites_x2.webp') -1030px -1832px;
+    }
 
-.bg-arrow_left {
-    width: 300px; height: 300px;
-    background: url('../img/icons/css_sprites_x2.webp') -1030px -1342px;
-}
+    .bg-number_four {
+        width: 320px;
+        height: 314px;
+        background: url('../img/icons/css_sprites_x2.webp') -1370px -1832px;
+    }
 
-.bg-how_cost_img {
-    width: 576px; height: 576px;
-    background: url('../img/icons/css_sprites_x2.webp') -980px -10px;
-}
+    .bg-number_one {
+        width: 320px;
+        height: 314px;
+        background: url('../img/icons/css_sprites_x2.webp') -1710px -1832px;
+    }
 
-.bg-main_block_img_1 {
-    width: 320px; height: 280px;
-    background: url('../img/icons/css_sprites_x2.webp') -1576px -1024px;
-}
+    .bg-number_two {
+        width: 320px;
+        height: 314px;
+        background: url('../img/icons/css_sprites_x2.webp') -2050px -1832px;
+    }
 
-	.img {
-		&-tablet,
-		&-main_block_img,
-		&-all_need,
-		&-why_eazy,
-		&-how_cost_img {
-			zoom:50%;
-		}
-		&-arrow,
-		&-number{
-			zoom: calc(64 / 2) * 1%;
-		}
-	}
+    .bg-number_three {
+        width: 320px;
+        height: 314px;
+        background: url('../img/icons/css_sprites_x2.webp') -2480px -10px;
+    }
+
+    .bg-tablet {
+        width: 950px;
+        height: 632px;
+        background: url('../img/icons/css_sprites_x2.webp') -1510px -10px;
+    }
+
+    .img {
+
+        &-tablet,
+        &-main_block_img,
+        &-all_need,
+        &-why_eazy,
+        &-how_cost_img {
+            zoom: 50%;
+        }
+
+        &-arrow,
+        &-number {
+            zoom: calc(64 / 2) * 1%;
+        }
+    }
 }
 
 .img {
-	&-number {
-		@media (min-resolution: 2dppx) and (max-width: $mlg) {
-			zoom: calc(50 / 2) * 1%;
-		}
-	
-		@media (min-resolution: 2dppx) and (max-width: $wsm) {
-			zoom: calc(40 / 2) * 1%;
-		}
-	}
-	&-why_eazy,
-	&-main_block_img,
-	&-all_need{
-		@media (min-resolution: 2dppx) and (max-width: $mlg) {
-			zoom: calc(80 / 2) * 1%;
-		}
-	
-		@media (min-resolution: 2dppx) and (max-width: $wsm) {
-			zoom: calc(60 / 2) * 1%;
-		}
-	}
+    &-number {
+        @media (min-resolution: 2dppx) and (max-width: $mlg) {
+            zoom: calc(50 / 2) * 1%;
+        }
+
+        @media (min-resolution: 2dppx) and (max-width: $wsm) {
+            zoom: calc(40 / 2) * 1%;
+        }
+    }
+
+    &-why_eazy,
+    &-main_block_img,
+    &-all_need {
+        @media (min-resolution: 2dppx) and (max-width: $mlg) {
+            zoom: calc(80 / 2) * 1%;
+        }
+
+        @media (min-resolution: 2dppx) and (max-width: $wsm) {
+            zoom: calc(60 / 2) * 1%;
+        }
+    }
 }
