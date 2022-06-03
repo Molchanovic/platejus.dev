@@ -1778,7 +1778,260 @@ main {
 
 }
 
+// ================================== Статья база знаний
+.base-article {
 
+	&__head {
+		margin-bottom: 40px;
+	}
+
+	&__head-title {
+		margin-bottom: 15px;
+		
+		@media (max-width: $mmd){
+			$fs: 24;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(32 / $fs * 100%);
+		}
+	}
+
+	&__last-edits {
+		$fs: 16;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(24 / $fs * 100%);
+		color: $color-grey;
+		font-weight: 400;
+	}
+
+	&__body {
+		counter-reset: h4title;
+	}
+
+	.basetable-blue {
+		margin: 40px 0px 0px 0px;
+
+		@media (max-width: $mmd){
+			margin-top: 20px;
+		}
+	}
+
+	&__body-title {
+		$fs: 24;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(36 / $fs * 100%);
+		margin-bottom: 25px;
+
+		@media (max-width: $mmd){
+			$fs: 20;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(28 / $fs * 100%);
+		}
+	}
+
+	&__text {
+		$fs: 16;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(24 / $fs * 100%);
+	}
+
+	&__step-block {
+		margin-top: 40px;
+		padding-bottom: 40px;
+		border-bottom: 2px solid $color-border-title;
+
+		@media (max-width: $mmd){
+			padding-bottom: 20px;
+			margin-top: 20px;
+		}
+	}
+
+	.baselist-table {
+		margin: 40px 0px 0px 0px;
+		@media (max-width: $mmd){
+			margin-top: 20px;
+		}
+	}
+
+	.basetable-important {
+		margin-top: 40px;
+
+		@media (max-width: $mmd){
+			margin-top: 20px;
+		}
+	}
+
+	&__step-title {
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+
+		&::before {
+			counter-increment: h4title;
+			content: counter(h4title);
+			min-width: 40px;
+			min-height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			background: $color-blue;
+			color: #fff;
+			$fs: 24;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(36 / $fs * 100%);
+			margin-right: 20px;
+		}
+	}
+
+	&__mark-li {
+		padding-left: 10px;
+		margin-top: 40px;
+
+		li {
+			display: flex;
+			align-items: center;
+			margin-bottom: 15px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				content: '';
+				display: inline-block;
+				border-radius: 50%;
+				min-width: 5px;
+				min-height: 5px;
+				background: $color-text;
+				margin-right: 10px;
+			}
+		}
+
+	}
+
+	&__img {
+		margin-top: 40px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.basetable-blue {
+	border: 1px solid $color-blue;
+	counter-reset: basetable;
+	padding: 40px;
+	color: $color-blue;
+	list-style-position: inside;
+
+	li {
+		$fs: 20;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(32 / $fs * 100%);
+		margin-bottom: 20px;
+		font-weight: 500;
+		list-style-type: none;
+		display: flex;
+
+		&:before {
+			content: counter(basetable) ".";
+			counter-increment: basetable;
+			margin-right: 5px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (max-width: $mmd){
+			$fs: 18;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(24 / $fs * 100%);
+		}
+	}
+
+	@media (max-width: $wsm){
+		padding: 15px;
+	}
+
+}
+
+.baselist-table {
+	border: 1px solid $color-gray-40;
+	counter-reset: baselist;
+	padding: 40px;
+
+	li {
+		margin-bottom: 20px;
+		list-style-type: none;
+		display: flex;
+
+		&:before {
+			content: counter(baselist) ".";
+			counter-increment: baselist;
+			margin-right: 5px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		color: $color-blue;
+		transition: .3s;
+		text-decoration: underline;
+
+		&:hover {
+			color: $color-purple;
+		}
+	}
+
+	@media (max-width: $wsm){
+		padding: 15px;
+	}
+}
+
+.basetable-important {
+	padding: 40px;
+	background: $color-ligth-bg-blue;
+	border: 1px solid $color-gray-40;
+	display: flex;
+	align-items: center;
+
+	&__icon {
+		margin-right: 40px;
+
+		svg {
+			width: 35px;
+			height: 35px;
+			fill: #000;
+		}
+	}
+
+	&__text-content {}
+
+	&__title {
+		$fs: 16;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(24 / $fs * 100%);
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	&__text {}
+
+	@media (max-width: $wsm){
+		padding: 15px;
+		flex-direction: column;
+		text-align: center;
+
+		&__icon {
+			margin-right: 0px;
+			margin-bottom: 20px;
+		}
+	}
+}
 
 // ==================================
 .base-popup {
@@ -1905,7 +2158,7 @@ main {
 		&_disable {
 			opacity: .5;
 			pointer-events: none;
-			
+
 		}
 	}
 

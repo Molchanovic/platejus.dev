@@ -172,12 +172,6 @@ i {
   background: url("../img/icons/css_sprites_x1.webp") -1268px -370px;
 }
 
-.bg-base_img {
-  width: 740px;
-  height: 379px;
-  background: url("../img/icons/css_sprites_x1.webp") -10px -10px;
-}
-
 .bg-dgin_img {
   width: 524px;
   height: 512px;
@@ -2313,6 +2307,217 @@ h3 {
   color: #1220a5;
 }
 
+.base-article__head {
+  margin-bottom: 40px;
+}
+
+.base-article__head-title {
+  margin-bottom: 15px;
+}
+
+.base-article__last-edits {
+  font-size: 1em;
+  line-height: 150%;
+  color: #6E6E6E;
+  font-weight: 400;
+}
+
+.base-article__body {
+  counter-reset: h4title;
+}
+
+.base-article .basetable-blue {
+  margin: 40px 0px 0px 0px;
+}
+
+.base-article__body-title {
+  font-size: 1.5em;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+
+.base-article__text {
+  font-size: 1em;
+  line-height: 150%;
+}
+
+.base-article__step-block {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #E8E8EA;
+}
+
+.base-article .baselist-table {
+  margin: 40px 0px 0px 0px;
+}
+
+.base-article .basetable-important {
+  margin-top: 40px;
+}
+
+.base-article__step-title {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.base-article__step-title::before {
+  counter-increment: h4title;
+  content: counter(h4title);
+  min-width: 40px;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #1220a5;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 150%;
+  margin-right: 20px;
+}
+
+.base-article__mark-li {
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+.base-article__mark-li li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.base-article__mark-li li:last-child {
+  margin-bottom: 0;
+}
+
+.base-article__mark-li li::before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  min-width: 5px;
+  min-height: 5px;
+  background: #202532;
+  margin-right: 10px;
+}
+
+.base-article__img {
+  margin-top: 40px;
+}
+
+.base-article__img img {
+  width: 100%;
+}
+
+.basetable-blue {
+  border: 1px solid #1220a5;
+  counter-reset: basetable;
+  padding: 40px;
+  color: #1220a5;
+  list-style-position: inside;
+}
+
+.basetable-blue li {
+  font-size: 1.25em;
+  line-height: 160%;
+  margin-bottom: 20px;
+  font-weight: 500;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.basetable-blue li:before {
+  content: counter(basetable) ".";
+  counter-increment: basetable;
+  margin-right: 5px;
+}
+
+.basetable-blue li:last-child {
+  margin-bottom: 0;
+}
+
+.baselist-table {
+  border: 1px solid #BEC0C5;
+  counter-reset: baselist;
+  padding: 40px;
+}
+
+.baselist-table li {
+  margin-bottom: 20px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.baselist-table li:before {
+  content: counter(baselist) ".";
+  counter-increment: baselist;
+  margin-right: 5px;
+}
+
+.baselist-table li:last-child {
+  margin-bottom: 0;
+}
+
+.baselist-table a {
+  color: #1220a5;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.baselist-table a:hover {
+  color: #d617cf;
+}
+
+.basetable-important {
+  padding: 40px;
+  background: #EEF3FF;
+  border: 1px solid #BEC0C5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basetable-important__icon {
+  margin-right: 40px;
+}
+
+.basetable-important__icon svg {
+  width: 35px;
+  height: 35px;
+  fill: #000;
+}
+
+.basetable-important__title {
+  font-size: 1em;
+  line-height: 150%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .base-popup {
   padding: 100px;
   border-radius: 0px;
@@ -2537,12 +2742,6 @@ h3 {
     background: url("../img/icons/css_sprites_x2.webp") -2480px -344px;
   }
 
-  .bg-base_img {
-    width: 1480px;
-    height: 758px;
-    background: url("../img/icons/css_sprites_x2.webp") -10px -10px;
-  }
-
   .bg-dgin_img {
     width: 1048px;
     height: 1024px;
@@ -2679,6 +2878,11 @@ h3 {
 }
 
 @media (max-width: 1199px) {
+  .breadcrumbs {
+    font-size: 1.125em;
+    line-height: 133.3333333333%;
+  }
+
   .header__logo {
     width: 120px;
   }
@@ -3255,6 +3459,38 @@ h3 {
     padding: 4px 15px;
   }
 
+  .base-article__head-title {
+    font-size: 1.5em;
+    line-height: 133.3333333333%;
+  }
+
+  .base-article .basetable-blue {
+    margin-top: 20px;
+  }
+
+  .base-article__body-title {
+    font-size: 1.25em;
+    line-height: 140%;
+  }
+
+  .base-article__step-block {
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .base-article .baselist-table {
+    margin-top: 20px;
+  }
+
+  .base-article .basetable-important {
+    margin-top: 20px;
+  }
+
+  .basetable-blue li {
+    font-size: 1.125em;
+    line-height: 133.3333333333%;
+  }
+
   .base-popup {
     padding: 50px;
   }
@@ -3310,6 +3546,15 @@ h3 {
   .img-main_block_img,
   .img-all_need {
     zoom: 60%;
+  }
+
+  .breadcrumbs {
+    font-size: 1em;
+    line-height: 150%;
+  }
+
+  .breadcrumbs__item svg {
+    width: 14px;
   }
 
   .main-block__btn {
@@ -3404,6 +3649,28 @@ h3 {
   .stayed-questions__title {
     font-size: 1.125em;
     line-height: 133.3333333333%;
+  }
+
+  .basetable-blue {
+    padding: 15px;
+  }
+
+  .baselist-table {
+    padding: 15px;
+  }
+
+  .basetable-important {
+    padding: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .basetable-important__icon {
+    margin-right: 0px;
+    margin-bottom: 20px;
   }
 
   .base-popup {

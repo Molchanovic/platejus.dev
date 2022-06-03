@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	@@include('_head.html', {
-		"title":"База знаний",
+		"title":"База знаний статья",
 		"description":"Описание",
 		"img":"img/...png",
 		"custom-css":"one.css",
@@ -32,8 +32,21 @@
                             </svg>
                         </li>
                         <li class="breadcrumbs__item">
-                            <a href="##">База знаний</a>
+                            <a href="/">База знаний</a>
+                            <svg class="icon">
+                                <use xlink:href="img/icons/sprite.svg#arrowblack"></use>
+                            </svg>
                         </li>
+                        <li class="breadcrumbs__item">
+                            <a href="/">Агрегаторы</a>
+                            <svg class="icon">
+                                <use xlink:href="img/icons/sprite.svg#arrowblack"></use>
+                            </svg>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="##">Какие диспетчерские можно подключить к «Платёжусу»</a>
+                        </li>
+                        
                     </ul>
                     <h1 class="baseknow__title">База знаний</h1>
                 </div>
@@ -215,132 +228,71 @@
                         </div>
                     </div>
                     
-                    <div class="baseknow__contennt">
-                        <div class="base-search">
-                            <a href="##">
-                                <svg class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#search"></use>
-                                </svg>
-                            </a>
+                    <article class="base-article baseknow__contennt">
+                        <div class="base-article__head">
+                            <h2 class="base-article__head-title">Какие диспетчерские можно подключить к «Платёжусу»</h2>
+                            <p class="base-article__last-edits">Последние изменения: 11 октября 2018</p>
+                        </div>
+
+                        <div class="base-article__body">
+                            <h3 class="base-article__body-title">Установка драйверов для Вики Принт 57 Ф</h3>
+                            <p class="base-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui, eu, scelerisque eu sed. Lectus est, lobortis malesuada facilisis magna odio. Ut curabitur amet donec in in sed nunc nisl, adipiscing. Tempor, enim pharetra lacus elit eget mi metus.</p>
+
+                            <ol class="basetable-blue">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Dui, eu, scelerisque eu sed.</li>
+                                <li>Lectus est, lobortis malesuada facilisis magna odio.</li>
+                                <li>Ut curabitur amet donec in in sed nunc nisl, adipiscing.</li>
+                            </ol>
+
+                            <div class="base-article__step-block">
+                                <h4 class="base-article__step-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+
+                                <p class="base-article__text">Dui, eu, scelerisque eu sed. Lectus est, lobortis malesuada facilisis magna odio. Ut curabitur amet donec in in sed nunc nisl, adipiscing. Tempor, enim pharetra lacus elit eget mi metus.</p>
+
+                                <ol class="baselist-table">
+                                    <li><p>Откройте окно “Параметры” (Сочетанием клавиш win + i, из меню пуск или через Центр Уведомления), перейдите в раздел “Система”, выберите вкладку “О системе”. Запомните значение указанное в графе “Тип системы”, 32-разрядная или 64-разрядная система у вас установлена. Эта информация понадобится на следующем шаге.</p></li>
+                                    <li><p>Скачайте нужную версию драйверов для Вики Принт. Если у вас 32-разрядная система, то скачайте драйвера по ссылке <a target="_=blank" href="https://goo.gl/MVFLXr">https://goo.gl/MVFLXr</a> , если у вас 64-разрядная система, то скачайте драйвера по ссылке <a href="https://goo.gl/JYO8Iw">https://goo.gl/JYO8Iw</a> </p>.</li>
+                                    <li><p>Запустите скачанный на предыдущем этапе файл. В диалоговом окне “Разрешить этому приложению от неизвестного издателя вносить изменения на вашем устройстве?” нажмите “Да”. В открывшемся мастере установки жмите на кнопки “Next” и “Далее” до тех пор, пока не появится экран с кнопкой “Готово”.</p></li>
+                                    <li><p>Подключите Вики Принт 57Ф к вашему планшету/компьютеру через USB-порт. Убедитесь, что принтер подключен к сети питания и включен (должен гореть синий индикатор на передней панели). Кликните правой кнопкой мыши на значке “Пуск” (в случае отсутствия мышки, нажмите кнопку Windows в левом нижнем углу, на панели планшета и удерживайте пару секунд до появления контекстного меню) . В появившемся выпадающем списке выберите пункт “Диспетчер устройств”. В открывшемся окне найдите пункт “Порты (COM и LPT)” и раскройте его. Если всё прошло удачно, то в раскрывшемся списке вы обнаружите устройство с наименование типа “STMicroelectronics Virtual COM Port (COM4)”. Запомните значение указанное в скобках, например “COM4”, оно нам понадобится при настройке службы обмена с ОФД. Примечание: Если иконка этого устройства в вашем случае имеет желтый значок или такого устройства нет в списке, значит что-то пошло не так и вам стоит обратиться в нашу службу поддержки.</p> </li>
+                                </ol>
+                            </div>
+                           
+
+                            <div class="base-article__step-block">
+                                <h4 class="base-article__step-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+
+                                <p class="base-article__text">Dui, eu, scelerisque eu sed. Lectus est, lobortis malesuada facilisis magna odio. Ut curabitur amet donec in in sed nunc nisl, adipiscing. Tempor, enim pharetra lacus elit eget mi metus.</p>
+                                <p class="base-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui, eu, scelerisque eu sed. Lectus est, lobortis malesuada facilisis magna odio. Ut curabitur amet donec in in sed nunc nisl, adipiscing. Tempor, enim pharetra lacus elit eget mi metus.</p>
+
+                                <ul class="base-article__mark-li">
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                    <li>Dui, eu, scelerisque eu sed. </li>
+                                    <li>Lectus est, lobortis malesuada facilisis magna odio. </li>
+                                    <li>Ut curabitur amet donec in in sed nunc nisl, adipiscing. </li>
+                                    <li>Tempor, enim pharetra lacus elit eget mi metus.</li>
+                                </ul>
+
+                                <div class="base-article__img">
+                                    <img src="img/gallery/home/x1/base-img.png" alt="">
+                                </div>
+                            </div>
                             
-                            <input placeholder="Поиск по статьям базы знаний" type="text" class="base-search__input">
-                        </div>
 
-                        <div class="baseknow__cards">
-                            <div class="card-base">
-                                <div class="card-base__text-block">
-                                    <h3 class="card-base__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    <p class="card-base__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque pellentesque tellus ac, venenatis nunc maecenas. Sit dis.</p>
+                            <div class="basetable-important">
+                                <div class="basetable-important__icon">
+                                    <svg>
+                                        <use xlink:href="img/icons/sprite.svg#important"></use>
+                                    </svg>
                                 </div>
-
-                                <a href="##" class="detailed-link big-opportunities__item-detailed-link">
-									Подробнее
-									<!-- <i class="icon-miniarrow"></i> -->
-									<svg class="icon">
-										<use xlink:href="img/icons/sprite.svg#miniarrow"></use>
-									</svg>
-								</a>
-                            </div>
-
-                            <div class="card-base">
-                                <div class="card-base__text-block">
-                                    <h3 class="card-base__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    <p class="card-base__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque pellentesque tellus ac, venenatis nunc maecenas. Sit dis.</p>
+                                <div class="basetable-important__text-content">
+                                    <h4 class="basetable-important__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    <p class="basetable-important__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui, eu, scelerisque eu sed. Lectus est, lobortis malesuada facilisis magna odio. Ut curabitur amet donec in in sed nunc nisl, adipiscing. Tempor, enim pharetra lacus elit eget mi metus.</p>
                                 </div>
-
-                                <a href="##" class="detailed-link big-opportunities__item-detailed-link">
-									Подробнее
-									<!-- <i class="icon-miniarrow"></i> -->
-									<svg class="icon">
-										<use xlink:href="img/icons/sprite.svg#miniarrow"></use>
-									</svg>
-								</a>
-                            </div>
-
-                            <div class="card-base">
-                                <div class="card-base__text-block">
-                                    <h3 class="card-base__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    <p class="card-base__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque pellentesque tellus ac, venenatis nunc maecenas. Sit dis.</p>
-                                </div>
-
-                                <a href="##" class="detailed-link big-opportunities__item-detailed-link">
-									Подробнее
-									<!-- <i class="icon-miniarrow"></i> -->
-									<svg class="icon">
-										<use xlink:href="img/icons/sprite.svg#miniarrow"></use>
-									</svg>
-								</a>
-                            </div>
-
-                            <div class="card-base">
-                                <div class="card-base__text-block">
-                                    <h3 class="card-base__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    <p class="card-base__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque pellentesque tellus ac, venenatis nunc maecenas. Sit dis.</p>
-                                </div>
-
-                                <a href="##" class="detailed-link big-opportunities__item-detailed-link">
-									Подробнее
-									<!-- <i class="icon-miniarrow"></i> -->
-									<svg class="icon">
-										<use xlink:href="img/icons/sprite.svg#miniarrow"></use>
-									</svg>
-								</a>
-                            </div>
-
-                            <div class="card-base">
-                                <div class="card-base__text-block">
-                                    <h3 class="card-base__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    <p class="card-base__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque pellentesque tellus ac, venenatis nunc maecenas. Sit dis.</p>
-                                </div>
-
-                                <a href="##" class="detailed-link big-opportunities__item-detailed-link">
-									Подробнее
-									<!-- <i class="icon-miniarrow"></i> -->
-									<svg class="icon">
-										<use xlink:href="img/icons/sprite.svg#miniarrow"></use>
-									</svg>
-								</a>
-                            </div>
-
-                            <div class="card-base">
-                                <div class="card-base__text-block">
-                                    <h3 class="card-base__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                                    <p class="card-base__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque pellentesque tellus ac, venenatis nunc maecenas. Sit dis.</p>
-                                </div>
-
-                                <a href="##" class="detailed-link big-opportunities__item-detailed-link">
-									Подробнее
-									<!-- <i class="icon-miniarrow"></i> -->
-									<svg class="icon">
-										<use xlink:href="img/icons/sprite.svg#miniarrow"></use>
-									</svg>
-								</a>
                             </div>
                         </div>
-
-                        <div class="paginations">
-                            <a href="##" class="paginations__arrow-btn paginations-back">
-                                <svg class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#arrowpag"></use>
-                                </svg>
-                            </a>
-                            <ul>
-                                <li><a href="##" class="paginations__link paginations__link_active">1</a></li>
-                                <li><a href="##" class="paginations__link">2</a ></li>
-                                <li><a href="##" class="paginations__link">3</a></li>
-                                <li><a href="##" class="paginations__link">4</a></li>
-                                <li><a href="##" class="paginations__link paginations__link_dots">...</a></li>
-                                <li><a href="##" class="paginations__link">296</a></li>
-                                <li><a href="##" class="paginations__link">297</a></li>
-                            </ul>
-                            
-                            <a href="##" class="paginations__arrow-btn paginations-next">
-                                <svg class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#arrowpag"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                        
+                    </article>
                 </div>
             </div>
         </main>
