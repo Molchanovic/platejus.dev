@@ -2032,9 +2032,9 @@ h3 {
 .baseknow__contennt {
   height: 100%;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 63%;
-          flex: 0 0 63%;
-  max-width: 63%;
+      -ms-flex: 0 0 64%;
+          flex: 0 0 64%;
+  max-width: 64%;
 }
 
 .baseknow__cards {
@@ -2156,7 +2156,7 @@ h3 {
   color: #d617cf;
 }
 
-.baseknow-sitebar__link_active:hover {
+.baseknow-sitebar__link:hover {
   color: #d617cf;
 }
 
@@ -2180,6 +2180,7 @@ h3 {
 .base-search {
   position: relative;
   width: 100%;
+  z-index: 25000;
 }
 
 .base-search__input {
@@ -2211,11 +2212,75 @@ h3 {
   color: #BEC0C5;
 }
 
-.base-search svg {
+.base-search__icon-search {
   position: absolute;
   top: 14px;
   left: 17px;
   fill: #BEC0C5;
+}
+
+.base-search__block-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0.6;
+  z-index: 20000;
+  display: none;
+}
+
+.base-search__block-back_active {
+  display: block;
+}
+
+.base-search__block {
+  background: #fff;
+  padding: 16px;
+  z-index: 2100000;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.base-search__block_active {
+  display: block;
+}
+
+.base-search__li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+}
+
+.base-search__li:last-child {
+  margin-bottom: 0;
+}
+
+.base-search__li svg {
+  fill: #BEC0C5;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  cursor: pointer;
+}
+
+.base-search__li p span {
+  color: #d617cf;
+}
+
+.base-search__close {
+  width: 14px;
+  height: 14px;
+  fill: #BEC0C5;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .card-base {
@@ -2273,11 +2338,11 @@ h3 {
   top: 7px;
 }
 
-.paginations__arrow-btn:hover {
+.paginations__arrow-btn_active {
   background: #1220a5;
 }
 
-.paginations__arrow-btn:hover svg {
+.paginations__arrow-btn_active svg {
   stroke: #fff;
 }
 
@@ -2571,6 +2636,8 @@ h3 {
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
+  height: 100%;
+  overflow: auto;
 }
 
 .base-popup__title {

@@ -178,15 +178,6 @@ if (document.querySelector('.slider-cases__slider-block')) {
 		btn.addEventListener('click', addHover(btn));
 
 	});
-
-	function addHover(myBtn) {
-
-		myBtn.classList.add('slider-arrow_active');
-		setTimeout(function () {
-			myBtn.classList.remove('slider-arrow_active');
-		}, 200);
-	}
-
 }
 
 //! Прелоадер
@@ -214,6 +205,43 @@ if (document.querySelector('.base-popup')) {
 		else {
 			btnSend.classList.add('base-popup__btn_disable');
 		}
+	})
+}
+
+if (document.querySelector('.paginations')) {
+	let pagBtns = document.querySelectorAll('.paginations__arrow-btn');
+	pagBtns.forEach(function (btn) {
+		btn.addEventListener('click', function () {
+			btn.classList.add('paginations__arrow-btn_active');
+			setTimeout(function () {
+				btn.classList.remove('paginations__arrow-btn_active');
+			}, 400);
+		})
+	});
+}
+
+function addHover(myBtn) {
+	myBtn.classList.add('slider-arrow_active');
+	setTimeout(function () {
+		myBtn.classList.remove('slider-arrow_active');
+	}, 200);
+}
+
+if (document.querySelector('.base-search')) {
+	let searchInput = document.querySelector('.base-search__input');
+	let opacityBack = document.querySelector('.base-search__block-back');
+	let searchBlock = document.querySelector('.base-search__block');
+
+	searchInput.addEventListener('click', function () {
+		searchInput.classList.add('base-search__input_active');
+		opacityBack.classList.add('base-search__block-back_active');
+		searchBlock.classList.add('base-search__block_active');
+	})
+
+	opacityBack.addEventListener('click', function () {
+		searchInput.classList.remove('base-search__input_active');
+		opacityBack.classList.remove('base-search__block-back_active');
+		searchBlock.classList.remove('base-search__block_active');
 	})
 }
 
