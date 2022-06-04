@@ -1516,6 +1516,29 @@ main {
 				min-height: unset;
 			}
 
+			&_big {
+				$grid: 100;
+				flex: 0 0 0% + $grid;
+				max-width: 0% + $grid;
+				min-height: 230px;
+				.detailed-link {
+					margin-top: 15px;
+				}
+
+
+			}
+
+			&__date {
+				margin-top: 25px;
+				color: $color-grey;
+
+				@media (max-width: $wsm){
+					$fs: 14;
+					font-size: calc($fs / $f-size) + em;
+					line-height: calc(18 / $fs * 100%);
+				}
+			}
+
 		}
 	}
 }

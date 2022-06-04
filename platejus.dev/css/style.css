@@ -2059,6 +2059,23 @@ h3 {
   min-height: 320px;
 }
 
+.baseknow__cards .card-base_big {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  min-height: 230px;
+}
+
+.baseknow__cards .card-base_big .detailed-link {
+  margin-top: 15px;
+}
+
+.baseknow__cards .card-base__date {
+  margin-top: 25px;
+  color: #6E6E6E;
+}
+
 .baseknow-sitebar {
   background: #F2F2F3;
   padding: 40px 30px;
@@ -3627,6 +3644,11 @@ h3 {
             flex: 0 0 100%;
     max-width: 100%;
     min-height: unset;
+  }
+
+  .baseknow__cards .card-base__date {
+    font-size: 0.875em;
+    line-height: 128.5714285714%;
   }
 
   .baseknow-sitebar {
