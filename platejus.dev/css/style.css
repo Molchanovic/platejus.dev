@@ -355,7 +355,6 @@ body.lock {
   opacity: 0;
   visibility: hidden;
   overflow-y: auto;
-  overflow-y: hidden;
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
@@ -562,7 +561,7 @@ h3 {
 }
 
 .input {
-  padding: 12px 16px;
+  padding: 7px 16px;
   font-size: 1em;
   line-height: 150%;
   background: #F2F2F3;
@@ -2597,12 +2596,13 @@ h3 {
 }
 
 .base-popup {
-  padding: 100px;
+  padding: 30px 100px;
   border-radius: 0px;
   position: relative;
   min-width: 1180px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-height: 714px;
 }
 
 .base-popup__close {
@@ -2640,11 +2640,11 @@ h3 {
   font-size: 1.5em;
   line-height: 150%;
   opacity: 0.8;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .base-popup__input-block {
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 }
 
 .base-popup__input-block:last-child {

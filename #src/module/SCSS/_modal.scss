@@ -13,7 +13,6 @@ body.lock {
 	opacity: 0;
 	visibility: hidden;
 	overflow-y: auto;
-	overflow-y: hidden;
 	transition: all 0.8s ease 0s;
 	&.open {
 		opacity: 1;
@@ -45,6 +44,7 @@ body.lock {
 		opacity: 0;
 		transform: perspective(600px) translate(0, -100%) rotateX(45deg);
 		overflow: auto;
+		
 	}
 
 	&__close {

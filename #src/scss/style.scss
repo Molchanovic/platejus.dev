@@ -2139,11 +2139,12 @@ main {
 
 // ==================================
 .base-popup {
-	padding: 100px;
+	padding: 30px 100px;
 	border-radius: 0px;
 	position: relative;
 	min-width: 1180px;
 	box-sizing: border-box;
+	max-height: 714px;
 
 	@media (max-width: $mxxl) {
 		min-width: 1080px;
@@ -2222,7 +2223,7 @@ main {
 		font-size: calc($fs / $f-size) + em;
 		line-height: calc(36 / $fs * 100%);
 		opacity: 0.8;
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 
 		@media (max-width: $wsm) {
 			$fs: 18;
@@ -2233,7 +2234,7 @@ main {
 	}
 
 	&__input-block {
-		margin-bottom: 25px;
+		margin-bottom: 12px;
 
 		&:last-child {
 			margin-bottom: 0;
