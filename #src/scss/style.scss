@@ -26,7 +26,7 @@
 //@import "../../../_module/SCSS/_navmenu"; //Главное меню  //!Сниппет "!navmenu" html + js
 // @import "../../../_module/SCSS/_tooltip"; //тултипы  //!Сниппет "!tultip" html
 @import "../module/SCSS/_modal"; //Модальное окно  //!Сниппет "!modal" html
-//@import "../../../_module/SCSS/_validador-form"; //Валидатор форм  //!Сниппет "!forma" html
+// @import "../_module/SCSS/_validador-form"; //Валидатор форм  //!Сниппет "!forma" html
 @import "../module/SCSS/_accordion"; //!Сниппет "!accordion" html
 //@import "../../../_module/SCSS/_hidingNumbers"; //Скрытие номера  //!Сниппет "!hidnum" html
 // @import "../../../_module/SCSS/_select"; //select поле выбора  //!Сниппет "!select" html
@@ -230,9 +230,10 @@ main {
 	&__item-img {
 		max-width: 110px;
 
-		img {
-			width: 100%;
-			object-fit: cover;
+		@media (min-resolution: 2dppx) and (min-width: 0) {
+			div {
+				height: 280px;
+			}
 		}
 
 		@media (max-width: $mlg) {
@@ -1815,14 +1816,6 @@ main {
 			top: 7px;
 		}
 
-		// &:hover {
-		// 	background: $color-blue;
-
-		// 	svg {
-		// 		stroke: #fff;
-		// 	}
-		// }
-
 		&_active {
 			background: $color-blue;
 
@@ -1831,15 +1824,15 @@ main {
 			}
 		}
 
-		// @media (max-width: $mlg) {
-		// 	&:hover {
-		// 		background: transparent;
-
-		// 		svg {
-		// 			stroke: $color-tunbs;
-		// 		}
-		// 	}
-		// }
+		@media (min-width: $mlg){
+			&:hover {
+				background: $color-blue;
+	
+				svg {
+					stroke: #fff;
+				}
+			}
+		}
 	}
 
 	.paginations-back {
@@ -2257,8 +2250,27 @@ main {
 
 	&__input {}
 
-	&__textarea {
+	&__textarea-block {
 		height: 165px;
+		position: relative;
+
+		span {
+			$fs: 12;
+			font-size: calc($fs / $f-size) + em;
+			line-height: calc(16 / $fs * 100%);
+			margin: 0px 0px 0px 0px;
+			color: $color-gray-40;
+			font-weight: 500;
+			letter-spacing: 0.2px;
+			position: absolute;
+			bottom: 8px;
+			right: 16px;
+		}
+	}
+
+	&__textarea {
+		width: 100%;
+		height: 100%;
 		resize: none;
 	}
 
@@ -2347,6 +2359,10 @@ main {
 
 
 	}
+}
+
+.input-filled {
+	border: 1px solid $color-purple;
 }
 // =============================
 

@@ -208,6 +208,7 @@ if (document.querySelector('.base-popup')) {
 	})
 }
 
+//! Пагинация 
 if (document.querySelector('.paginations')) {
 	let pagBtns = document.querySelectorAll('.paginations__arrow-btn');
 	pagBtns.forEach(function (btn) {
@@ -227,6 +228,7 @@ function addHover(myBtn) {
 	}, 200);
 }
 
+//! Поиск
 if (document.querySelector('.base-search')) {
 	let searchInput = document.querySelector('.base-search__input');
 	let opacityBack = document.querySelector('.base-search__block-back');
@@ -244,6 +246,47 @@ if (document.querySelector('.base-search')) {
 		searchBlock.classList.remove('base-search__block_active');
 	})
 }
+
+//! Кол-во букв в textarea
+if (document.querySelector('.textarea-block')) {
+	let textareaBlock = document.querySelectorAll('.textarea-block');
+	textareaBlock.forEach(function (input) {
+		let spanBlock = input.querySelector('span');
+		input.querySelector('textarea').addEventListener('input', function (event) {
+			console.log(`${event.target.value.length}/${+(event.target.getAttribute('data-max'))}`);
+			spanBlock.innerHTML = `${event.target.value.length}/${+(event.target.getAttribute('data-max'))}`
+		});
+	})
+}
+
+if (document.querySelector('form')) {
+	let formsValidate = document.querySelectorAll('form');
+
+	formsValidate.forEach(function (item) {
+		item.querySelectorAll('.input').forEach(function (input) {
+			input.addEventListener('focusout', function () {
+				if (input.value.length == 0) {
+					input.classList.add('input-filled');
+				}
+				else {
+					input.classList.remove('input-filled');
+				}
+			})
+
+			// input.addEventListener('input', function () {
+
+			// })
+
+			// item.querySelector('button').addEventListener('click', function () {
+			// 	if (input.value.length == 0) {
+			// 		input.classList.add('input-filled');
+			// 	}
+			// })
+		})
+	})
+}
+
+
 
 
 

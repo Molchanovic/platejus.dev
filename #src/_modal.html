@@ -11,7 +11,7 @@
 					<h2 class="base-popup__title">Пришлите вопрос или <br> пожелания по работе сервиса </h2>
 					<div class="base-popup__input-block">
 						<span>Как вас зовут*</span>
-						<input placeholder="Имя Фамилия" name="name" type="text" class="base-popup__input input">
+						<input placeholder="Имя Фамилия" name="name" type="text" class="form-username base-popup__input input">
 					</div>
 
 					<div class="base-popup__input-block">
@@ -26,7 +26,11 @@
 
 					<div class="base-popup__input-block">
 						<span>Комментарий* </span>
-						<textarea placeholder="Ваше сообщение" name="youmessage" type="text" class="base-popup__textarea input"></textarea>
+						<div class="base-popup__textarea-block textarea-block">
+							<textarea placeholder="Ваше сообщение" name="youmessage" data-max="500" class="base-popup__textarea input"></textarea>
+							<span>0/500</span>
+						</div>
+						
 					</div>
 
 					<button class="base-popup__btn base-popup__btn_disable btn">Отправить</button>
@@ -42,8 +46,6 @@
 					<div class="bg-dgin_img"></div>
 				</div>
 			</div>
-
-			
 		</div>
 	</div>
 </div>
