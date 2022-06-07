@@ -2145,7 +2145,6 @@ main {
 	min-width: 1180px;
 	box-sizing: border-box;
 
-
 	@media (max-width: $mxxl) {
 		min-width: 1080px;
 	}
@@ -2155,7 +2154,8 @@ main {
 	}
 
 	@media (max-width: $mlg) {
-		min-width: 90%
+		min-width: 90%;
+		height: 850px;
 	}
 
 	@media (max-width: $mmd) {
@@ -2248,7 +2248,9 @@ main {
 		}
 	}
 
-	&__input {}
+	&__input {
+
+	}
 
 	&__textarea-block {
 		height: 165px;
@@ -2284,7 +2286,6 @@ main {
 		&_disable {
 			opacity: .5;
 			pointer-events: none;
-
 		}
 	}
 
@@ -2296,10 +2297,19 @@ main {
 		align-items: center;
 
 		div {
-			zoom: 50%;
+
+			
 
 			@media (max-width: $mxl) {
-				zoom: 35%;
+				zoom: 65%;
+			}
+
+			@media (min-resolution: 2dppx) and (min-width: 0) {
+				zoom: 50%;
+
+				@media (max-width: $mxl) {
+					zoom: 32%;
+				}
 			}
 		}
 
