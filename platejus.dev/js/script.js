@@ -234,16 +234,21 @@ if (document.querySelector('.base-search')) {
 	let opacityBack = document.querySelector('.base-search__block-back');
 	let searchBlock = document.querySelector('.base-search__block');
 
+
 	searchInput.addEventListener('click', function () {
 		searchInput.classList.add('base-search__input_active');
 		opacityBack.classList.add('base-search__block-back_active');
 		searchBlock.classList.add('base-search__block_active');
+		document.querySelector('html').classList.add('hidden');
+		(document.querySelector('.base-search')).classList.add('base-search_active')
 	})
 
 	opacityBack.addEventListener('click', function () {
 		searchInput.classList.remove('base-search__input_active');
 		opacityBack.classList.remove('base-search__block-back_active');
 		searchBlock.classList.remove('base-search__block_active');
+		document.querySelector('html').classList.remove('hidden');
+		(document.querySelector('.base-search')).classList.remove('base-search_active')
 	})
 }
 
@@ -425,21 +430,35 @@ document.addEventListener('keydown', function (e){
 //@//@include('../../../_module/JS/_tooltip.js', {}) //Тултип  //!Сниппет "!tooltip" html
 //@//@include('../../../_module/JS/_validator-form.js', {}) //Валидатор форм  //!Сниппет "!forma" html
 if (document.getElementsByClassName("accordion")) {
-	let acc = document.getElementsByClassName("accordion");
-	let i;
+	let acc = document.querySelectorAll(".accordion");
 
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function () {
-			this.classList.toggle("accordion_active");
-			let panel = this.nextElementSibling;
+	acc.forEach(function (item) {
+		let arrowAcc = item.querySelector('.baseknow-sitebar__item-triangle');
+		arrowAcc.addEventListener('click', function () {
+			item.classList.toggle("accordion_active");
+			let panel = item.nextElementSibling;
+
 			if (panel.style.maxHeight) {
 				panel.style.maxHeight = null;
 			} else {
 				panel.style.maxHeight = panel.scrollHeight + "px";
 			}
 		});
-	}
+	})
 }
+
+// 	for (i = 0; i < acc.length; i++) {
+// 		acc[i].addEventListener("click", function () {
+// 			this.classList.toggle("accordion_active");
+// 			let panel = document.getElementsByClassName("panel");
+// 			if (panel.style.maxHeight) {
+// 				panel.style.maxHeight = null;
+// 			} else {
+// 				panel.style.maxHeight = panel.scrollHeight + "px";
+// 			}
+// 		});
+// 	}
+// }
  //Валидатор форм  //!Сниппет "!accordion" html
 
 if (document.querySelector('.tel')) {

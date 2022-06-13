@@ -1,16 +1,30 @@
 if (document.getElementsByClassName("accordion")) {
-	let acc = document.getElementsByClassName("accordion");
-	let i;
+	let acc = document.querySelectorAll(".accordion");
 
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function () {
-			this.classList.toggle("accordion_active");
-			let panel = this.nextElementSibling;
+	acc.forEach(function (item) {
+		let arrowAcc = item.querySelector('.baseknow-sitebar__item-triangle');
+		arrowAcc.addEventListener('click', function () {
+			item.classList.toggle("accordion_active");
+			let panel = item.nextElementSibling;
+
 			if (panel.style.maxHeight) {
 				panel.style.maxHeight = null;
 			} else {
 				panel.style.maxHeight = panel.scrollHeight + "px";
 			}
 		});
-	}
+	})
 }
+
+// 	for (i = 0; i < acc.length; i++) {
+// 		acc[i].addEventListener("click", function () {
+// 			this.classList.toggle("accordion_active");
+// 			let panel = document.getElementsByClassName("panel");
+// 			if (panel.style.maxHeight) {
+// 				panel.style.maxHeight = null;
+// 			} else {
+// 				panel.style.maxHeight = panel.scrollHeight + "px";
+// 			}
+// 		});
+// 	}
+// }

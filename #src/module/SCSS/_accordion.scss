@@ -8,23 +8,6 @@
 	line-height: calc(24 / $fs * 100%);
 	font-weight: 600;
 	color: $color-blue;
-
-	&:after {
-		content: "";
-		width: 0;
-		height: 0;
-		border-left: 6px solid transparent;
-		border-right: 6px solid transparent;
-		border-top: 10px solid $color-blue;
-		transition: .3s;
-	}
-
-	&_active:after {
-		border-left: 6px solid transparent;
-		border-right: 6px solid transparent;
-		border-bottom: 10px solid $color-blue;
-		border-top: none;
-	}
 }
 
 .panel {

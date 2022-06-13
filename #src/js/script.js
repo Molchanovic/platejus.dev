@@ -234,16 +234,21 @@ if (document.querySelector('.base-search')) {
 	let opacityBack = document.querySelector('.base-search__block-back');
 	let searchBlock = document.querySelector('.base-search__block');
 
+
 	searchInput.addEventListener('click', function () {
 		searchInput.classList.add('base-search__input_active');
 		opacityBack.classList.add('base-search__block-back_active');
 		searchBlock.classList.add('base-search__block_active');
+		document.querySelector('html').classList.add('hidden');
+		(document.querySelector('.base-search')).classList.add('base-search_active')
 	})
 
 	opacityBack.addEventListener('click', function () {
 		searchInput.classList.remove('base-search__input_active');
 		opacityBack.classList.remove('base-search__block-back_active');
 		searchBlock.classList.remove('base-search__block_active');
+		document.querySelector('html').classList.remove('hidden');
+		(document.querySelector('.base-search')).classList.remove('base-search_active')
 	})
 }
 

@@ -1619,6 +1619,8 @@ main {
 		align-items: center;
 		background: $color-grey-five;
 		padding: 10px 10px 10px 10px;
+		text-align: left;
+		padding-right: 35px;
 
 		p {
 			text-align: left;
@@ -1640,9 +1642,35 @@ main {
 		}
 	}
 
+	&__item-triangle {
+		position: absolute;
+		right: 10px;
+		top: 42%;
+
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 10px solid $color-blue;
+		transition: .3s;
+
+
+
+	}
+
+	.accordion_active {
+		.baseknow-sitebar__item-triangle {
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-bottom: 10px solid $color-blue;
+				border-top: none;
+		}
+	}
+
 	&__link {
 		&_active {
 			color: $color-purple;
+			pointer-events: none;
 		}
 
 		&:hover {
@@ -1684,7 +1712,11 @@ main {
 .base-search {
 	position: relative;
 	width: 100%;
-	z-index: 25000;
+	
+
+	&_active {
+		z-index: 20000;
+	}
 
 	&__input {
 		width: 100%;
@@ -1695,6 +1727,10 @@ main {
 
 		&::placeholder {
 			color: $color-gray-40;
+		}
+
+		&_active {
+			z-index: 18000;
 		}
 
 	}
@@ -1714,7 +1750,7 @@ main {
 		bottom: 0;
 		background: rgba(0, 0, 0, 0.85);
 		opacity: 0.6;
-		z-index: 20000;
+		z-index: 16000;
 		display: none;
 
 		&_active {
@@ -1725,7 +1761,7 @@ main {
 	&__block {
 		background: #fff;
 		padding: 16px;
-		z-index: 2100000;
+		z-index: 16100;
 		position: absolute;
 		top: 50px;
 		left: 0;
@@ -1770,7 +1806,7 @@ main {
 		top: 15px;
 		right: 20px;
 		cursor: pointer;
-		
+
 	}
 }
 
@@ -1824,10 +1860,10 @@ main {
 			}
 		}
 
-		@media (min-width: $mlg){
+		@media (min-width: $mlg) {
 			&:hover {
 				background: $color-blue;
-	
+
 				svg {
 					stroke: #fff;
 				}
@@ -2249,9 +2285,7 @@ main {
 		}
 	}
 
-	&__input {
-
-	}
+	&__input {}
 
 	&__textarea-block {
 		height: 165px;
@@ -2299,7 +2333,7 @@ main {
 
 		div {
 
-			
+
 
 			@media (max-width: $mxl) {
 				zoom: 65%;
@@ -2375,6 +2409,7 @@ main {
 .input-filled {
 	border: 1px solid $color-purple;
 }
+
 // =============================
 
 #checkbox-base:checked+label span {
@@ -2406,7 +2441,6 @@ main {
 .loaded .preloader {
 	display: none;
 }
-
 
 
 

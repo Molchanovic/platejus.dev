@@ -423,25 +423,6 @@ body.lock {
   color: #1220a5;
 }
 
-.accordion:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 10px solid #1220a5;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.accordion_active:after {
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 10px solid #1220a5;
-  border-top: none;
-}
-
 .panel {
   max-height: 0;
   overflow: hidden;
@@ -463,6 +444,10 @@ body.lock {
 
 .body_hidden {
   overflow-y: hidden;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -837,7 +822,7 @@ h3 {
 .header {
   padding: 5px 0px;
   background: #fff;
-  z-index: 2000;
+  z-index: 15000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -2133,6 +2118,8 @@ h3 {
           align-items: center;
   background: #EAEAEB;
   padding: 10px 10px 10px 10px;
+  text-align: left;
+  padding-right: 35px;
 }
 
 .baseknow-sitebar__item p {
@@ -2147,8 +2134,30 @@ h3 {
   letter-spacing: 0.02em;
 }
 
+.baseknow-sitebar__item-triangle {
+  position: absolute;
+  right: 10px;
+  top: 42%;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #1220a5;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.baseknow-sitebar .accordion_active .baseknow-sitebar__item-triangle {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 10px solid #1220a5;
+  border-top: none;
+}
+
 .baseknow-sitebar__link_active {
   color: #d617cf;
+  pointer-events: none;
 }
 
 .baseknow-sitebar__link:hover {
@@ -2175,7 +2184,10 @@ h3 {
 .base-search {
   position: relative;
   width: 100%;
-  z-index: 25000;
+}
+
+.base-search_active {
+  z-index: 20000;
 }
 
 .base-search__input {
@@ -2207,6 +2219,10 @@ h3 {
   color: #BEC0C5;
 }
 
+.base-search__input_active {
+  z-index: 18000;
+}
+
 .base-search__icon-search {
   position: absolute;
   top: 14px;
@@ -2222,7 +2238,7 @@ h3 {
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
   opacity: 0.6;
-  z-index: 20000;
+  z-index: 16000;
   display: none;
 }
 
@@ -2233,7 +2249,7 @@ h3 {
 .base-search__block {
   background: #fff;
   padding: 16px;
-  z-index: 2100000;
+  z-index: 16100;
   position: absolute;
   top: 50px;
   left: 0;
