@@ -554,6 +554,7 @@ h3 {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Inter, normal;
 }
 
 .input::-webkit-input-placeholder {
@@ -621,7 +622,7 @@ h3 {
 }
 
 .detailed-link:hover .icon {
-  stroke: #ea5688;
+  stroke: #d617cf;
   -webkit-transform: translate(10px, 0px);
       -ms-transform: translate(10px, 0px);
           transform: translate(10px, 0px);
@@ -2117,9 +2118,10 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   background: #EAEAEB;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 35px 10px 10px;
   text-align: left;
-  padding-right: 35px;
+  padding: 10px 35px 12px 10px;
+  margin-bottom: -2px;
 }
 
 .baseknow-sitebar__item p {
@@ -2689,12 +2691,15 @@ h3 {
   position: absolute;
   bottom: 8px;
   right: 16px;
+  z-index: 1;
+  background-color: #F2F2F3;
 }
 
 .base-popup__textarea {
   width: 100%;
   height: 100%;
   resize: none;
+  padding-bottom: 25px;
 }
 
 .base-popup__btn {

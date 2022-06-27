@@ -149,6 +149,7 @@ h3 {
 	border: 1px solid $color-gray-40;
 	width: 100%;
 	box-sizing: border-box;
+	font-family: $font;
 
 	&::placeholder {
 		color: $color-gray-40;
@@ -196,7 +197,7 @@ h3 {
 		color: $color-purple;
 
 		.icon {
-			stroke: $color-pink;
+			stroke: $color-purple;
 			transform: translate(10px, 0px);
 
 		}

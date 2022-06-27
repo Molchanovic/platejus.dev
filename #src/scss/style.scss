@@ -1618,9 +1618,11 @@ main {
 		display: flex;
 		align-items: center;
 		background: $color-grey-five;
-		padding: 10px 10px 10px 10px;
+		padding: 10px 35px 10px 10px;
 		text-align: left;
-		padding-right: 35px;
+		//fix для долбанного Safari
+		padding: 10px 35px 12px 10px;
+		margin-bottom: -2px;
 
 		p {
 			text-align: left;
@@ -2302,6 +2304,8 @@ main {
 			position: absolute;
 			bottom: 8px;
 			right: 16px;
+			z-index: 1;
+			background-color: $color-bg-grey;
 		}
 	}
 
@@ -2309,6 +2313,8 @@ main {
 		width: 100%;
 		height: 100%;
 		resize: none;
+		
+		padding-bottom: 25px;
 	}
 
 	&__btn {

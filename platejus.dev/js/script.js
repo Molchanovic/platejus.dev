@@ -194,19 +194,19 @@ if (document.querySelector('.preloader')) {
 }
 
 //! Проверка чекеда у кнопки
-if (document.querySelector('.base-popup')) {
-	let btnSend = document.querySelector('.base-popup__btn');
-	let inputPopup = document.querySelector('#checkbox-base');
+// if (document.querySelector('.base-popup')) {
+// 	let btnSend = document.querySelector('.base-popup__btn');
+// 	let inputPopup = document.querySelector('#checkbox-base');
 
-	inputPopup.addEventListener('click', function () {
-		if (inputPopup.checked) {
-			btnSend.classList.remove('base-popup__btn_disable');
-		}
-		else {
-			btnSend.classList.add('base-popup__btn_disable');
-		}
-	})
-}
+// 	inputPopup.addEventListener('click', function () {
+// 		if (inputPopup.checked) {
+// 			btnSend.classList.remove('base-popup__btn_disable');
+// 		}
+// 		else {
+// 			btnSend.classList.add('base-popup__btn_disable');
+// 		}
+// 	})
+// }
 
 //! Пагинация 
 if (document.querySelector('.paginations')) {
@@ -266,6 +266,8 @@ if (document.querySelector('.textarea-block')) {
 
 if (document.querySelector('form')) {
 	let formsValidate = document.querySelectorAll('form');
+	let btnSend = document.querySelector('.base-popup__btn');
+	let inputPopup = document.querySelector('#checkbox-base');
 
 	formsValidate.forEach(function (item) {
 		item.querySelectorAll('.input').forEach(function (input) {
@@ -277,6 +279,18 @@ if (document.querySelector('form')) {
 					input.classList.remove('input-filled');
 				}
 			})
+
+			input.addEventListener('input', inputFull)
+
+			function inputFull () {
+				if ((!input.value == "")) {
+					// btnSend.classList.aremove('base-popup__btn_disable');
+					console.log(123124127451278457)
+				}
+			}
+
+			
+			
 
 			// input.addEventListener('input', function () {
 
