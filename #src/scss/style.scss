@@ -1613,33 +1613,49 @@ main {
 
 	}
 
+	&__block-active {
+		display: flex;
+		align-items: center;
+	}
+
+	&__span-num {
+		margin: 0px 8px 0px auto;
+		$fs: 12;
+		font-size: calc($fs / $f-size) + em;
+		line-height: calc(16 / $fs * 100%);
+		letter-spacing: 0.02em;
+		transition: .3s;
+	}
+
 	&__item {
 		width: 100%;
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		background: $color-grey-five;
 		padding: 10px 35px 10px 10px;
 		text-align: left;
 		//fix для долбанного Safari
-		padding: 10px 35px 12px 10px;
+		padding: 10px 25px 12px 10px;
 		margin-bottom: -2px;
 		cursor: unset;
 
-		a:hover {
+		&:hover {
+			cursor: pointer;
 			color: $color-purple;
+
+			.baseknow-sitebar__item-triangle {
+				border-top: 10px solid $color-purple;
+			}
+
+			.baseknow-sitebar__span-num {
+				color: $color-purple;
+			}
 		}
 
 		p {
 			text-align: left;
 			margin-right: 5px;
-		}
-
-		span {
-			margin: 0px 8px 0px auto;
-			$fs: 12;
-			font-size: calc($fs / $f-size) + em;
-			line-height: calc(16 / $fs * 100%);
-			letter-spacing: 0.02em;
 		}
 
 		@media (max-width: $mxl) {
@@ -1656,31 +1672,30 @@ main {
 
 		width: 0;
 		height: 0;
+		display: flex;
 		border-left: 6px solid transparent;
 		border-right: 6px solid transparent;
 		border-top: 10px solid $color-blue;
 		transition: .3s;
 		cursor: pointer;
+
 		&:hover {
 			border-top: 10px solid $color-purple;
 		}
-
-
-
 	}
 
-	&__triangle-btn{
+	&__triangle-btn {
 		display: flex;
-    justify-content: flex-end;
-    width: 100%;
+		justify-content: flex-end;
+		width: 100%;
 	}
 
 	.accordion_active {
 		.baseknow-sitebar__item-triangle {
-				border-left: 6px solid transparent;
-				border-right: 6px solid transparent;
-				border-bottom: 10px solid $color-blue;
-				border-top: none;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-bottom: 10px solid $color-blue;
+			border-top: none;
 		}
 	}
 
@@ -1729,7 +1744,7 @@ main {
 .base-search {
 	position: relative;
 	width: 100%;
-	
+
 
 	&_active {
 		z-index: 20000;
@@ -2328,7 +2343,7 @@ main {
 		width: 100%;
 		height: 100%;
 		resize: none;
-		
+
 		padding-bottom: 25px;
 	}
 
@@ -2438,7 +2453,7 @@ main {
 	min-width: 16px;
 	height: 16px;
 	border: none;
-	box-shadow:inset 0 0 0 8px $color-blue;
+	box-shadow: inset 0 0 0 8px $color-blue;
 }
 
 #checkbox-base:checked+label span::before {

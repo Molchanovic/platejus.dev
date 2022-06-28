@@ -264,55 +264,42 @@ if (document.querySelector('.textarea-block')) {
 	})
 }
 
-if (document.querySelector('form')) {
-	let formsValidate = document.querySelectorAll('form');
+if (document.querySelector('.base-popup')) {
+	let formsValidate = document.querySelectorAll('.base-popup__form .input');
 	let btnSend = document.querySelector('.base-popup__btn');
 	let inputPopup = document.querySelector('#checkbox-base');
+	let arrInput = [];
+
+	console.log(inputPopup)
+
+	function inputFull () {
+		if (arrInput.length == 4 && inputPopup.checked) {
+			btnSend.classList.remove('base-popup__btn_disable');
+		}
+		else {
+			btnSend.classList.add('base-popup__btn_disable');
+		}
+	}
+
+	inputPopup.addEventListener('click', inputFull);
 
 	formsValidate.forEach(function (item) {
-		item.querySelectorAll('.input').forEach(function (input) {
-			input.addEventListener('focusout', function () {
-				if (input.value.length == 0) {
-					input.classList.add('input-filled');
+		item.addEventListener('input', function () {
+			formsValidate.forEach(function (input) {
+				if (!input.value == "") {
+					input.classList.add('input-full');
 				}
+
 				else {
-					input.classList.remove('input-filled');
+					input.classList.remove('input-full');
 				}
 			})
-
-			input.addEventListener('input', inputFull)
-
-			function inputFull () {
-				if ((!input.value == "")) {
-					// btnSend.classList.aremove('base-popup__btn_disable');
-					console.log(123124127451278457)
-				}
-			}
-
-			
-			
-
-			// input.addEventListener('input', function () {
-
-			// })
-
-			// item.querySelector('button').addEventListener('click', function () {
-			// 	if (input.value.length == 0) {
-			// 		input.classList.add('input-filled');
-			// 	}
-			// })
+			arrInput = document.querySelectorAll('.input-full');
+			inputFull ();
 		})
 	})
+	
 }
-
-
-
-
-
-
-
-
-
 
 //===Модули===============================
 @@include('../module/JS/_modal.js', {}) //Модальное окно  //!Сниппет "!modal" html

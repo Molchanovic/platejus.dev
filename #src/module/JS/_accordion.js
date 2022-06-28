@@ -2,7 +2,7 @@ if (document.getElementsByClassName("accordion")) {
 	let acc = document.querySelectorAll(".accordion");
 
 	acc.forEach(function (item) {
-		let arrowAcc = item.querySelector('.baseknow-sitebar__item-triangle');
+		let arrowAcc = item.querySelector('.aseknow-sitebar__block-active');
 		arrowAcc.addEventListener('click', function () {
 			item.classList.toggle("accordion_active");
 			let panel = item.nextElementSibling;
