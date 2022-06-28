@@ -2122,6 +2122,11 @@ h3 {
   text-align: left;
   padding: 10px 35px 12px 10px;
   margin-bottom: -2px;
+  cursor: unset;
+}
+
+.baseknow-sitebar__item a:hover {
+  color: #d617cf;
 }
 
 .baseknow-sitebar__item p {
@@ -2148,6 +2153,21 @@ h3 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.baseknow-sitebar__item-triangle:hover {
+  border-top: 10px solid #d617cf;
+}
+
+.baseknow-sitebar__triangle-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
 }
 
 .baseknow-sitebar .accordion_active .baseknow-sitebar__item-triangle {
@@ -2736,9 +2756,10 @@ h3 {
 .base-popup__checkbox label span {
   cursor: pointer;
   display: inline-block;
-  min-width: 14px;
-  height: 14px;
-  border: 1px solid #BEC0C5;
+  width: 16px;
+  height: 16px;
+  -webkit-box-shadow: inset 0 0 0 1px #BEC0C5;
+          box-shadow: inset 0 0 0 1px #BEC0C5;
   margin-right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2781,8 +2802,9 @@ h3 {
 #checkbox-base:checked + label span {
   min-width: 16px;
   height: 16px;
-  background: #1220a5;
   border: none;
+  -webkit-box-shadow: inset 0 0 0 8px #1220a5;
+          box-shadow: inset 0 0 0 8px #1220a5;
 }
 
 #checkbox-base:checked + label span::before {
