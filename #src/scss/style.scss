@@ -3,8 +3,7 @@
 	@font-face {
 		font-family: $font_name;
 		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff") format("woff"),
-		url("../fonts/#{$file_name}.woff2") format("woff2");
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
 		font-weight: #{$weight};
 		font-style: #{$style};
 	}
@@ -47,11 +46,11 @@ main {
 	@media (min-width: $md) {
 		margin-top: 100px;
 	}
-
 }
 
 .main-block {
-	&__title {}
+	&__title {
+	}
 
 	&__block-baner {
 		margin-top: 60px;
@@ -73,7 +72,7 @@ main {
 		}
 
 		&:before {
-			content: '';
+			content: "";
 			z-index: -1;
 			position: absolute;
 			display: block;
@@ -117,11 +116,9 @@ main {
 				fill: transparent;
 				position: relative;
 				top: -10px;
-
 			}
 
 			&-stars-min {
-
 				&-1,
 				&-2 {
 					position: absolute;
@@ -169,7 +166,8 @@ main {
 		}
 	}
 
-	&__text {}
+	&__text {
+	}
 
 	&__btn {
 		padding: 16px 60px;
@@ -268,7 +266,6 @@ main {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-top: 55px;
-
 	}
 
 	&__item {
@@ -322,7 +319,6 @@ main {
 			$fs: 17;
 			font-size: calc($fs / $f-size) + em;
 			line-height: calc(25 / $fs * 100%);
-
 		}
 
 		@media (max-width: $mmd) {
@@ -332,7 +328,8 @@ main {
 		}
 	}
 
-	&__item-text {}
+	&__item-text {
+	}
 
 	&__item-date {
 		color: $color-gray-40;
@@ -345,9 +342,11 @@ main {
 
 // ==================================
 .save-calmly {
-	&__title {}
+	&__title {
+	}
 
-	&__subtitle-text {}
+	&__subtitle-text {
+	}
 
 	&__row {
 		display: flex;
@@ -356,9 +355,7 @@ main {
 		flex-wrap: wrap;
 
 		@media (max-width: $mmd) {
-
 			justify-content: center;
-
 		}
 	}
 
@@ -396,37 +393,31 @@ main {
 			//background: red;
 			mix-blend-mode: normal;
 			opacity: 0.4;
-			transform: matrix(1.1, -1.43, .34, .71, 0, 0);
+			transform: matrix(1.1, -1.43, 0.34, 0.71, 0, 0);
 			position: absolute;
 			top: 12%;
 			left: -4px;
 			z-index: -1;
 
 			@media (max-width: $mxl) {
-				transform: matrix(1.1, -1.43, .34, .71, 0, 0);
+				transform: matrix(1.1, -1.43, 0.34, 0.71, 0, 0);
 			}
 
 			@media (max-width: $mlg) {
-				transform: matrix(1.1, -1.78, .34, .71, 0, 0);
+				transform: matrix(1.1, -1.78, 0.34, 0.71, 0, 0);
 				left: -31px;
 			}
 
 			@media (max-width: $mmd) {
-				transform: matrix(1.1, -1.47, .34, .71, 0, 0);
+				transform: matrix(1.1, -1.47, 0.34, 0.71, 0, 0);
 				left: -6px;
 			}
 
 			@media (max-width: $msm) {
-				transform: matrix(1.1, -2.02, .34, .71, 0, 0);
+				transform: matrix(1.1, -2.02, 0.34, 0.71, 0, 0);
 				left: -62px;
 			}
 		}
-
-
-
-
-
-
 
 		@media (max-width: $mxl) {
 			$grid: 48;
@@ -447,7 +438,6 @@ main {
 			$grid: 100;
 			flex: 0 0 0% + $grid;
 			min-height: 443px;
-
 		}
 
 		@media (max-width: $msm) {
@@ -456,7 +446,6 @@ main {
 			min-height: 488px;
 		}
 	}
-
 
 	// &__img{
 	// 	position: absolute;
@@ -473,7 +462,8 @@ main {
 		margin-bottom: 15px;
 	}
 
-	&__item-text {}
+	&__item-text {
+	}
 
 	&__dop-text {
 		margin-top: 35px;
@@ -489,10 +479,11 @@ main {
 	background: $color-bg-grey;
 	padding: 50px 0px;
 
+	&__title {
+	}
 
-	&__title {}
-
-	&__subtitle-text {}
+	&__subtitle-text {
+	}
 
 	&__row {
 		display: flex;
@@ -542,7 +533,8 @@ main {
 		margin-bottom: 10px;
 	}
 
-	&__item-text {}
+	&__item-text {
+	}
 
 	&__btn {
 		padding: 16px 60px;
@@ -570,8 +562,6 @@ main {
 	@media (max-width: $mmd) {
 		padding: 30px 15px 30px 15px;
 	}
-
-
 
 	&__row {
 		display: flex;
@@ -660,9 +650,11 @@ main {
 
 // ==================================
 .how-work {
-	&__title {}
+	&__title {
+	}
 
-	&__subtitle-text {}
+	&__subtitle-text {
+	}
 
 	&__row {
 		display: flex;
@@ -770,9 +762,11 @@ main {
 
 // ==================================
 .big-opportunities {
-	&__title {}
+	&__title {
+	}
 
-	&__subtitle-text {}
+	&__subtitle-text {
+	}
 
 	&__row {
 		display: flex;
@@ -795,7 +789,8 @@ main {
 		}
 	}
 
-	&__item-wrapper {}
+	&__item-wrapper {
+	}
 
 	&__item {
 		$grid: 31.5;
@@ -829,9 +824,11 @@ main {
 		margin-bottom: 10px;
 	}
 
-	&__item-detailed-link {}
+	&__item-detailed-link {
+	}
 
-	&__item-text {}
+	&__item-text {
+	}
 
 	&__text {
 		margin-top: 30px;
@@ -843,7 +840,8 @@ main {
 	background: $color-bg-grey;
 	padding: 60px 0;
 
-	&__slide {}
+	&__slide {
+	}
 
 	.swiper-pagination {
 		.swiper-pagination-bullet {
@@ -911,7 +909,8 @@ main {
 		margin-bottom: 15px;
 	}
 
-	&__slide-text {}
+	&__slide-text {
+	}
 
 	&__slide-detailed-link {
 		display: flex;
@@ -956,7 +955,7 @@ main {
 	}
 
 	&_active {
-		background: $color-blue ;
+		background: $color-blue;
 	}
 
 	&:hover {
@@ -979,8 +978,6 @@ main {
 		.icon {
 			width: 8px;
 			height: 20px;
-
-
 		}
 
 		&:hover {
@@ -1004,11 +1001,14 @@ main {
 	padding-bottom: 100px;
 	background: #fff;
 
-	&__title {}
+	&__title {
+	}
 
-	&__subtitle-text {}
+	&__subtitle-text {
+	}
 
-	&__slide {}
+	&__slide {
+	}
 
 	&__slide-row {
 		display: flex;
@@ -1043,7 +1043,8 @@ main {
 		}
 	}
 
-	&__slide-description {}
+	&__slide-description {
+	}
 
 	&__slide-text {
 		margin-top: 30px;
@@ -1052,9 +1053,11 @@ main {
 
 // ==================================
 .manage-income {
-	&__title {}
+	&__title {
+	}
 
-	&__subtitle-text {}
+	&__subtitle-text {
+	}
 
 	&__row {
 		display: flex;
@@ -1131,7 +1134,8 @@ main {
 		position: relative;
 		height: 60px;
 
-		input {}
+		input {
+		}
 	}
 
 	&__range-num {
@@ -1213,7 +1217,6 @@ main {
 		font-weight: 500;
 
 		@media (max-width: $msm) {
-
 			// $fs: 10;
 			// font-size: calc($fs / $f-size) + em;
 			br {
@@ -1324,7 +1327,6 @@ main {
 		width: 100%;
 		align-items: center;
 		justify-content: space-between;
-
 	}
 
 	&__close {
@@ -1363,7 +1365,7 @@ main {
 
 		a {
 			font-weight: 700;
-			transition: .3s;
+			transition: 0.3s;
 
 			&:hover {
 				color: $color-purple;
@@ -1376,7 +1378,6 @@ main {
 			display: block;
 		}
 	}
-
 }
 
 // ==================================
@@ -1406,7 +1407,6 @@ main {
 		border-top: 3px solid transparent;
 		border-radius: 50%;
 		animation: spinner 1s linear infinite;
-
 	}
 
 	@keyframes spinner {
@@ -1420,7 +1420,6 @@ main {
 	}
 }
 
-
 // ================================== База знаний
 .knowledgebase {
 	padding: 25px 0 160px 0;
@@ -1432,12 +1431,10 @@ main {
 	@media (max-width: $mlg) {
 		margin-top: 0;
 		padding: 80px 0 90px 0;
-
 	}
 }
 
 .baseknow {
-
 	&__title-block {
 		margin-bottom: 40px;
 
@@ -1448,7 +1445,6 @@ main {
 
 	&__title {
 		color: #000;
-
 	}
 
 	&__row {
@@ -1501,8 +1497,6 @@ main {
 			margin-top: 20px;
 		}
 
-
-
 		.card-base {
 			$grid: 48.5;
 			flex: 0 0 0% + $grid;
@@ -1526,8 +1520,6 @@ main {
 				.detailed-link {
 					margin-top: 15px;
 				}
-
-
 			}
 
 			&__date {
@@ -1540,7 +1532,6 @@ main {
 					line-height: calc(18 / $fs * 100%);
 				}
 			}
-
 		}
 	}
 }
@@ -1571,7 +1562,8 @@ main {
 		}
 	}
 
-	&__nav {}
+	&__nav {
+	}
 
 	&__wrapper {
 		padding: 8px 10px 10px 20px;
@@ -1587,7 +1579,7 @@ main {
 			left: 0;
 			width: 4px;
 			background-color: $color-gray-40;
-			transform: rotate(180deg)
+			transform: rotate(180deg);
 		}
 
 		&::-webkit-scrollbar-thumb {
@@ -1610,7 +1602,6 @@ main {
 				margin-bottom: 0;
 			}
 		}
-
 	}
 
 	&__block-active {
@@ -1624,7 +1615,7 @@ main {
 		font-size: calc($fs / $f-size) + em;
 		line-height: calc(16 / $fs * 100%);
 		letter-spacing: 0.02em;
-		transition: .3s;
+		transition: 0.3s;
 	}
 
 	&__item {
@@ -1640,17 +1631,17 @@ main {
 		margin-bottom: -2px;
 		cursor: unset;
 
-		&:hover {
+		a:hover {
 			cursor: pointer;
 			color: $color-purple;
 
-			.baseknow-sitebar__item-triangle {
-				border-top: 10px solid $color-purple;
-			}
+			// .baseknow-sitebar__item-triangle {
+			// 	border-top: 10px solid $color-purple;
+			// }
 
-			.baseknow-sitebar__span-num {
-				color: $color-purple;
-			}
+			// .baseknow-sitebar__span-num {
+			// 	color: $color-purple;
+			// }
 		}
 
 		p {
@@ -1665,22 +1656,44 @@ main {
 		}
 	}
 
+	&__block-active {
+		cursor: pointer;
+		&:hover {
+			.baseknow-sitebar {
+				&__span-num {
+					color: $color-purple;
+				}
+				&__item-triangle {
+					border-left: 6px solid transparent;
+    				border-right: 6px solid transparent;
+    				border-top: 10px solid $color-purple;
+					&_active {
+						border-bottom: 10px solid $color-purple;
+						border-top:unset;
+					}
+				}
+			}
+		}
+		
+	}
+			
+
 	&__item-triangle {
 		position: absolute;
 		right: 10px;
 		top: 42%;
-
 		width: 0;
 		height: 0;
 		display: flex;
 		border-left: 6px solid transparent;
 		border-right: 6px solid transparent;
 		border-top: 10px solid $color-blue;
-		transition: .3s;
+		transition: 0.3s;
 		cursor: pointer;
 
-		&:hover {
-			border-top: 10px solid $color-purple;
+		&_active {
+			border-bottom: 10px solid $color-blue;
+			border-top:unset;
 		}
 	}
 
@@ -1690,14 +1703,14 @@ main {
 		width: 100%;
 	}
 
-	.accordion_active {
-		.baseknow-sitebar__item-triangle {
-			border-left: 6px solid transparent;
-			border-right: 6px solid transparent;
-			border-bottom: 10px solid $color-blue;
-			border-top: none;
-		}
-	}
+	// .accordion_active {
+	// 	.baseknow-sitebar__item-triangle {
+	// 		border-left: 6px solid transparent;
+	// 		border-right: 6px solid transparent;
+	// 		border-bottom: 10px solid $color-blue;
+	// 		border-top: none;
+	// 	}
+	// }
 
 	&__link {
 		&_active {
@@ -1733,7 +1746,8 @@ main {
 		}
 	}
 
-	&__text {}
+	&__text {
+	}
 
 	&__btn {
 		padding: 16px 30px;
@@ -1744,7 +1758,6 @@ main {
 .base-search {
 	position: relative;
 	width: 100%;
-
 
 	&_active {
 		z-index: 20000;
@@ -1764,7 +1777,6 @@ main {
 		&_active {
 			z-index: 18000;
 		}
-
 	}
 
 	&__icon-search {
@@ -1838,7 +1850,6 @@ main {
 		top: 15px;
 		right: 20px;
 		cursor: pointer;
-
 	}
 }
 
@@ -1850,7 +1861,8 @@ main {
 	flex-direction: column;
 	justify-content: space-between;
 
-	&__text-block {}
+	&__text-block {
+	}
 
 	&__title {
 		$fs: 16;
@@ -1860,7 +1872,8 @@ main {
 		margin-bottom: 12px;
 	}
 
-	&__text {}
+	&__text {
+	}
 }
 
 .paginations {
@@ -1873,10 +1886,10 @@ main {
 		min-height: 30px;
 		border: 1px solid $color-tunbs;
 		position: relative;
-		transition: .3s;
+		transition: 0.3s;
 
 		svg {
-			transition: .3s;
+			transition: 0.3s;
 			fill: transparent;
 			stroke: $color-tunbs;
 			height: 15px;
@@ -1933,7 +1946,7 @@ main {
 		$fs: 14;
 		font-size: calc($fs / $f-size) + em;
 		line-height: calc(20 / $fs * 100%);
-		transition: .3s;
+		transition: 0.3s;
 		font-weight: 400;
 
 		&:hover {
@@ -1944,13 +1957,10 @@ main {
 			color: $color-blue;
 		}
 	}
-
-
 }
 
 // ================================== Статья база знаний
 .base-article {
-
 	&__head {
 		margin-bottom: 40px;
 	}
@@ -2068,7 +2078,7 @@ main {
 			}
 
 			&::before {
-				content: '';
+				content: "";
 				display: inline-block;
 				border-radius: 50%;
 				min-width: 5px;
@@ -2077,7 +2087,6 @@ main {
 				margin-right: 10px;
 			}
 		}
-
 	}
 
 	&__img {
@@ -2125,7 +2134,6 @@ main {
 	@media (max-width: $wsm) {
 		padding: 15px;
 	}
-
 }
 
 .baselist-table {
@@ -2151,7 +2159,7 @@ main {
 
 	a {
 		color: $color-blue;
-		transition: .3s;
+		transition: 0.3s;
 		text-decoration: underline;
 
 		&:hover {
@@ -2181,7 +2189,8 @@ main {
 		}
 	}
 
-	&__text-content {}
+	&__text-content {
+	}
 
 	&__title {
 		$fs: 16;
@@ -2191,7 +2200,8 @@ main {
 		margin-bottom: 20px;
 	}
 
-	&__text {}
+	&__text {
+	}
 
 	@media (max-width: $wsm) {
 		padding: 15px;
@@ -2223,7 +2233,7 @@ main {
 	}
 
 	@media (max-width: $mlg) {
-		min-width: 90%;
+		min-width: 663px;
 		height: 850px;
 	}
 
@@ -2241,7 +2251,7 @@ main {
 		right: 40px;
 
 		svg {
-			transition: .3s;
+			transition: 0.3s;
 		}
 
 		&:hover {
@@ -2282,8 +2292,6 @@ main {
 			flex: 0 0 0% + $grid;
 			max-width: 0% + $grid;
 		}
-
-
 	}
 
 	&__title {
@@ -2317,7 +2325,8 @@ main {
 		}
 	}
 
-	&__input {}
+	&__input {
+	}
 
 	&__textarea-block {
 		height: 165px;
@@ -2327,35 +2336,44 @@ main {
 			$fs: 12;
 			font-size: calc($fs / $f-size) + em;
 			line-height: calc(16 / $fs * 100%);
-			margin: 0px 0px 0px 0px;
+			margin: 0px;
 			color: $color-gray-40;
 			font-weight: 500;
 			letter-spacing: 0.2px;
-			position: absolute;
-			bottom: 8px;
-			right: 16px;
-			z-index: 1;
-			background-color: $color-bg-grey;
+			// position: absolute;
+			// bottom: 8px;
+			// right: 16px;
+			// z-index: 1;
+			// background-color: $color-bg-grey;
+			border-top: none;
+			display: flex;
+    justify-content: flex-end;
 		}
 	}
 
 	&__textarea {
 		width: 100%;
-		height: 100%;
+		height: 83%;
 		resize: none;
-
-		padding-bottom: 25px;
+		margin-bottom: -7px;
+		border-bottom: none;
 	}
 
 	&__btn {
-		background: $color-ligth-purple;
+		
 
 		@media (max-width: $wsm) {
 			width: 100%;
 		}
 
+		&_check{
+			background-color: rgba($color-blue, 0.8);
+			pointer-events: none;
+		}
+		
+
 		&_disable {
-			opacity: .5;
+			background-color: rgba($color-blue, 0.5);
 			pointer-events: none;
 		}
 	}
@@ -2368,9 +2386,6 @@ main {
 		align-items: center;
 
 		div {
-
-
-
 			@media (max-width: $mxl) {
 				zoom: 65%;
 			}
@@ -2388,7 +2403,6 @@ main {
 			display: none;
 		}
 	}
-
 
 	&__checkbox {
 		label {
@@ -2409,15 +2423,13 @@ main {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				transition: .3s;
 
 				&::before {
 					width: 80%;
 					height: 80%;
-					content: '';
+					content: "";
 					background: url(../img/iconsprite/check.svg) no-repeat;
 					background-size: contain;
-					transition: .3s;
 					display: none;
 				}
 			}
@@ -2438,8 +2450,6 @@ main {
 		input {
 			display: none;
 		}
-
-
 	}
 }
 
@@ -2449,17 +2459,16 @@ main {
 
 // =============================
 
-#checkbox-base:checked+label span {
+#checkbox-base:checked + label span {
 	min-width: 16px;
 	height: 16px;
 	border: none;
 	box-shadow: inset 0 0 0 8px $color-blue;
 }
 
-#checkbox-base:checked+label span::before {
+#checkbox-base:checked + label span::before {
 	display: inline-block;
 }
-
 
 // ==================================
 // ==================================
@@ -2478,11 +2487,6 @@ main {
 .loaded .preloader {
 	display: none;
 }
-
-
-
-
-
 
 //   .save-calmly__item:before {
 // 	content: "";

@@ -150,6 +150,8 @@ h3 {
 	width: 100%;
 	box-sizing: border-box;
 	font-family: $font;
+	color: $color-dark-blue;
+	letter-spacing: 0.2px;
 
 	&::placeholder {
 		color: $color-gray-40;

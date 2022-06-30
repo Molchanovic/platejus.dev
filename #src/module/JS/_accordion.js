@@ -2,9 +2,11 @@ if (document.getElementsByClassName("accordion")) {
 	let acc = document.querySelectorAll(".accordion");
 
 	acc.forEach(function (item) {
-		let arrowAcc = item.querySelector('.aseknow-sitebar__block-active');
+		let arrowAcc = item.querySelector('.baseknow-sitebar__block-active');
 		arrowAcc.addEventListener('click', function () {
 			item.classList.toggle("accordion_active");
+		let arrowTrangle = item.querySelector('.baseknow-sitebar__item-triangle');
+			arrowTrangle.classList.toggle("baseknow-sitebar__item-triangle_active");
 			let panel = item.nextElementSibling;
 
 			if (panel.style.maxHeight) {

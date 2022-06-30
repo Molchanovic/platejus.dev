@@ -258,8 +258,8 @@ if (document.querySelector('.textarea-block')) {
 	textareaBlock.forEach(function (input) {
 		let spanBlock = input.querySelector('span');
 		input.querySelector('textarea').addEventListener('input', function (event) {
-			console.log(`${event.target.value.length}/${+(event.target.getAttribute('data-max'))}`);
-			spanBlock.innerHTML = `${event.target.value.length}/${+(event.target.getAttribute('data-max'))}`
+			console.log(`${event.target.value.length}/${+(event.target.getAttribute('maxlength'))}`);
+			spanBlock.innerHTML = `${event.target.value.length}/${+(event.target.getAttribute('maxlength'))}`
 		});
 	})
 }
@@ -275,6 +275,15 @@ if (document.querySelector('.base-popup')) {
 	function inputFull () {
 		if (arrInput.length == 4 && inputPopup.checked) {
 			btnSend.classList.remove('base-popup__btn_disable');
+			btnSend.classList.remove('base-popup__btn_check');
+		}
+		else if (inputPopup.checked) {
+			btnSend.classList.add('base-popup__btn_check');
+			btnSend.classList.remove('base-popup__btn_disable');
+		}
+		else if (!inputPopup.checked) {
+			btnSend.classList.remove('base-popup__btn_check');
+			btnSend.classList.add('base-popup__btn_disable');
 		}
 		else {
 			btnSend.classList.add('base-popup__btn_disable');
@@ -434,9 +443,11 @@ if (document.getElementsByClassName("accordion")) {
 	let acc = document.querySelectorAll(".accordion");
 
 	acc.forEach(function (item) {
-		let arrowAcc = item.querySelector('.aseknow-sitebar__block-active');
+		let arrowAcc = item.querySelector('.baseknow-sitebar__block-active');
 		arrowAcc.addEventListener('click', function () {
 			item.classList.toggle("accordion_active");
+		let arrowTrangle = item.querySelector('.baseknow-sitebar__item-triangle');
+			arrowTrangle.classList.toggle("baseknow-sitebar__item-triangle_active");
 			let panel = item.nextElementSibling;
 
 			if (panel.style.maxHeight) {
