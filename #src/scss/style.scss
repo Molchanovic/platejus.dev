@@ -2348,6 +2348,7 @@ main {
 			border-top: none;
 			display: flex;
     justify-content: flex-end;
+	 padding-top:0;
 		}
 	}
 
@@ -2367,7 +2368,7 @@ main {
 		}
 
 		&_check{
-			background-color: rgba($color-blue, 0.8);
+			background-color: rgba($color-blue, 0.6);
 			pointer-events: none;
 		}
 		

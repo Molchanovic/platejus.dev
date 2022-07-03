@@ -2749,6 +2749,7 @@ h3 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 0;
 }
 
 .base-popup__textarea {
@@ -2760,7 +2761,7 @@ h3 {
 }
 
 .base-popup__btn_check {
-  background-color: rgba(18, 32, 165, 0.8);
+  background-color: rgba(18, 32, 165, 0.6);
   pointer-events: none;
 }
 
