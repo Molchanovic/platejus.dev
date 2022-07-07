@@ -1,4 +1,4 @@
-
+//'use strict';
 // !Бургер
 if (document.querySelector('.burger-menu')) {
 	(function () {
@@ -270,7 +270,6 @@ if (document.querySelector('.base-popup')) {
 	let inputPopup = document.querySelector('#checkbox-base');
 	let arrInput = [];
 
-	console.log(inputPopup)
 
 	function inputFull () {
 		if (arrInput.length == 4 && inputPopup.checked) {

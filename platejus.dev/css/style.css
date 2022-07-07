@@ -2796,6 +2796,7 @@ h3 {
   cursor: pointer;
   display: inline-block;
   width: 16px;
+  min-width: 16px;
   height: 16px;
   -webkit-box-shadow: inset 0 0 0 1px #BEC0C5;
           box-shadow: inset 0 0 0 1px #BEC0C5;
@@ -3727,6 +3728,10 @@ h3 {
 
   .manage-income__sum-text br {
     display: none;
+  }
+
+  .base-popup {
+    min-width: unset;
   }
 }
 
