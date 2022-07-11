@@ -1732,6 +1732,10 @@ main {
 		padding: 20px 15px;
 	}
 
+	&_mob {
+		margin-top: 25px;
+	}
+
 	&__title {
 		$fs: 24;
 		font-size: calc($fs / $f-size) + em;

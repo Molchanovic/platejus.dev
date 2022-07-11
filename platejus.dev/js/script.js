@@ -271,7 +271,7 @@ if (document.querySelector('.base-popup')) {
 	let arrInput = [];
 
 
-	function inputFull () {
+	function inputFull() {
 		if (arrInput.length == 4 && inputPopup.checked) {
 			btnSend.classList.remove('base-popup__btn_disable');
 			btnSend.classList.remove('base-popup__btn_check');
@@ -303,11 +303,32 @@ if (document.querySelector('.base-popup')) {
 				}
 			})
 			arrInput = document.querySelectorAll('.input-full');
-			inputFull ();
+			inputFull();
 		})
 	})
-	
+
 }
+
+
+
+
+let stayedQuestion = document.querySelector('.stayed-questions'); //что перенести
+let stayedQuestionMob = document.querySelector('.stayed-questions_mob'); //куда перенести
+
+if (stayedQuestion && stayedQuestionMob) {
+	
+
+	
+	if (document.documentElement.clientWidth < 575) {
+		stayedQuestionMob.append(stayedQuestion);
+	}
+}
+
+
+
+
+
+
 
 //===Модули===============================
 const popupLinks = document.querySelectorAll('.popup-link');

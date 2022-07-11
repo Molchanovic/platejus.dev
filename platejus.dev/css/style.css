@@ -2225,6 +2225,10 @@ h3 {
   padding: 40px 30px;
 }
 
+.stayed-questions_mob {
+  margin-top: 25px;
+}
+
 .stayed-questions__title {
   font-size: 1.5em;
   line-height: 150%;
