@@ -265,10 +265,10 @@ if (document.querySelector('.textarea-block')) {
 }
 
 if (document.querySelector('.base-popup')) {
-	let formsValidate = document.querySelectorAll('.base-popup__form .input');
-	let btnSend = document.querySelector('.base-popup__btn');
-	let inputPopup = document.querySelector('#checkbox-base');
-	let arrInput = [];
+	var formsValidate = document.querySelectorAll('.base-popup__form .input');
+	var btnSend = document.querySelector('.base-popup__btn');
+	var inputPopup = document.querySelector('#checkbox-base');
+	var arrInput = [];
 
 
 	function inputFull() {
