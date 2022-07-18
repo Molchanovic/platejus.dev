@@ -3449,7 +3449,7 @@ h3 {
 
   .knowledgebase {
     margin-top: 0;
-    padding: 80px 0 90px 0;
+    padding: 80px 0 40px 0;
   }
 
   .baseknow__row {
@@ -3734,6 +3734,11 @@ h3 {
     display: none;
   }
 
+  .stayed-questions {
+    padding: 20px 15px;
+    margin-top: 40px;
+  }
+
   .base-popup {
     min-width: unset;
   }
@@ -3847,10 +3852,6 @@ h3 {
   .baseknow-sitebar__title {
     font-size: 1.125em;
     line-height: 133.3333333333%;
-  }
-
-  .stayed-questions {
-    padding: 20px 15px;
   }
 
   .stayed-questions__title {
