@@ -1,6 +1,66 @@
+# Инструкция (Набросок, потом допишу)
+## Установка
+- Установить [NodeJS 16.15](https://nodejs.org/dist/v16.14.2/node-v16.14.2-x64.msi) 
+- Установить [Python v3.10](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe) 
+- установить [Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community)  
+- установить [Распространяемый пакет Visual C++ для Visual Studio 2015](https://www.microsoft.com/ru-ru/download/details.aspx?id=48145) 
+- или все необходимое можно скачать с [Я.Диска](https://disk.yandex.ru/d/rm8XtJ28SBhsyg)
+- Изменить права в Windows через PowerShell(Администратор). 
+Проверяем текущие параметры для политики выполнения: **Get-ExecutionPolicy -List**
+Устанавливаем требуемый уровень (меняем политику выполнения) **Set-ExecutionPolicy -Scope LocalMachine Unrestricted**
+- Установить Gulp глобально **npm i gulp -g**
+## Запуск
+- Положить данную сборку в любую удобную папку, переименовав в название проекта
+- Запустить команду установки node модулей **npm i** (опционально: если папка **node_modules** отсутствует)
+- Запускаем сборку командой **gulp watch**
+- Сборка успешно запустилась если терминал находится в ждущем режиме и ввод команд заблокирован (последняя команда **Starting 'fontsStyle'...**)
+- Остановить Gulp можно путем закрытие терминала или командой внутри терминала **Ctrl + C**
+
+## Возможные ошибки
+- Невозможность найти модуль **webp-converter/cwebp**
+	Нужно проверить версию модуля  **webp-converter**, должна быть **2.2.3**
+- Проверку версий всех модулей можно командой **npm list**.
+	Работа проверена только на указанных версиях модулей:
+	- browser-sync **2.27.10**
+	- del **6.1.0** 
+	- gulp **4.0.2**
+	- gulp-autoprefixer **8.0.0**
+	- webp-converter": **"2.2.3**
+	- gulp-cheerio **1.0.0** 
+	- gulp-clean-css **4.3.0** 
+	- gulp-file-include **2.3.0**
+	- gulp-fonter **0.3.0 **
+	- gulp-group-css-media-queries **1.2.2** 
+	- gulp-imagemin **7.1.0** 
+	- gulp-media-queries-splitter **1.0.3**
+	- gulp-newer **1.4.0**
+	- gulp-plumber **1.2.1**
+	- gulp-rename **2.0.0**
+	- gulp-replace **1.1.3**
+	- gulp-sass **5.1.0**
+	- gulp-svg-sprite **1.5.0**
+	- gulp-ttf2woff **1.1.1** 
+	- gulp-ttf2woff2 **4.0.1**
+	- gulp-uglify-es **3.0.0**
+	- gulp-webp-html **1.0.2**
+	- gulp-webpcss **1.1.1** 
+	- imagemin-webp **6.0.0**
+	- sass **1.52.1**
+	- transform-runtime **0.0.0**
+	- gulp-svgmin **4.1.0**
+	- imagemin **8.0.1**
+	- imagemin-optipng **8.0.0**
+	- node-sass **7.0.1**
+## Описание функций
+.....Руки не дошли пока....
+# v1.4
+- пересборка модулей
+# v1.3
+- добавление нормального svg спрайта
+- добавление svg спрайта без изменений исходного кода (отсутствует возможность изменение цвета)
+
 # v1.2
 ____________________
-- Заблокированы версии подулей
 - Изменилась процедура инициализации и запуска
 	- npm install gulp --save-dev (сначала устанавливаем gulp)
 	- gulp watch (запускаем gulp)
@@ -44,9 +104,9 @@ _____________________
 	<!DOCTYPE html>
 		<html lang="ru">
 			@@include('_head.html', {
-				"title":"Гдавная",
-				"description":"Описание",
-				"img":"img/картинка-для-соц-сетей.png",
+				"title":"Гдавная 
+				"description":"Описание 
+				"img":"img/картинка-для-соц-сетей.png 
 				})
 			...
 		</html>

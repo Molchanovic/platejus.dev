@@ -337,7 +337,7 @@ if (stayedQuestion && stayedQuestionMob) {
 @@include('../module/JS/_accordion.js', {}) //Валидатор форм  //!Сниппет "!accordion" html
 
 if (document.querySelector('.tel')) {
-	@@include('../../../_module/JS/_maskPhone.js', {}) //Маска номера телефона (библиотека)
+	@@include('../module/JS/_maskPhone.js', {}) //Маска номера телефона (библиотека)
 	maskPhone('.tel');//Вызов функции маски номера телефона
 }
 
